@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import "./Settings.scss";
 
 const Settings: React.FC<{}> = () => {

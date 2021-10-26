@@ -1,6 +1,6 @@
+import { VHEStorage } from "./useStorage";
 import { useEffect, useMemo, useState } from "react";
 import { generateUUID } from "../util";
-import { VHEStorage } from "./useStorage";
 
 interface iGameSave {
   uuid: string;

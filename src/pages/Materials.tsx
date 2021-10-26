@@ -1,9 +1,7 @@
 import { FormattedMessage } from "react-intl";
-import { useGotoMenu } from "../util";
 import "./Materials.scss";
 
 const Materials: React.FC<{}> = () => {
-  const gotoMenu = useGotoMenu();
 
   return (
     <body className="documentation-container">

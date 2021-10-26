@@ -1,9 +1,6 @@
-import { useCallback, useMemo, useState } from "react";
-import { FormattedMessage } from "react-intl";
-import { useHistory, useParams } from "react-router-dom";
+import { useMemo, useState } from "react";
 import { DecisionPoint } from "../hooks/useGameData";
 import useLogGameEvent from "../hooks/useLogGameEvent";
-import { useGotoMenu } from "../util";
 import "./Decision.scss";
 
 interface iProps {
@@ -12,11 +9,7 @@ interface iProps {
 }
 
 const Decision: React.FC<iProps> = ({ decisionPoint, onOptionChosen }) => {
-  const history = useHistory();
-  const { game_id } = useParams<{ game_id: string }>();
-
   const logGameEvent = useLogGameEvent();
-  const gotoMenu = useGotoMenu();
 
   const dp = decisionPoint;
 
@@ -40,15 +33,15 @@ const Decision: React.FC<iProps> = ({ decisionPoint, onOptionChosen }) => {
     });
   }, [randomizedOptions, onOptionChosen]);
 
-  const replayVideo = useCallback(() => {
-    /*gtag('event', 'video_replayed', {
-      'event_category': 'video',
-      'event_label': $scope.dp.data,
-      'value': $scope.dp.id
-    });*/
-    logGameEvent("", "replay", "video", dp.data, dp.id);
-    history.push(`/games/${game_id}/video`);
-  }, [dp.data, dp.id, history, logGameEvent, game_id]);
+  // const replayVideo = useCallback(() => {
+  //   /*gtag('event', 'video_replayed', {
+  //     'event_category': 'video',
+  //     'event_label': $scope.dp.data,
+  //     'value': $scope.dp.id
+  //   });*/
+  //   logGameEvent("", "replay", "video", dp.data, dp.id);
+  //   history.push(`/games/${game_id}/video`);
+  // }, [dp.data, dp.id, history, logGameEvent, game_id]);
 
   return (
     <div className="container">

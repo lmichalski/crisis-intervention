@@ -1,6 +1,5 @@
 import { useMemo } from "react";
 import { FormattedMessage } from "react-intl";
-import { useGotoMenu } from "../util";
 import "./Summary.scss";
 import {
   PDFDownloadLink,
@@ -38,8 +37,6 @@ const Summary: React.FC<iProps> = ({
   const logGameEvent = useLogGameEvent();
 
   // const [progress, setProgress] = useState([])
-
-  const goToMenu = useGotoMenu();
 
   let progress: { question: string; answer: string; correct: boolean }[] =
     useMemo(() => {

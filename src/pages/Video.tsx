@@ -1,11 +1,9 @@
 import { useEffect, useCallback, useRef } from "react";
-import { FormattedMessage } from "react-intl";
 import { useLocation, useHistory, useParams } from "react-router-dom";
 import videojs from "video.js";
 import Player from "@vimeo/player";
 
 import { DecisionPoint } from "../hooks/useGameData";
-import { useGotoMenu } from "../util";
 
 import "./Video.scss";
 import useLogGameEvent from "../hooks/useLogGameEvent";
@@ -30,8 +28,6 @@ const Video: React.FC<iProps> = ({
 
   const videoRef = useRef<HTMLVideoElement>(null);
   const iframeRef = useRef<HTMLIFrameElement>(null);
-
-  const gotoMenu = useGotoMenu();
 
   const skipVideo = useCallback(() => {
     let time = undefined;

@@ -1,6 +1,3 @@
-import { Link } from "react-router-dom";
-import { useGotoMenu } from "../util";
-import { FormattedMessage } from "react-intl";
 import "./Chart.scss";
 
 interface iProps {
@@ -8,8 +5,6 @@ interface iProps {
 }
 
 const Chart: React.FC<iProps> = ({ image }) => {
-  const gotoMenu = useGotoMenu();
-
   return (
     <div className="container">
       <div className="panel info">
