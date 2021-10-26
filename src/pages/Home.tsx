@@ -11,7 +11,7 @@ const Home: React.FC<iProps> = () => {
         <header>
           <FormattedMessage
             id="Home.title"
-            defaultMessage="Virtual Healthcare Experence"
+            defaultMessage="Crisis Intervention"
             description="Title for homepage"
             tagName="h2"
           />
