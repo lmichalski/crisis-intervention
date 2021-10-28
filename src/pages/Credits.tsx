@@ -16,41 +16,88 @@ const Credits: React.FC<{}> = () => {
         </header>
         <div className="main">
           <div className="content cf">
-            <h2>Content Providers</h2>
+            <h2>Funder</h2>
             <ul>
-              <li>Margaret Verkuyl NP:PHC, MN</li>
-              <li>Dr. Jennifer Lapum, RN, PhD</li>
-              <li>Dr. Oona St-Amant RN, PhD </li>
-              <li>Behi Nikaiin RN MScN</li>
-              <li>Michelle Hughes RN, MEd</li>
-              <li>Dr. Paula Mastrilli RN, PhD</li>
-              <li>Dr. Daria Romaniuk RN, PhD</li>
-              <li>Lorraine Betts RN, MN</li>
-            </ul>
-            <h2>Cast</h2>
-            <ul>
-              <li>Karen Lee</li>
-              <li>Sarah Winstanley</li>
+              <li>eCampusOntario</li>
+              <li><a href="https://www.ecampusontario.ca/">ecampusontario.ca</a></li>
             </ul>
 
-            <h2>Project Coordination</h2>
+            <h2>Research Project Manager</h2>
             <ul>
-              <li>Lars Svekis</li>
-              <li>Sushila Parikh</li>
+              <li>Roxanne Ramjattan, PhD, MSW, RSW</li>
             </ul>
-            <h2>Game Design & Development</h2>
+
+            <h2>Virtual Gaming Simulation Consultant</h2>
             <ul>
-              <li>Igor Karasyov</li>
+              <li>Margaret Verkuyl, NP, PHC, MN</li>
+              <li>Professor, Nursing Centennial College</li>
+            </ul>
+
+            <h2>Cast</h2>
+            <ul>
+              <li>Michael Jenkins (Therapist, Marcus)</li>
+              <li>Catherine Ouimet (Client, Kelly)</li>
+              <li>Cintra Ramkissoon (Friend, Talia)</li>
+            </ul>
+
+            <h2>Film Producer</h2>
+            <ul>
+              <li>Ryan Marley</li>
+            </ul>
+
+            <h2>Editor</h2>
+            <ul> 
+              <li>Guino Anderson</li>
+            </ul>
+
+            <h2>Website Designer</h2>
+            <ul>
               <li>Lucas Michalski</li>
             </ul>
-            <h2>Video Production</h2>
+
+            <h2>Research Assistants</h2>
+            <h3>Winter 2021</h3>
             <ul>
-              <li>Daniil Novikov</li>
-              <li>Ilya Emilianov</li>
-              <li>Arseniy Semin</li>
-              <li>Cassandra Ferworn</li>
-              <li>Kelvin Kong</li>
+              <li>Grace (Jasper) Bakker </li>
+              <li>Jen Humber </li>
+              <li>Ivan Lange </li>
+              <li>Sophia Miller </li>
+              <li>Cintra Ramkissoon </li>
             </ul>
+            <h3>Summer 2021</h3>
+            <ul>
+              <li>Daniella Antongiovanni </li>
+              <li>Damon Dam </li>
+              <li>Sandrine Bendavid </li>
+              <li>Tiffani Lucas </li>
+              <li>Megan Williams</li>
+            </ul>
+            <h3>Fall 2021</h3>
+            <ul>
+              <li>Daniella Antongiovanni </li>
+              <li>Damon Dam </li>
+              <li>Sandrine Bendavid </li>
+              <li>Tiffani Lucas </li>
+            </ul>
+
+            <h2>Advisory Committee</h2>
+            <div className="advisory-committee">
+                <h4>Maris Karklins</h4>
+                <h5>Assistive Technologist, Counselling and Accessibility Services </h5>
+                <h6>Seneca College </h6>
+
+                <h4>Erica Watson, MSW, RSW</h4>
+                <h5>Clinical Supervisor & Educational Coordinato </h5>
+                <h6>SickKids Centre | Garry Hurvitz Center for Community Mental Health </h6>
+
+                <h4>Seemab Mushtaq, BA</h4>
+                <h5>Crisis Worker </h5>
+                <h6>Distress Centre of Greater Toronto </h6>
+
+                <h4>Rebecca Oliveira, RN, BScN, CPMHN</h4>
+                <h5>Nurse Educator </h5>
+                <h6>Center for Addiction and Mental Health </h6>
+              </div>
           </div>
         </div>
       </div>
