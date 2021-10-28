@@ -18,7 +18,6 @@ import Feedback from "./pages/Feedback";
 import Settings from "./pages/Settings";
 import Summary from "./pages/Summary";
 import Transition from "./pages/Transition";
-import Materials from "./pages/Materials";
 import Principles from "./pages/Principles";
 import Chart from "./pages/Chart";
 import useLogGameEvent from "./hooks/useLogGameEvent";
@@ -190,10 +189,6 @@ const App: React.FC<iProps> = ({ gameId }) => {
 
             <Route path={`${path}/intro`}>
               <Intro strings={gameData.strings.intro} />
-            </Route>
-
-            <Route path={`${path}/materials`}>
-              <Materials />
             </Route>
 
             <Route path={`${path}/objectives`}>
