@@ -194,9 +194,9 @@ const Video: React.FC<iProps> = ({
               <iframe
                 ref={iframeRef}
                 // style={{height: (iframeRef.current?.scrollWidth ?? 600) * 9/16}}
-                src={dp.video.vimeo_url + "?autoplay=1"}
+                src={dp.video.vimeo_url + "?autoplay=1&texttrack=en"}
                 frameBorder={0}
-                allow="autoplay; fullscreen; picture-in-picture"
+                allow="autoplay; texttrack; fullscreen; picture-in-picture"
                 allowFullScreen
                 title="SG4_DP1_0"
               ></iframe>
