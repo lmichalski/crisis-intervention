@@ -1,6 +1,12 @@
 import React, { useCallback, useMemo, useState } from "react";
 
-import { Switch, Route, useHistory, useRouteMatch, Redirect } from "react-router-dom";
+import {
+  Switch,
+  Route,
+  useHistory,
+  useRouteMatch,
+  Redirect,
+} from "react-router-dom";
 import { useIntl } from "react-intl";
 
 import Menu from "./pages/Menu";
@@ -9,7 +15,6 @@ import "./App.scss";
 import { useGameData } from "./hooks/useGameData";
 
 import Objectives from "./pages/Objectives";
-import Intro from "./pages/Intro";
 import Decision from "./pages/Decision";
 import Video from "./pages/Video";
 import Credits from "./pages/Credits";
@@ -20,6 +25,7 @@ import Summary from "./pages/Summary";
 import Transition from "./pages/Transition";
 import Principles from "./pages/Principles";
 import Chart from "./pages/Chart";
+import Scenario from "./pages/Scenario"
 import useLogGameEvent from "./hooks/useLogGameEvent";
 import { getBrowser } from "./util";
 import useGameState from "./hooks/useGameState";
@@ -41,8 +47,11 @@ const App: React.FC<iProps> = ({ gameId }) => {
     ({ correct }) => correct === "correct"
   ).length;
 
-  const [navMenuExpanded, setNavMenuExpanded] = useState(true)
-  const handleMenuToggleButtonClick = useCallback(() => setNavMenuExpanded((expanded) => !expanded),[])
+  const [navMenuExpanded, setNavMenuExpanded] = useState(true);
+  const handleMenuToggleButtonClick = useCallback(
+    () => setNavMenuExpanded((expanded) => !expanded),
+    []
+  );
 
   const lastDecisionPoint =
     gameData.decisionpoints[gameData.decisionpoints.length - 1].id ===
@@ -90,13 +99,7 @@ const App: React.FC<iProps> = ({ gameId }) => {
 
       gameState.selectOption(nextId, label);
 
-      logGameEvent(
-        "",
-        "select",
-        "answer",
-        label,
-        next?.correct
-      );
+      logGameEvent("", "select", "answer", label, next?.correct);
 
       switch (next?.type) {
         case "video":
@@ -151,7 +154,11 @@ const App: React.FC<iProps> = ({ gameId }) => {
       </header>
 
       <div className="body">
-        <nav className={`nav-menu ${navMenuExpanded?"nav-menu--expanded": "nav-menu--collapsed"}`}>
+        <nav
+          className={`nav-menu ${
+            navMenuExpanded ? "nav-menu--expanded" : "nav-menu--collapsed"
+          }`}
+        >
           <Menu
             strings={gameData.strings.menu}
             startNewGame={handleStartNewGame}
@@ -187,10 +194,6 @@ const App: React.FC<iProps> = ({ gameId }) => {
               />
             </Route>
 
-            <Route path={`${path}/intro`}>
-              <Intro strings={gameData.strings.intro} />
-            </Route>
-
             <Route path={`${path}/objectives`}>
               <Objectives strings={gameData.strings.objectives} />
             </Route>
@@ -207,6 +210,10 @@ const App: React.FC<iProps> = ({ gameId }) => {
 
             <Route path={`${path}/settings`}>
               <Settings />
+            </Route>
+
+            <Route path={`${path}/scenario`}>
+              <Scenario strings={gameData.strings.intro} />
             </Route>
 
             <Route path={`${path}/summary`}>
@@ -231,11 +238,10 @@ const App: React.FC<iProps> = ({ gameId }) => {
             </Route>
 
             <Route path={`${path}/lo`}>Somethings going on here, I swear</Route>
-            
-            <Route path="/">
-              <Redirect to={`${url}/chart`}/>
-            </Route>
 
+            <Route path="/">
+              <Redirect to={`${url}/instructions`} />
+            </Route>
           </Switch>
         </div>
       </div>

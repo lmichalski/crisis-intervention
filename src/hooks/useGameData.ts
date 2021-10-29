@@ -62,6 +62,9 @@ interface GameDataShape {
     chart: {
       image: string;
     };
+    scenario: {
+      introCards: string[];
+    };
     principles?: {
       paragraph: string;
       bullet_list: string[];

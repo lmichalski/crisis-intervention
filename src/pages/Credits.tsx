@@ -19,7 +19,9 @@ const Credits: React.FC<{}> = () => {
             <h2>Funder</h2>
             <ul>
               <li>eCampusOntario</li>
-              <li><a href="https://www.ecampusontario.ca/">ecampusontario.ca</a></li>
+              <li>
+                <a href="https://www.ecampusontario.ca/">ecampusontario.ca</a>
+              </li>
             </ul>
 
             <h2>Research Project Manager</h2>
@@ -46,7 +48,7 @@ const Credits: React.FC<{}> = () => {
             </ul>
 
             <h2>Editor</h2>
-            <ul> 
+            <ul>
               <li>Guino Anderson</li>
             </ul>
 
@@ -82,22 +84,27 @@ const Credits: React.FC<{}> = () => {
 
             <h2>Advisory Committee</h2>
             <div className="advisory-committee">
-                <h4>Maris Karklins</h4>
-                <h5>Assistive Technologist, Counselling and Accessibility Services </h5>
-                <h6>Seneca College </h6>
+              <h4>Maris Karklins</h4>
+              <h5>
+                Assistive Technologist, Counselling and Accessibility Services{" "}
+              </h5>
+              <h6>Seneca College </h6>
 
-                <h4>Erica Watson, MSW, RSW</h4>
-                <h5>Clinical Supervisor & Educational Coordinato </h5>
-                <h6>SickKids Centre | Garry Hurvitz Center for Community Mental Health </h6>
+              <h4>Erica Watson, MSW, RSW</h4>
+              <h5>Clinical Supervisor & Educational Coordinato </h5>
+              <h6>
+                SickKids Centre | Garry Hurvitz Center for Community Mental
+                Health{" "}
+              </h6>
 
-                <h4>Seemab Mushtaq, BA</h4>
-                <h5>Crisis Worker </h5>
-                <h6>Distress Centre of Greater Toronto </h6>
+              <h4>Seemab Mushtaq, BA</h4>
+              <h5>Crisis Worker </h5>
+              <h6>Distress Centre of Greater Toronto </h6>
 
-                <h4>Rebecca Oliveira, RN, BScN, CPMHN</h4>
-                <h5>Nurse Educator </h5>
-                <h6>Center for Addiction and Mental Health </h6>
-              </div>
+              <h4>Rebecca Oliveira, RN, BScN, CPMHN</h4>
+              <h5>Nurse Educator </h5>
+              <h6>Center for Addiction and Mental Health </h6>
+            </div>
           </div>
         </div>
       </div>

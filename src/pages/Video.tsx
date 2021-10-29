@@ -191,15 +191,15 @@ const Video: React.FC<iProps> = ({
       <div id="player" className="videoplayer functional">
         {dp?.video &&
           (dp.video.vimeo_url ? (
-              <iframe
-                ref={iframeRef}
-                // style={{height: (iframeRef.current?.scrollWidth ?? 600) * 9/16}}
-                src={dp.video.vimeo_url + "?autoplay=1&texttrack=en"}
-                frameBorder={0}
-                allow="autoplay; texttrack; fullscreen; picture-in-picture"
-                allowFullScreen
-                title="SG4_DP1_0"
-              ></iframe>
+            <iframe
+              ref={iframeRef}
+              // style={{height: (iframeRef.current?.scrollWidth ?? 600) * 9/16}}
+              src={dp.video.vimeo_url + "?autoplay=1&texttrack=en"}
+              frameBorder={0}
+              allow="autoplay; texttrack; fullscreen; picture-in-picture"
+              allowFullScreen
+              title="SG4_DP1_0"
+            ></iframe>
           ) : (
             <video
               ref={videoRef}

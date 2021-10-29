@@ -2,7 +2,6 @@ import { FormattedMessage } from "react-intl";
 import "./Materials.scss";
 
 const Materials: React.FC<{}> = () => {
-
   return (
     <body className="documentation-container">
       <div className="panel feedback">

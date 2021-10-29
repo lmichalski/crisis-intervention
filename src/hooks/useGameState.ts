@@ -37,7 +37,7 @@ const useGameState = (storageKey: string) => {
       fullscreen: false,
       currentStep,
       videoposition,
-      progress
+      progress,
     });
   }, [uuid, gamesaved, currentStep, videoposition, progress, storageKey]);
 

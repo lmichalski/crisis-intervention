@@ -29,23 +29,22 @@ interface iProps {
 }
 
 const correctnessColors: { [key in Correctness]: string } = {
-  "correct":"#009933",
-  "half": "#808080",
-  "wrong": "cc0000"
-}
+  correct: "#009933",
+  half: "#808080",
+  wrong: "cc0000",
+};
 
 const correctnessLabels: { [key in Correctness]: string } = {
-  "correct":"CORRECT",
-  "half": "PARTIALLY-CORRECT",
-  "wrong": "INCORRECT"
-}
+  correct: "CORRECT",
+  half: "PARTIALLY-CORRECT",
+  wrong: "INCORRECT",
+};
 
 const Summary: React.FC<iProps> = ({
   gameProgress,
   decisionPoints,
   completed,
 }) => {
-
   // const [progress, setProgress] = useState([])
 
   let progress: { question: string; answer: string; correct: Correctness }[] =
@@ -79,7 +78,8 @@ const Summary: React.FC<iProps> = ({
           </Text>
           .
         </Text>
-        {progress.length === decisionPoints.filter(({ correct }) => correct === "correct").length ? (
+        {progress.length ===
+        decisionPoints.filter(({ correct }) => correct === "correct").length ? (
           <Text>
             You've demonstrated the best possible result! Now play it one more
             time to make sure it wasn't mere luck :)
@@ -88,10 +88,11 @@ const Summary: React.FC<iProps> = ({
           <Text>
             {" "}
             However, if you give only correct answers it should only take 11
-            questions to complete the scenario. 
-            You selected not-the-best-answer {progress.filter(({ correct }) => correct === "half").length} times.
-            You selected the wrong answer {progress.filter(({ correct }) => correct === "wrong").length} times.
-            See if you can improve your results next time!{" "}
+            questions to complete the scenario. You selected not-the-best-answer{" "}
+            {progress.filter(({ correct }) => correct === "half").length} times.
+            You selected the wrong answer{" "}
+            {progress.filter(({ correct }) => correct === "wrong").length}{" "}
+            times. See if you can improve your results next time!{" "}
           </Text>
         )}
         <Text>
@@ -120,7 +121,6 @@ const Summary: React.FC<iProps> = ({
   }
 
   const pdfContent = useMemo(() => {
-
     let responses = progress.map((dp, i) => (
       <View key={i}>
         <View>
@@ -129,9 +129,7 @@ const Summary: React.FC<iProps> = ({
         </View>
         <View>
           <Text style={{ fontWeight: "bold" }}>A: </Text>
-          <Text
-            style={{ color: correctnessColors[dp.correct] }}
-          >
+          <Text style={{ color: correctnessColors[dp.correct] }}>
             {dp.answer} ({correctnessLabels[dp.correct]})
           </Text>
         </View>
@@ -194,11 +192,9 @@ const Summary: React.FC<iProps> = ({
               {progress.map((dp) => (
                 <li>
                   <div>{dp.question}</div>
-                  <div
-                    className={dp.correct}
-                    >
+                  <div className={dp.correct}>
                     <strong style={{ color: correctnessColors[dp.correct] }}>
-                      {dp.answer} ({correctnessLabels[dp.correct]}) 
+                      {dp.answer} ({correctnessLabels[dp.correct]})
                     </strong>
                   </div>
                 </li>

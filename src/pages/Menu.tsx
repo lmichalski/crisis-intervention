@@ -29,7 +29,7 @@ const Menu: React.FC<iProps> = ({
         <div className="main">
           <div className="content">
             <ul className="game-buttons">
-            <li>
+              <li>
                 <button className="Link" onClick={startNewGame}>
                   <FormattedMessage
                     id="Menu.newGame"
@@ -40,7 +40,7 @@ const Menu: React.FC<iProps> = ({
               </li>
 
               <div className="divider"></div>
-              
+
               <li>
                 <button
                   className={`Link ${gamesaved ? "active" : "disabled"}`}
@@ -55,6 +55,24 @@ const Menu: React.FC<iProps> = ({
               </li>
             </ul>
             <ul className="controls">
+            <li>
+                <Link to={`/games/${game_id}/instructions/`}>
+                  <FormattedMessage
+                    id="Menu.instructions"
+                    defaultMessage="How to Play"
+                    description="How to Play Button"
+                  />
+                </Link>
+              </li>
+            <li>
+                <Link to={`/games/${game_id}/scenario/`}>
+                  <FormattedMessage
+                    id="Menu.scenario"
+                    defaultMessage="Scenario"
+                    description="Scenario Button"
+                  />
+                </Link>
+              </li>
               <li>
                 <Link to={`/games/${game_id}/objectives/`}>
                   <FormattedMessage
@@ -75,15 +93,6 @@ const Menu: React.FC<iProps> = ({
                   </Link>
                 </li>
               ) : null}
-              <li>
-                <Link to={`/games/${game_id}/instructions/`}>
-                  <FormattedMessage
-                    id="Menu.instructions"
-                    defaultMessage="How to Play"
-                    description="How to Play Button"
-                  />
-                </Link>
-              </li>
               <li>
                 <Link to={`/games/${game_id}/chart/`}>
                   <FormattedMessage

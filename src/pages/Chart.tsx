@@ -13,6 +13,7 @@ const Chart: React.FC<iProps> = ({ image }) => {
         </header>
         <div>
           <img
+            className="chart"
             src="/images/chart_image.png"
             alt="Client's Chart with some background information for this visit"
           ></img>
