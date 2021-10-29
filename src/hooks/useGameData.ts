@@ -73,6 +73,11 @@ interface GameDataShape {
       paragraph: string;
       bullet_list: string[];
     };
+
+    resources: {
+      paragraph: string;
+      bullet_list: string[];
+    };
   };
 }
 

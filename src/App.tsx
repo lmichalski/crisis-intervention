@@ -22,6 +22,7 @@ import Instructions from "./pages/Instructions";
 import Feedback from "./pages/Feedback";
 import Settings from "./pages/Settings";
 import Summary from "./pages/Summary";
+import Resources from "./pages/Resources"
 import Transition from "./pages/Transition";
 import Principles from "./pages/Principles";
 import Chart from "./pages/Chart";
@@ -29,6 +30,7 @@ import Scenario from "./pages/Scenario"
 import useLogGameEvent from "./hooks/useLogGameEvent";
 import { getBrowser } from "./util";
 import useGameState from "./hooks/useGameState";
+import Intro from "./pages/Intro";
 
 interface iProps {
   gameId: string;
@@ -216,6 +218,14 @@ const App: React.FC<iProps> = ({ gameId }) => {
               <Scenario strings={gameData.strings.intro} />
             </Route>
 
+            <Route path={`${path}/intro`}>
+              <Intro strings={gameData.strings.intro} />
+            </Route>
+
+            <Route path={`${path}/resources`}>
+              <Resources />
+            </Route>
+            
             <Route path={`${path}/summary`}>
               <Summary
                 decisionPoints={gameData.decisionpoints}
