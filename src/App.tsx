@@ -38,7 +38,7 @@ const App: React.FC<iProps> = ({ gameId }) => {
   const gameData = useGameData(gameId, locale);
   const gameState = useGameState(gameId);
   const minSteps = gameData.decisionpoints.filter(
-    ({ correct }) => correct
+    ({ correct }) => correct === "correct"
   ).length;
 
   const [navMenuExpanded, setNavMenuExpanded] = useState(true)
@@ -95,7 +95,7 @@ const App: React.FC<iProps> = ({ gameId }) => {
         "select",
         "answer",
         label,
-        next?.correct ? "correct" : "incorrect"
+        next?.correct
       );
 
       switch (next?.type) {

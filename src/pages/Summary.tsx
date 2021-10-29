@@ -12,8 +12,7 @@ import {
 import { Font } from "@react-pdf/renderer";
 
 import { Link as Lonk } from "react-router-dom";
-import useLogGameEvent from "../hooks/useLogGameEvent";
-import { DecisionPoint } from "../hooks/useGameData";
+import { Correctness, DecisionPoint } from "../hooks/useGameData";
 
 const Roboto = require("../fnt/Roboto-Regular.ttf").default as string;
 
@@ -29,16 +28,27 @@ interface iProps {
   completed: boolean;
 }
 
+const correctnessColors: { [key in Correctness]: string } = {
+  "correct":"#009933",
+  "half": "#808080",
+  "wrong": "cc0000"
+}
+
+const correctnessLabels: { [key in Correctness]: string } = {
+  "correct":"CORRECT",
+  "half": "PARTIALLY-CORRECT",
+  "wrong": "INCORRECT"
+}
+
 const Summary: React.FC<iProps> = ({
   gameProgress,
   decisionPoints,
   completed,
 }) => {
-  const logGameEvent = useLogGameEvent();
 
   // const [progress, setProgress] = useState([])
 
-  let progress: { question: string; answer: string; correct: boolean }[] =
+  let progress: { question: string; answer: string; correct: Correctness }[] =
     useMemo(() => {
       let progress = [];
       var i;
@@ -59,12 +69,6 @@ const Summary: React.FC<iProps> = ({
   let message: JSX.Element;
 
   if (completed) {
-    const correct_ratio = (
-      progress.filter(({ correct }) => correct).length / progress.length
-    ).toFixed(2);
-
-    logGameEvent("", "complete", "game", "", correct_ratio);
-
     message = (
       <>
         <Text>
@@ -75,8 +79,7 @@ const Summary: React.FC<iProps> = ({
           </Text>
           .
         </Text>
-        {progress.length ===
-        decisionPoints.filter(({ correct }) => correct).length ? (
+        {progress.length === decisionPoints.filter(({ correct }) => correct === "correct").length ? (
           <Text>
             You've demonstrated the best possible result! Now play it one more
             time to make sure it wasn't mere luck :)
@@ -84,9 +87,11 @@ const Summary: React.FC<iProps> = ({
         ) : (
           <Text>
             {" "}
-            However, if you give only correct answers it should only take 9
-            questions to complete the scenario. See if you can improve your
-            results next time!{" "}
+            However, if you give only correct answers it should only take 11
+            questions to complete the scenario. 
+            You selected not-the-best-answer {progress.filter(({ correct }) => correct === "half").length} times.
+            You selected the wrong answer {progress.filter(({ correct }) => correct === "wrong").length} times.
+            See if you can improve your results next time!{" "}
           </Text>
         )}
         <Text>
@@ -115,6 +120,7 @@ const Summary: React.FC<iProps> = ({
   }
 
   const pdfContent = useMemo(() => {
+
     let responses = progress.map((dp, i) => (
       <View key={i}>
         <View>
@@ -124,9 +130,9 @@ const Summary: React.FC<iProps> = ({
         <View>
           <Text style={{ fontWeight: "bold" }}>A: </Text>
           <Text
-            style={dp.correct ? { color: "#009933" } : { color: "#cc0000" }}
+            style={{ color: correctnessColors[dp.correct] }}
           >
-            {dp.answer} ({dp.correct ? "Correct" : "Incorrect"})
+            {dp.answer} ({correctnessLabels[dp.correct]})
           </Text>
         </View>
       </View>
@@ -189,13 +195,10 @@ const Summary: React.FC<iProps> = ({
                 <li>
                   <div>{dp.question}</div>
                   <div
-                    className={dp.correct ? "correct" : "wrong"}
-                    style={
-                      dp.correct ? { color: "#009933" } : { color: "#cc0000" }
-                    }
-                  >
-                    <strong>
-                      {dp.answer} ({dp.correct ? "Correct" : "Incorrect"})
+                    className={dp.correct}
+                    >
+                    <strong style={{ color: correctnessColors[dp.correct] }}>
+                      {dp.answer} ({correctnessLabels[dp.correct]}) 
                     </strong>
                   </div>
                 </li>

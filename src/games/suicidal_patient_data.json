@@ -67,7 +67,7 @@
       "video": {
         "vimeo_url": "https://player.vimeo.com/video/638786250"
       },
-      "correct": false,
+      "correct": "wrong",
       "feedback": "",
       "message": "How do you start the conversation with Kelly?",
       "options": [
@@ -94,7 +94,7 @@
       "video": {
         "vimeo_url": "https://player.vimeo.com/video/638787017"
       },
-      "correct": false,
+      "correct": "wrong",
       "feedback": "",
       "message": "How do you start the conversation with Kelly?",
       "options": [
@@ -117,7 +117,7 @@
       "video": {
         "vimeo_url": "https://player.vimeo.com/video/638787265"
       },
-      "correct": false,
+      "correct": "half",
       "feedback": "",
       "message": "How do you start the conversation with Kelly?",
       "options": [
@@ -140,7 +140,7 @@
       "video": {
         "vimeo_url": "https://player.vimeo.com/video/638787456"
       },
-      "correct": true,
+      "correct": "correct",
       "feedback": "",
       "message": "How do you help Kelly to feel free to share what's going on?",
       "options": [
@@ -167,7 +167,7 @@
       "video": {
         "vimeo_url": "https://player.vimeo.com/video/635497123"
       },
-      "correct": false,
+      "correct": "wrong",
       "feedback": "",
       "message": "How do you help Kelly to feel free to share what's going on?",
       "options": [
@@ -190,7 +190,7 @@
       "video": {
         "vimeo_url": "https://player.vimeo.com/video/638787934"
       },
-      "correct": false,
+      "correct": "half",
       "feedback": "",
       "message": "How do you help Kelly to feel free to share what's going on?",
       "options": [
@@ -213,7 +213,7 @@
       "video": {
         "vimeo_url": "https://player.vimeo.com/video/638789427"
       },
-      "correct": true,
+      "correct": "correct",
       "feedback": "",
       "message": "How do you gather more information?",
       "options": [
@@ -240,7 +240,7 @@
       "video": {
         "vimeo_url": "https://player.vimeo.com/video/638790260"
       },
-      "correct": false,
+      "correct": "half",
       "feedback": "",
       "message": "How do you gather more information?",
       "options": [
@@ -263,7 +263,7 @@
       "video": {
         "vimeo_url": "https://player.vimeo.com/video/638790544"
       },
-      "correct": false,
+      "correct": "wrong",
       "feedback": "",
       "message": "How do you gather more information?",
       "options": [
@@ -286,7 +286,7 @@
       "video": {
         "vimeo_url": "https://player.vimeo.com/video/638798953"
       },
-      "correct": true,
+      "correct": "correct",
       "feedback": "",
       "message": "How do you address Kelly’s unhealthy behaviours?",
       "options": [
@@ -313,7 +313,7 @@
       "video": {
         "vimeo_url": "https://player.vimeo.com/video/638799204"
       },
-      "correct": false,
+      "correct": "half",
       "feedback": "",
       "message": "How do you address Kelly’s unhealthy behaviours?",
       "options": [
@@ -336,7 +336,7 @@
       "video": {
         "vimeo_url": "https://player.vimeo.com/video/638799355"
       },
-      "correct": false,
+      "correct": "wrong",
       "feedback": "",
       "message": "How do you address Kelly’s unhealthy behaviours?",
       "options": [
@@ -359,7 +359,7 @@
       "video": {
         "vimeo_url": "https://player.vimeo.com/video/638805599"
       },
-      "correct": true,
+      "correct": "correct",
       "feedback": "",
       "message": "How do you proceed?",
       "options": [
@@ -386,7 +386,7 @@
       "video": {
         "vimeo_url": "https://player.vimeo.com/video/638805787"
       },
-      "correct": false,
+      "correct": "half",
       "feedback": "",
       "message": "How do you proceed?",
       "options": [
@@ -409,7 +409,7 @@
       "video": {
         "vimeo_url": "https://player.vimeo.com/video/638805863"
       },
-      "correct": false,
+      "correct": "wrong",
       "feedback": "",
       "message": "How do you proceed?",
       "options": [
@@ -432,7 +432,7 @@
       "video": {
         "vimeo_url": "https://player.vimeo.com/video/638807487"
       },
-      "correct": true,
+      "correct": "correct",
       "feedback": "",
       "message": "How do you inquire about Kelly’s support system?",
       "options": [
@@ -459,7 +459,7 @@
       "video": {
         "vimeo_url": "https://player.vimeo.com/video/638807836"
       },
-      "correct": false,
+      "correct": "half",
       "feedback": "",
       "message": "How do you inquire about Kelly’s support system?",
       "options": [
@@ -482,7 +482,7 @@
       "video": {
         "vimeo_url": "https://player.vimeo.com/video/638807927"
       },
-      "correct": false,
+      "correct": "wrong",
       "feedback": "",
       "message": "How do you inquire about Kelly’s support system?",
       "options": [
@@ -505,7 +505,7 @@
       "video": {
         "vimeo_url": "https://player.vimeo.com/video/638809605"
       },
-      "correct": true,
+      "correct": "correct",
       "feedback": "",
       "message": "How do you find out more about Kelly’s coping mechanisms?",
       "options": [
@@ -532,7 +532,7 @@
       "video": {
         "vimeo_url": "https://player.vimeo.com/video/638809936"
       },
-      "correct": false,
+      "correct": "half",
       "feedback": "",
       "message": "How do you find out more about Kelly’s coping mechanisms?",
       "options": [
@@ -555,7 +555,7 @@
       "video": {
         "vimeo_url": "https://player.vimeo.com/video/638810050"
       },
-      "correct": false,
+      "correct": "wrong",
       "feedback": "",
       "message": "How do you find out more about Kelly’s coping mechanisms?",
       "options": [
@@ -578,7 +578,7 @@
       "video": {
         "vimeo_url": "https://player.vimeo.com/video/638813395"
       },
-      "correct": true,
+      "correct": "correct",
       "feedback": "",
       "message": "What is your response to Kelly’s admission of having negative thoughts?",
       "options": [
@@ -605,7 +605,7 @@
       "video": {
         "vimeo_url": "https://player.vimeo.com/video/638813605"
       },
-      "correct": false,
+      "correct": "half",
       "feedback": "",
       "message": "What is your response to Kelly’s admission of having negative thoughts?",
       "options": [
@@ -628,7 +628,7 @@
       "video": {
         "vimeo_url": "https://player.vimeo.com/video/638813749"
       },
-      "correct": false,
+      "correct": "wrong",
       "feedback": "",
       "message": "What is your response to Kelly’s admission of having negative thoughts?",
       "options": [
@@ -651,7 +651,7 @@
       "video": {
         "vimeo_url": "https://player.vimeo.com/video/638815887"
       },
-      "correct": true,
+      "correct": "correct",
       "feedback": "",
       "message": "How do you respond to Kelly’s suicidal thoughts?",
       "options": [
@@ -678,7 +678,7 @@
       "video": {
         "vimeo_url": "https://player.vimeo.com/video/638816147"
       },
-      "correct": false,
+      "correct": "half",
       "feedback": "",
       "message": "How do you respond to Kelly’s suicidal thoughts?",
       "options": [
@@ -701,7 +701,7 @@
       "video": {
         "vimeo_url": "https://player.vimeo.com/video/638816237"
       },
-      "correct": false,
+      "correct": "wrong",
       "feedback": "",
       "message": "How do you respond to Kelly’s suicidal thoughts?",
       "options": [
@@ -724,7 +724,7 @@
       "video": {
         "vimeo_url": "https://player.vimeo.com/video/638816368"
       },
-      "correct": true,
+      "correct": "correct",
       "feedback": "",
       "message": "How do you continue to assess Kelly’s suicide plan?",
       "options": [
@@ -751,7 +751,7 @@
       "video": {
         "vimeo_url": "https://player.vimeo.com/video/638816717"
       },
-      "correct": true,
+      "correct": "half",
       "feedback": "",
       "message": "How do you continue to assess Kelly’s suicide plan?",
       "options": [
@@ -774,7 +774,7 @@
       "video": {
         "vimeo_url": "https://player.vimeo.com/video/638816781"
       },
-      "correct": true,
+      "correct": "correct",
       "feedback": "",
       "message": "How do you continue to assess Kelly’s suicide plan?",
       "options": [
@@ -797,7 +797,7 @@
       "video": {
         "vimeo_url": "https://player.vimeo.com/video/638821139"
       },
-      "correct": true,
+      "correct": "correct",
       "feedback": "",
       "message": "What would you rate Kelly’s risk level?",
       "options": [
@@ -822,7 +822,7 @@
       "type": "video",
       "data": "SG4_DP11_2",
       "video": null,
-      "correct": true,
+      "correct": "wrong",
       "feedback": "",
       "message": "What would you rate Kelly’s risk level?",
       "options": [
@@ -843,7 +843,7 @@
       "type": "video",
       "data": "SG4_DP11_3",
       "video": null,
-      "correct": true,
+      "correct": "half",
       "feedback": "",
       "message": "What would you rate Kelly’s risk level?",
       "options": [
@@ -866,7 +866,7 @@
       "video": {
         "vimeo_url": "https://player.vimeo.com/video/638821322"
       },
-      "correct": true,
+      "correct": "correct",
       "feedback": "",
       "message": "What is your first step to develop a safety plan?",
       "options": [
@@ -893,7 +893,7 @@
       "video": {
         "vimeo_url": "https://player.vimeo.com/video/638821521"
       },
-      "correct": true,
+      "correct": "half",
       "feedback": "",
       "message": "What is your first step to develop a safety plan?",
       "options": [
@@ -916,7 +916,7 @@
       "video": {
         "vimeo_url": "https://player.vimeo.com/video/638821699"
       },
-      "correct": true,
+      "correct": "correct",
       "feedback": "",
       "message": "What is your first step to develop a safety plan?",
       "options": [
@@ -939,7 +939,7 @@
       "video": {
         "vimeo_url": "https://player.vimeo.com/video/638822909"
       },
-      "correct": true,
+      "correct": "correct",
       "feedback": "",
       "message": "How do you encourage Kelly to go to the hospital?",
       "options": [
@@ -966,7 +966,7 @@
       "video": {
         "vimeo_url": "https://player.vimeo.com/video/638823096"
       },
-      "correct": false,
+      "correct": "half",
       "feedback": "",
       "message": "How do you encourage Kelly to go to the hospital?",
       "options": [
@@ -982,24 +982,20 @@
       "next": null
     },
     {
-      "id": 39,
+      "id": 38,
       "title": "DP13_3",
       "type": "video",
       "data": "SG4_DP13_3",
       "video": {
         "vimeo_url": "https://player.vimeo.com/video/638823260"
       },
-      "correct": false,
+      "correct": "wrong",
       "feedback": "",
       "message": "How do you encourage Kelly to go to the hospital?",
       "options": [
         {
           "label": "Discuss options",
           "next": 37
-        },
-        {
-          "label": "Discuss the need for further help",
-          "next": 38
         },
         {
           "label": "Discuss the need for immediate action",
@@ -1016,7 +1012,7 @@
       "video": {
         "vimeo_url": "https://player.vimeo.com/video/638824546"
       },
-      "correct": true,
+      "correct": "correct",
       "feedback": "",
       "message": "How do you ensure Kelly goes to the hospital?",
       "options": [
@@ -1043,7 +1039,7 @@
       "video": {
         "vimeo_url": "https://player.vimeo.com/video/638824752"
       },
-      "correct": false,
+      "correct": "half",
       "feedback": "",
       "message": "How do you ensure Kelly goes to the hospital?",
       "options": [
@@ -1059,14 +1055,14 @@
       "next": null
     },
     {
-      "id": 40,
+      "id": 41,
       "title": "DP14_3",
       "type": "video",
       "data": "SG4_DP14_3",
       "video": {
         "vimeo_url": "https://player.vimeo.com/video/638824898"
       },
-      "correct": false,
+      "correct": "wrong",
       "feedback": "",
       "message": "How do you ensure Kelly goes to the hospital?",
       "options": [
@@ -1086,7 +1082,7 @@
       "type": "video",
       "data": "SG4_DP15_1",
       "video": null,
-      "correct": true,
+      "correct": "correct",
       "feedback": "",
       "message": "",
       "options": [],

@@ -9,6 +9,8 @@ const games: Record<string, Record<string, GameDataShape>> = {
   },
 };
 
+export type Correctness = "correct" | "half" | "wrong";
+
 export interface DecisionPoint {
   id: number;
   title?: string;
@@ -26,7 +28,7 @@ export interface DecisionPoint {
       }
     | null;
 
-  correct: boolean;
+  correct: Correctness;
   feedback: string;
   message: string;
   options: {
