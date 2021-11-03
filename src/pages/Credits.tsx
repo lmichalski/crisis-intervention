@@ -20,7 +20,7 @@ const Credits: React.FC<{}> = () => {
             <ul>
               <li>eCampusOntario</li>
               <li>
-                <a href="https://www.ecampusontario.ca/">ecampusontario.ca</a>
+                <a href="https://www.ecampusontario.ca/" target="_blank" rel="noreferrer">ecampusontario.ca</a>
               </li>
             </ul>
 
@@ -91,7 +91,7 @@ const Credits: React.FC<{}> = () => {
               <h6>Seneca College </h6>
 
               <h4>Erica Watson, MSW, RSW</h4>
-              <h5>Clinical Supervisor & Educational Coordinato </h5>
+              <h5>Clinical Supervisor & Educational Coordinator </h5>
               <h6>
                 SickKids Centre | Garry Hurvitz Center for Community Mental
                 Health{" "}
