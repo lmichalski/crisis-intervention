@@ -55,7 +55,7 @@ const Menu: React.FC<iProps> = ({
               </li>
             </ul>
             <ul className="controls">
-            <li>
+              <li>
                 <Link to={`/games/${game_id}/instructions/`}>
                   <FormattedMessage
                     id="Menu.instructions"
@@ -64,7 +64,7 @@ const Menu: React.FC<iProps> = ({
                   />
                 </Link>
               </li>
-            <li>
+              <li>
                 <Link to={`/games/${game_id}/scenario/`}>
                   <FormattedMessage
                     id="Menu.scenario"

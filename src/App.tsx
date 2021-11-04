@@ -69,9 +69,9 @@ const App: React.FC<iProps> = ({ gameId }) => {
     gameState.newGame();
     setNavMenuExpanded(false);
 
-    history.push(`${url}/intro/`);
+    history.push(`${url}/chart/`);
     logGameEvent("", "start", "game", getBrowser(), "");
-  }, [history, logGameEvent, gameState, url]);
+  }, [history, logGameEvent, url, gameState]);
 
   const handleResumeGame = useCallback(() => {
     var dp = currentDecisionPoint;
@@ -81,7 +81,9 @@ const App: React.FC<iProps> = ({ gameId }) => {
       history.push(`${url}/summary/`);
     } else if (gameState.videoposition > 0.1) {
       history.push(`${url}/video/`);
-    } else {
+    } else if (gameState.currentStep === 0) {
+      history.push(`${url}/intro/`);
+    }else {
       history.push(`${url}/decision/`);
     }
 
@@ -90,6 +92,7 @@ const App: React.FC<iProps> = ({ gameId }) => {
     history,
     logGameEvent,
     gameState.videoposition,
+    gameState.currentStep,
     currentDecisionPoint,
     lastDecisionPoint,
     url,
@@ -201,7 +204,7 @@ const App: React.FC<iProps> = ({ gameId }) => {
             </Route>
 
             <Route path={`${path}/chart`}>
-              <Chart image={""} />
+              <Chart image={""} proceedToScenario={handleResumeGame} />
             </Route>
 
             {gameData.strings.principles ? (

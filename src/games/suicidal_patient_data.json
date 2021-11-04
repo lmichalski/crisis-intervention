@@ -56,9 +56,7 @@
     },
     "resources": {
       "paragraph": "resources",
-      "bullet_list": [
-        "game-content-goes-here"
-      ]
+      "bullet_list": ["game-content-goes-here"]
     },
     "chart": {
       "image": "chart_image.png"

@@ -1,5 +1,25 @@
-.view .container .chart{
-    width: 100%; 
-    padding: 0;
+.body .view .Chart {
+    height: 100%;
     box-sizing: border-box;
+    margin: 0;
+
+    &__panel {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        box-sizing: border-box;
+        gap: 1rem;
+
+        .chart{
+            height: 0;
+            flex-grow: 1;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    }
+
+    &__proceed-button {
+        align-self: flex-end;
+    }
+
 }

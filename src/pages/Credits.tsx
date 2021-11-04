@@ -20,7 +20,13 @@ const Credits: React.FC<{}> = () => {
             <ul>
               <li>eCampusOntario</li>
               <li>
-                <a href="https://www.ecampusontario.ca/" target="_blank" rel="noreferrer">ecampusontario.ca</a>
+                <a
+                  href="https://www.ecampusontario.ca/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  ecampusontario.ca
+                </a>
               </li>
             </ul>
 

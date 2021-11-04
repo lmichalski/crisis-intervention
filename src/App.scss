@@ -62,10 +62,10 @@ button{
 		display: flex;
 		flex-direction: row;
 		flex-grow: 1;
-
+		align-items: stretch;
+		height: calc(100% - 84px);
 		.container{
 			font-size: 20px;
-			margin: 32px;
 		}
 	
 		.nav-menu {
@@ -120,6 +120,9 @@ button{
 			flex-grow: 1;
 			width: 0;
 			background-color: rgb(57, 68, 88);
+			padding: 32px;
+			height: 100%;
+			box-sizing: border-box;
 
 			h2 {
 				color: white;
@@ -130,12 +133,12 @@ button{
 				display: flex;
 				flex-flow: column nowrap;
 				align-items: flex-start;
-
+				height: 100%;
+				box-sizing: border-box;
 				color: white;
 
 				// width: 450px;
-				max-width: 95%;
-				max-height: 95%;
+				overflow-y: scroll;
 				padding: 30px 40px;
 				box-sizing: border-box;
 				background-color: var(--theme-primary);
@@ -150,6 +153,7 @@ button{
 				// border-style: solid;
 				// border-width: 2px;
 
+				height: 100%;
 				.content ul {
 					padding-left: 20px;
 
