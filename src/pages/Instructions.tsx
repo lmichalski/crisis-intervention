@@ -30,11 +30,10 @@ const Instructions: React.FC<iProps> = ({ minSteps, strings }) => {
               <li>
                 Watch interactions between Kelly and the mental health
                 counsellor.
-                
               </li>
               <li>
-                Following each interaction, you will be asked to select the
-                most appropriate response. Possible responses are classified as:
+                Following each interaction, you will be asked to select the most
+                appropriate response. Possible responses are classified as:
                 Correct{" "}
                 <img
                   src="/images/icon-correct.png"

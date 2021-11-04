@@ -1,10 +1,11 @@
-/********** INTRODUCTION **********/
-
-.intro {
-	width: 900px;
-	background: none;
-	text-transform: none;
-}
-.intro footer {
+.option_box {
+	// position: absolute;
+	// left: 0;
+	// right: 0;
+	// bottom: 5%;
+	min-height: 30%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 	text-align: center;
 }

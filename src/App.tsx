@@ -25,7 +25,7 @@ import Summary from "./pages/Summary";
 import Transition from "./pages/Transition";
 import Principles from "./pages/Principles";
 import Chart from "./pages/Chart";
-import Scenario from "./pages/Scenario"
+import Scenario from "./pages/Scenario";
 import useLogGameEvent from "./hooks/useLogGameEvent";
 import { getBrowser } from "./util";
 import useGameState from "./hooks/useGameState";
@@ -153,96 +153,109 @@ const App: React.FC<iProps> = ({ gameId }) => {
         <h1>{gameData.strings.menu.title}</h1>
       </header>
 
-      <div className="body">
-        <nav
-          className={`nav-menu ${
-            navMenuExpanded ? "nav-menu--expanded" : "nav-menu--collapsed"
-          }`}
-        >
-          <Menu
-            strings={gameData.strings.menu}
-            startNewGame={handleStartNewGame}
-            resumeGame={handleResumeGame}
-            gamesaved={gameState.gamesaved}
-            pagesToShow={{
-              principles: !!gameData.strings.principles,
-            }}
-          />
-        </nav>
+      <div className="content">
+        <div className={`banner ${
+              navMenuExpanded ? "banner--expanded" : "banner--collapsed"
+            }`}>
+          <img
+            src="/images/hands-clasping.jpg"
+            alt="interracial hands reaching for each other"
+          ></img>
+        </div>
 
-        <div className="view" role="application">
-          <Switch>
-            <Route path={`${path}/credits`}>
-              <Credits />
-            </Route>
+        <div className="body">
+          <nav
+            className={`nav-menu ${
+              navMenuExpanded ? "nav-menu--expanded" : "nav-menu--collapsed"
+            }`}
+          >
+            <Menu
+              strings={gameData.strings.menu}
+              startNewGame={handleStartNewGame}
+              resumeGame={handleResumeGame}
+              gamesaved={gameState.gamesaved}
+              pagesToShow={{
+                principles: !!gameData.strings.principles,
+              }}
+            />
+          </nav>
 
-            <Route path={`${path}/decision`}>
-              <Decision
-                decisionPoint={currentDecisionPoint}
-                onOptionChosen={handleOptionChosen}
-              />
-            </Route>
-
-            <Route path={`${path}/feedback`}>
-              <Feedback decisionPoint={currentDecisionPoint} />
-            </Route>
-
-            <Route path={`${path}/instructions`}>
-              <Instructions
-                minSteps={minSteps}
-                strings={gameData.strings.instructions}
-              />
-            </Route>
-
-            <Route path={`${path}/objectives`}>
-              <Objectives strings={gameData.strings.objectives} />
-            </Route>
-
-            <Route path={`${path}/chart`}>
-              <Chart image={""} />
-            </Route>
-
-            {gameData.strings.principles ? (
-              <Route path={`${path}/principles`}>
-                <Principles strings={gameData.strings.principles} />
+          <div className="view" role="application">
+            <Switch>
+              <Route path={`${path}/credits`}>
+                <Credits />
               </Route>
-            ) : null}
 
-            <Route path={`${path}/settings`}>
-              <Settings />
-            </Route>
+              <Route path={`${path}/decision`}>
+                <Decision
+                  decisionPoint={currentDecisionPoint}
+                  onOptionChosen={handleOptionChosen}
+                />
+              </Route>
 
-            <Route path={`${path}/scenario`}>
-              <Scenario strings={gameData.strings.intro} />
-            </Route>
+              <Route path={`${path}/feedback`}>
+                <Feedback decisionPoint={currentDecisionPoint} />
+              </Route>
 
-            <Route path={`${path}/summary`}>
-              <Summary
-                decisionPoints={gameData.decisionpoints}
-                gameProgress={gameState.progress}
-                completed={lastDecisionPoint}
-              />
-            </Route>
+              <Route path={`${path}/instructions`}>
+                <Instructions
+                  minSteps={minSteps}
+                  strings={gameData.strings.instructions}
+                />
+              </Route>
 
-            <Route path={`${path}/transition`}>
-              <Transition decisionPoint={currentDecisionPoint} />
-            </Route>
+              <Route path={`${path}/objectives`}>
+                <Objectives strings={gameData.strings.objectives} />
+              </Route>
 
-            <Route path={`${path}/video`}>
-              <Video
-                decisionPoint={currentDecisionPoint}
-                onVideoFinished={handleVideoFinished}
-                videoposition={gameState.videoposition}
-                setVideoposition={gameState.setVideoposition}
-              />
-            </Route>
+              <Route path={`${path}/chart`}>
+                <Chart image={""} />
+              </Route>
 
-            <Route path={`${path}/lo`}>Somethings going on here, I swear</Route>
+              {gameData.strings.principles ? (
+                <Route path={`${path}/principles`}>
+                  <Principles strings={gameData.strings.principles} />
+                </Route>
+              ) : null}
 
-            <Route path="/">
-              <Redirect to={`${url}/instructions`} />
-            </Route>
-          </Switch>
+              <Route path={`${path}/settings`}>
+                <Settings />
+              </Route>
+
+              <Route path={`${path}/scenario`}>
+                <Scenario strings={gameData.strings.intro} />
+              </Route>
+
+              <Route path={`${path}/summary`}>
+                <Summary
+                  decisionPoints={gameData.decisionpoints}
+                  gameProgress={gameState.progress}
+                  completed={lastDecisionPoint}
+                />
+              </Route>
+
+              <Route path={`${path}/transition`}>
+                <Transition decisionPoint={currentDecisionPoint} />
+              </Route>
+
+              <Route path={`${path}/video`}>
+                <Video
+                  decisionPoint={currentDecisionPoint}
+                  onVideoFinished={handleVideoFinished}
+                  videoposition={gameState.videoposition}
+                  setVideoposition={gameState.setVideoposition}
+                />
+              </Route>
+
+              <Route path={`${path}/lo`}>
+                Somethings going on here, I swear
+              </Route>
+
+              <Route path="/">
+                <Redirect to={`${url}/instructions`} />
+              </Route>
+            </Switch>
+          </div>
         </div>
       </div>
     </div>
