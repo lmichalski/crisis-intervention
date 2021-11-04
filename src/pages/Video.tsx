@@ -182,8 +182,8 @@ const Video: React.FC<iProps> = ({
       });
       return () => player.off("loaded");
     }
-  // Disable exhaustive deps so this hook only gets called on initial render
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // Disable exhaustive deps so this hook only gets called on initial render
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
