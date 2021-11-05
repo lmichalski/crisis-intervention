@@ -1,31 +1,36 @@
 /********** GAME SETTINGS **********/
 
-.settings {
-  width: 17em;
-  text-transform: none;
-}
-.settings h2 {
-  width: 40%;
-  margin: 0;
-  padding: 0;
-  float: left;
-  font-weight: 400;
-  color: #000;
-  text-align: right;
-}
-.settings .radio {
-  width: 55%;
-  float: right;
-}
-.settings .radio label {
-  color: #000;
-  cursor: pointer;
-}
-.settings .radio label:hover {
-  color: #fff;
-  text-shadow: 0 0 2px #fff, 0 0 4px #fff;
-}
+.Settings {
 
-.settings .radio input[type="radio"]:checked + label {
-  color: #fff;
+  &__panel {
+    width: 100%;
+    text-transform: none;
+
+    h2 {
+      margin: 0;
+      padding: 0;
+      float: left;
+      font-weight: 400;
+      color: #000;
+      text-align: right;
+    }
+    
+    .radio {
+      width: 55%;
+      float: right;
+    }
+    .radio label {
+      color: #000;
+      cursor: pointer;
+    }
+    .radio label:hover {
+      color: #fff;
+      text-shadow: 0 0 2px #fff, 0 0 4px #fff;
+    }
+  
+    .radio input[type="radio"]:checked + label {
+      color: #fff;
+    }
+
+  }
 }

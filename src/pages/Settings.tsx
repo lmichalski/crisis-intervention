@@ -62,8 +62,8 @@ const Settings: React.FC<iProps> = ({
   }, []);
 
   return (
-    <div className="container">
-      <div className="panel settings">
+    <div className="Settings container">
+      <div className="panel Settings__panel">
         <header>
           <h2>Game Options</h2>
         </header>
