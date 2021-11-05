@@ -72,31 +72,31 @@ const Menu: React.FC<iProps> = ({
                   />
                 </Link>
               </li>
-              {/* <li>
+              <li>
                 <Link to={`/resources/`}>
                   <FormattedMessage
                     id="Menu.resources"
-                    defaultMessage="Resources"
+                    defaultMessage="6. Resources"
                     description="Resources button"
                   />
                 </Link>
-              </li> */}
+              </li>
 
-              {/* <li>
+              <li>
                 <Link to={`/research/`}>
                   <FormattedMessage
                     id="Menu.research"
-                    defaultMessage="Research"
+                    defaultMessage="7. Research"
                     description="Research button"
                   />
                 </Link>
-              </li> */}
+              </li>
 
               <li>
                 <Link to={`/credits/`}>
                   <FormattedMessage
                     id="Menu.credits"
-                    defaultMessage="6. Credits"
+                    defaultMessage="8. Credits"
                     description="Credits Button"
                   />
                 </Link>
