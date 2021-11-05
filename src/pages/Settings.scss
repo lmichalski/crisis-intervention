@@ -2,26 +2,46 @@
 
 .Settings {
 
+  &__item {
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    margin: 16px;
+
+    & > *{
+      width: fit-content;
+      flex-basis: 0;
+      flex-grow: 1;
+    }
+  }
+
   &__panel {
-    width: 100%;
+    width: fit-content;
+    margin: auto!important;
     text-transform: none;
+
+    .content{
+      background-color: #446fa0;
+      border-radius: 16px;
+    }
 
     h2 {
       margin: 0;
-      padding: 0;
+      padding: 0 16px;
       float: left;
+      font-size: 32px;
       font-weight: 400;
       color: #000;
       text-align: right;
     }
     
     .radio {
-      width: 55%;
       float: right;
     }
     .radio label {
       color: #000;
       cursor: pointer;
+      font-size: 24px;
     }
     .radio label:hover {
       color: #fff;

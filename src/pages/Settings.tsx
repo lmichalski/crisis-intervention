@@ -69,7 +69,7 @@ const Settings: React.FC<iProps> = ({
         </header>
         <div className="main">
           <div className="content">
-            <div className="cf">
+            <div className="Settings__item">
               <h2>Display:</h2>
               <div className="radio">
                 <div>
@@ -101,7 +101,7 @@ const Settings: React.FC<iProps> = ({
               </div>
             </div>
             <br />
-            <div className="cf">
+            <div className="Settings__item">
               <h2>Subtitles:</h2>
               <div className="radio">
                 <div>
