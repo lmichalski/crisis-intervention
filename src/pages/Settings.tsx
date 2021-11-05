@@ -14,9 +14,16 @@ const Settings: React.FC<iProps> = ({
 
   const handleSubtitlesChange = useCallback(
     (evt: React.ChangeEvent<HTMLInputElement>) => {
-      onSubtitlesToggled(evt.target.value === "on");
+      onSubtitlesToggled(evt.currentTarget.value === "on");
     },
     [onSubtitlesToggled]
+  );
+
+  const handleFullscreenChange = useCallback(
+    (evt: React.ChangeEvent<HTMLInputElement>) => {
+      //(evt.currentTarget.value === "on");
+    },
+    []
   );
 
   return (
@@ -29,20 +36,15 @@ const Settings: React.FC<iProps> = ({
           <div className="content">
             <div className="cf">
               <h2>Display:</h2>
-              <div className="radio">
+              <div className="radio" onChange={handleFullscreenChange}>
                 <div>
                   <input
                     type="radio"
                     name="display_mode"
                     id="mode_window"
-                    ng-model="sg.fullscreen"
-                    ng-value="false"
-                    ng-change="toggleFullScreen()"
                   />
                   <label
                     htmlFor="mode_window"
-                    tabIndex={0}
-                    role="radio"
                     aria-checked={!isFullscreen}
                     ng-keydown="onFullscreenKeydown($event)"
                   >
@@ -54,16 +56,11 @@ const Settings: React.FC<iProps> = ({
                     type="radio"
                     name="display_mode"
                     id="mode_fullscreen"
-                    ng-model="sg.fullscreen"
-                    ng-value="true"
-                    ng-change="toggleFullScreen()"
+                    value="on"
                   />
                   <label
                     htmlFor="mode_fullscreen"
-                    tabIndex={0}
-                    role="radio"
                     aria-checked={isFullscreen}
-                    ng-keydown="onFullscreenKeydown($event)"
                   >
                     Fullscreen
                   </label>
@@ -84,10 +81,7 @@ const Settings: React.FC<iProps> = ({
                   />
                   <label
                     htmlFor="subtitles_off"
-                    tabIndex={0}
-                    role="radio"
                     aria-checked={!subtitlesEnabled}
-                    ng-keydown="onSubtitlesKeydown($event)"
                   >
                     Off
                   </label>
@@ -102,8 +96,6 @@ const Settings: React.FC<iProps> = ({
                   />
                   <label
                     htmlFor="subtitles_en"
-                    tabIndex={0}
-                    role="radio"
                     aria-checked={subtitlesEnabled}
                   >
                     On
