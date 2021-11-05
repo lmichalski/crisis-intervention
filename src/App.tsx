@@ -22,6 +22,7 @@ import Instructions from "./pages/Instructions";
 import Feedback from "./pages/Feedback";
 import Settings from "./pages/Settings";
 import Summary from "./pages/Summary";
+import Resources from "./pages/Resources";
 import Transition from "./pages/Transition";
 import Principles from "./pages/Principles";
 import Chart from "./pages/Chart";
@@ -69,9 +70,9 @@ const App: React.FC<iProps> = ({ gameId }) => {
     gameState.newGame();
     setNavMenuExpanded(false);
 
-    history.push(`${url}/intro/`);
+    history.push(`${url}/chart/`);
     logGameEvent("", "start", "game", getBrowser(), "");
-  }, [history, logGameEvent, gameState, url]);
+  }, [history, logGameEvent, url, gameState]);
 
   const handleResumeGame = useCallback(() => {
     var dp = currentDecisionPoint;
@@ -81,6 +82,8 @@ const App: React.FC<iProps> = ({ gameId }) => {
       history.push(`${url}/summary/`);
     } else if (gameState.videoposition > 0.1) {
       history.push(`${url}/video/`);
+    } else if (gameState.currentStep === 0) {
+      history.push(`${url}/intro/`);
     } else {
       history.push(`${url}/decision/`);
     }
@@ -90,6 +93,7 @@ const App: React.FC<iProps> = ({ gameId }) => {
     history,
     logGameEvent,
     gameState.videoposition,
+    gameState.currentStep,
     currentDecisionPoint,
     lastDecisionPoint,
     url,
@@ -236,8 +240,8 @@ const App: React.FC<iProps> = ({ gameId }) => {
                 <Settings />
               </Route>
 
-              <Route path={`${path}/scenario`}>
-                <Scenario strings={gameData.strings.intro} />
+              <Route path={`${path}/resources`}>
+                <Resources />
               </Route>
 
               <Route path={`${path}/summary`}>
@@ -246,6 +250,10 @@ const App: React.FC<iProps> = ({ gameId }) => {
                   gameProgress={gameState.progress}
                   completed={lastDecisionPoint}
                 />
+              </Route>
+
+              <Route path={`${path}/scenario`}>
+                <Scenario strings={gameData.strings.intro} />
               </Route>
 
               <Route path={`${path}/transition`}>

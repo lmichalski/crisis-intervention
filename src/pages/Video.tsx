@@ -98,8 +98,6 @@ const Video: React.FC<iProps> = ({
   }, [history, location.pathname, setVideoposition, game_id]);
 
   useEffect(() => {
-    var iframe = iframeRef.current;
-
     if (videoRef.current && dp) {
       const api = videojs(videoRef.current);
       const clip = {
@@ -171,20 +169,45 @@ const Video: React.FC<iProps> = ({
       });
 
       api.load();
-    } else if (dp && iframe) {
-      var player = new Player(iframe);
-      console.log("Setting vimeo listenera");
-      player.on("ended", function () {
+    }
+  }, [dp, skipVideo, logGameEvent, setVideoposition, videoposition]);
+
+  useEffect(() => {
+    if (iframeRef.current) {
+      console.log("Setting vimeo listeners");
+
+      const player = new Player(iframeRef.current);
+      player.on("loaded", () => {
+        player.setCurrentTime(videoposition);
+      });
+      return () => player.off("loaded");
+    }
+    // Disable exhaustive deps so this hook only gets called on initial render
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  useEffect(() => {
+    if (iframeRef.current) {
+      console.log("Setting vimeo listeners");
+
+      const player = new Player(iframeRef.current);
+      player.on("timeupdate", (data: { seconds: number }) => {
+        console.log(`Progress ${data.seconds}`);
+        setVideoposition(data.seconds);
+      });
+
+      player.on("ended", () => {
         console.log("vimeo ended");
         skipVideo();
         logGameEvent("", "finish", "video", dp.data, "");
       });
 
-      player.getVideoTitle().then(function (title) {
-        console.log("title:", title);
-      });
+      return () => {
+        player.off("timeupdate");
+        player.off("ended");
+      };
     }
-  }, [dp, skipVideo, logGameEvent, setVideoposition, videoposition]);
+  }, [setVideoposition, dp.data, logGameEvent, skipVideo]);
 
   return (
     <div className="video">
