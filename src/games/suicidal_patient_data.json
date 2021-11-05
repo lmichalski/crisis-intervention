@@ -67,7 +67,7 @@
       "type": "video",
       "data": "SG4_DP1_1",
       "video": {
-        "vimeo_url": "https://player.vimeo.com/video/638786250"
+        "vimeo_url": "https://player.vimeo.com/video/638785855"
       },
       "correct": "wrong",
       "feedback": "",
@@ -94,10 +94,10 @@
       "type": "video",
       "data": "SG4_DP0_1",
       "video": {
-        "vimeo_url": "https://player.vimeo.com/video/638787017"
+        "vimeo_url": "https://player.vimeo.com/video/638787265"
       },
       "correct": "wrong",
-      "feedback": "",
+      "feedback": "Incorrect: Your response indicated that you made a strong assumption without gathering information. The response lacked empathy and did not allow the client to discuss what brought them into the centre. The response also inquires about a potentially very personal matter without giving the client a chance to acclimatize to the setting or to you. As a result, therapeutic rapport was not established and the client no longer wants services. ",
       "message": "How do you start the conversation with Kelly?",
       "options": [
         {
@@ -117,10 +117,10 @@
       "type": "video",
       "data": "SG4_DP1_3",
       "video": {
-        "vimeo_url": "https://player.vimeo.com/video/638787265"
+        "vimeo_url": "https://player.vimeo.com/video/638787017"
       },
       "correct": "half",
-      "feedback": "",
+      "feedback": "Not the Best: Your response indicated that you were able to notice the client’s current state; however, the approach was too forward and caused the client to feel uncomfortable. This may not have been the best way to greet a distressed client. The client should be given the space to open up.",
       "message": "How do you start the conversation with Kelly?",
       "options": [
         {
@@ -140,10 +140,10 @@
       "type": "video",
       "data": "SG4_DP2_1",
       "video": {
-        "vimeo_url": "https://player.vimeo.com/video/638787456"
+        "vimeo_url": "https://player.vimeo.com/video/638786250"
       },
       "correct": "correct",
-      "feedback": "",
+      "feedback": "Correct: Your response indicated that you attempted to build rapport and create a safe space. By choosing this response your client was more willing to continue speaking with you.",
       "message": "How do you help Kelly to feel free to share what's going on?",
       "options": [
         {
@@ -170,7 +170,7 @@
         "vimeo_url": "https://player.vimeo.com/video/635497123"
       },
       "correct": "wrong",
-      "feedback": "",
+      "feedback": "Incorrect: Your response lacked empathy and did not illicit trust or foster a working relationship",
       "message": "How do you help Kelly to feel free to share what's going on?",
       "options": [
         {
@@ -193,7 +193,7 @@
         "vimeo_url": "https://player.vimeo.com/video/638787934"
       },
       "correct": "half",
-      "feedback": "",
+      "feedback": "Not the Best: Your response asked an important question; however, the response overlooked the client’s feeling state and moved too quickly to an action-oriented question. This did not make the client feel comfortable to speak openly.",
       "message": "How do you help Kelly to feel free to share what's going on?",
       "options": [
         {
@@ -213,10 +213,10 @@
       "type": "video",
       "data": "SG4_DP3_1",
       "video": {
-        "vimeo_url": "https://player.vimeo.com/video/638789427"
+        "vimeo_url": "https://player.vimeo.com/video/638787456"
       },
       "correct": "correct",
-      "feedback": "",
+      "feedback": "Correct: Your response was able to validate and normalize the client’s feelings and addressed their discomfort. In addition, the response invited the client to speak openly and displayed active listening.",
       "message": "How do you gather more information?",
       "options": [
         {
@@ -240,10 +240,10 @@
       "type": "video",
       "data": "SG4_DP3_2",
       "video": {
-        "vimeo_url": "https://player.vimeo.com/video/638790260"
+        "vimeo_url": "https://player.vimeo.com/video/638790544"
       },
-      "correct": "half",
-      "feedback": "",
+      "correct": "wrong",
+      "feedback": "Incorrect: Your response used language of blame and caused the client to act defensively. It can harm the rapport you have built so far.",
       "message": "How do you gather more information?",
       "options": [
         {
@@ -263,10 +263,10 @@
       "type": "video",
       "data": "SG4_DP3_3",
       "video": {
-        "vimeo_url": "https://player.vimeo.com/video/638790544"
+        "vimeo_url": "https://player.vimeo.com/video/638790260"
       },
-      "correct": "wrong",
-      "feedback": "",
+      "correct": "half",
+      "feedback": "Not the Best: Your response acknowledged the client has support; however, you were unable to effectively gather more information.",
       "message": "How do you gather more information?",
       "options": [
         {
@@ -286,10 +286,10 @@
       "type": "video",
       "data": "SG4_DP4_1",
       "video": {
-        "vimeo_url": "https://player.vimeo.com/video/638798953"
+        "vimeo_url": "https://player.vimeo.com/video/638789427"
       },
       "correct": "correct",
-      "feedback": "",
+      "feedback": "Correct: Your response reminded the client of their positive support. Your response also used a reflective question to gather information.",
       "message": "How do you address Kelly’s unhealthy behaviours?",
       "options": [
         {
@@ -313,10 +313,10 @@
       "type": "video",
       "data": "SG4_DP4_2",
       "video": {
-        "vimeo_url": "https://player.vimeo.com/video/638799204"
+        "vimeo_url": "https://player.vimeo.com/video/638799355"
       },
-      "correct": "half",
-      "feedback": "",
+      "correct": "wrong",
+      "feedback": "Incorrect: Your response made the client feel judged and caused the client to shut down.",
       "message": "How do you address Kelly’s unhealthy behaviours?",
       "options": [
         {
@@ -336,10 +336,10 @@
       "type": "video",
       "data": "SG4_DP4_3",
       "video": {
-        "vimeo_url": "https://player.vimeo.com/video/638799355"
+        "vimeo_url": "https://player.vimeo.com/video/638799204"
       },
-      "correct": "wrong",
-      "feedback": "",
+      "correct": "half",
+      "feedback": "Not the Best: Your response expressed some concern for her unhealthy behaviours and wanting to explore further. It made a connection to feelings. However, the approach may have been judgmental and may not have elicited an honest response from the client.",
       "message": "How do you address Kelly’s unhealthy behaviours?",
       "options": [
         {
@@ -359,10 +359,10 @@
       "type": "video",
       "data": "SG4_DP5_1",
       "video": {
-        "vimeo_url": "https://player.vimeo.com/video/638805599"
+        "vimeo_url": "https://player.vimeo.com/video/638798953"
       },
       "correct": "correct",
-      "feedback": "",
+      "feedback": "Correct: Your response acknowledged that there are negative impacts of the client’s unhealthy behaviours without judgement. Your response also asked open-ended questions to encourage discussion.",
       "message": "How do you proceed?",
       "options": [
         {
@@ -386,10 +386,10 @@
       "type": "video",
       "data": "SG4_DP5_2",
       "video": {
-        "vimeo_url": "https://player.vimeo.com/video/638805787"
+        "vimeo_url": "https://player.vimeo.com/video/638805863"
       },
-      "correct": "half",
-      "feedback": "",
+      "correct": "wrong",
+      "feedback": "Incorrect: Your response seemed judgmental and was ineffective.",
       "message": "How do you proceed?",
       "options": [
         {
@@ -409,10 +409,10 @@
       "type": "video",
       "data": "SG4_DP5_3",
       "video": {
-        "vimeo_url": "https://player.vimeo.com/video/638805863"
+        "vimeo_url": "https://player.vimeo.com/video/638805787"
       },
-      "correct": "wrong",
-      "feedback": "",
+      "correct": "half",
+      "feedback": "Not the Best: Your response used an open-ended question to gather more information; however, the question was too broad and did not demonstrate active listening. As well, you failed to validate Kelly’s feelings.",
       "message": "How do you proceed?",
       "options": [
         {
@@ -432,10 +432,10 @@
       "type": "video",
       "data": "SG4_DP6_1",
       "video": {
-        "vimeo_url": "https://player.vimeo.com/video/638807487"
+        "vimeo_url": "https://player.vimeo.com/video/638805599"
       },
       "correct": "correct",
-      "feedback": "",
+      "feedback": "Correct: Your response paraphrased the client’s situation and reflected the client’s feelings. This response allowed the client to reflect on their behaviour.",
       "message": "How do you inquire about Kelly’s support system?",
       "options": [
         {
@@ -459,10 +459,10 @@
       "type": "video",
       "data": "SG4_DP6_2",
       "video": {
-        "vimeo_url": "https://player.vimeo.com/video/638807836"
+        "vimeo_url": "https://player.vimeo.com/video/638807927"
       },
-      "correct": "half",
-      "feedback": "",
+      "correct": "wrong",
+      "feedback": "Incorrect: Your response assumes that the client considers her family a support system. Your response also appeared judgmental.",
       "message": "How do you inquire about Kelly’s support system?",
       "options": [
         {
@@ -482,10 +482,10 @@
       "type": "video",
       "data": "SG4_DP6_3",
       "video": {
-        "vimeo_url": "https://player.vimeo.com/video/638807927"
+        "vimeo_url": "https://player.vimeo.com/video/638807836"
       },
-      "correct": "wrong",
-      "feedback": "",
+      "correct": "half",
+      "feedback": "Not the Best: Your response acknowledged the client’s need for additional support. However, you asked a closed-ended question and may have made the client feel uneasy.",
       "message": "How do you inquire about Kelly’s support system?",
       "options": [
         {
@@ -505,10 +505,10 @@
       "type": "video",
       "data": "SG4_DP7_1",
       "video": {
-        "vimeo_url": "https://player.vimeo.com/video/638809605"
+        "vimeo_url": "https://player.vimeo.com/video/638807487"
       },
       "correct": "correct",
-      "feedback": "",
+      "feedback": "Correct: Your response acknowledged some of the client’s existing support system and you asked an open-ended question to gather more information. ",
       "message": "How do you find out more about Kelly’s coping mechanisms?",
       "options": [
         {
@@ -516,11 +516,11 @@
           "next": 19
         },
         {
-          "label": "Discuss other pressures",
+          "label": "Discuss other coping skills",
           "next": 21
         },
         {
-          "label": "Discuss other coping skills",
+          "label": "Discuss other pressures",
           "next": 20
         }
       ],
@@ -532,18 +532,18 @@
       "type": "video",
       "data": "SG4_DP7_2",
       "video": {
-        "vimeo_url": "https://player.vimeo.com/video/638809936"
+        "vimeo_url": "https://player.vimeo.com/video/638810050"
       },
-      "correct": "half",
-      "feedback": "",
+      "correct": "wrong",
+      "feedback": "Incorrect: Your response is invalidating the client’s feelings and making her feel unimportant. ",
       "message": "How do you find out more about Kelly’s coping mechanisms?",
       "options": [
         {
-          "label": "Discuss other coping skills",
+          "label": "Discuss other pressures",
           "next": 20
         },
         {
-          "label": "Discuss other pressures",
+          "label": "Discuss other coping skills",
           "next": 21
         }
       ],
@@ -555,10 +555,10 @@
       "type": "video",
       "data": "SG4_DP7_3",
       "video": {
-        "vimeo_url": "https://player.vimeo.com/video/638810050"
+        "vimeo_url": "https://player.vimeo.com/video/638809936"
       },
-      "correct": "wrong",
-      "feedback": "",
+      "correct": "half",
+      "feedback": "Not the Best: Your response slightly acknowledged the client’s stressors; however, the question asked was closed-ended and may seem judgmental. ",
       "message": "How do you find out more about Kelly’s coping mechanisms?",
       "options": [
         {
@@ -578,14 +578,14 @@
       "type": "video",
       "data": "SG4_DP8_1",
       "video": {
-        "vimeo_url": "https://player.vimeo.com/video/638813395"
+        "vimeo_url": "https://player.vimeo.com/video/638809605"
       },
       "correct": "correct",
-      "feedback": "",
+      "feedback": "Correct: Your response acknowledged the client’s stressors, validated her need for support, and asked an open-ended question to gather more information. ",
       "message": "What is your response to Kelly’s admission of having negative thoughts?",
       "options": [
         {
-          "label": "Explore Kelly personal habits",
+          "label": "Explore Kelly's personal habits",
           "next": 22
         },
         {
@@ -605,10 +605,10 @@
       "type": "SG4_DP8_2",
       "data": "pass-vid",
       "video": {
-        "vimeo_url": "https://player.vimeo.com/video/638813605"
+        "vimeo_url": "https://player.vimeo.com/video/638813749"
       },
-      "correct": "half",
-      "feedback": "",
+      "correct": "wrong",
+      "feedback": "Incorrect: Your response was too abrupt and presented as insensitive",
       "message": "What is your response to Kelly’s admission of having negative thoughts?",
       "options": [
         {
@@ -628,10 +628,10 @@
       "type": "video",
       "data": "SG4_DP8_3",
       "video": {
-        "vimeo_url": "https://player.vimeo.com/video/638813749"
+        "vimeo_url": "https://player.vimeo.com/video/638813605"
       },
-      "correct": "wrong",
-      "feedback": "",
+      "correct": "half",
+      "feedback": "Not the Best: With the information being told to you, this question would not be the most important response to ask given Kelly’s current situation.",
       "message": "What is your response to Kelly’s admission of having negative thoughts?",
       "options": [
         {
@@ -651,10 +651,10 @@
       "type": "video",
       "data": "SG4_DP9_1",
       "video": {
-        "vimeo_url": "https://player.vimeo.com/video/638815887"
+        "vimeo_url": "https://player.vimeo.com/video/638813395"
       },
       "correct": "correct",
-      "feedback": "",
+      "feedback": "Correct: Your response displayed active listening and empathy. Your response also inquired about self-harm and suicidality to further access risk.",
       "message": "How do you respond to Kelly’s suicidal thoughts?",
       "options": [
         {
@@ -678,10 +678,10 @@
       "type": "video",
       "data": "SG4_DP9_2",
       "video": {
-        "vimeo_url": "https://player.vimeo.com/video/638816147"
+        "vimeo_url": "https://player.vimeo.com/video/638816237"
       },
-      "correct": "half",
-      "feedback": "",
+      "correct": "wrong",
+      "feedback": "Incorrect: Your response did not generate more information about the intent or plan to commit suicide which is needed to assess risk.",
       "message": "How do you respond to Kelly’s suicidal thoughts?",
       "options": [
         {
@@ -701,10 +701,10 @@
       "type": "video",
       "data": "SG4_DP9_3",
       "video": {
-        "vimeo_url": "https://player.vimeo.com/video/638816237"
+        "vimeo_url": "https://player.vimeo.com/video/638816147"
       },
-      "correct": "wrong",
-      "feedback": "",
+      "correct": "half",
+      "feedback": "Not the Best: Your response appeared too broad and was not able to generate additional information to assess for risk. ",
       "message": "How do you respond to Kelly’s suicidal thoughts?",
       "options": [
         {
@@ -724,10 +724,10 @@
       "type": "video",
       "data": "SG4_DP10_1",
       "video": {
-        "vimeo_url": "https://player.vimeo.com/video/638816368"
+        "vimeo_url": "https://player.vimeo.com/video/638815887"
       },
       "correct": "correct",
-      "feedback": "",
+      "feedback": "Correct: Your response helped to gather further information to assess the client’s risk level. Your response was also helpful as it inquired if the client was in imminent danger. ",
       "message": "How do you continue to assess Kelly’s suicide plan?",
       "options": [
         {
@@ -751,10 +751,10 @@
       "type": "video",
       "data": "SG4_DP10_2",
       "video": {
-        "vimeo_url": "https://player.vimeo.com/video/638816717"
+        "vimeo_url": "https://player.vimeo.com/video/638816781"
       },
-      "correct": "half",
-      "feedback": "",
+      "correct": "wrong",
+      "feedback": "Incorrect: Your response elicits feelings about one of her sources of stress. This response was unhelpful as it places additional pressure on the client. In addition, it doesn’t get to the goal of assessing her current risk.",
       "message": "How do you continue to assess Kelly’s suicide plan?",
       "options": [
         {
@@ -774,10 +774,10 @@
       "type": "video",
       "data": "SG4_DP10_3",
       "video": {
-        "vimeo_url": "https://player.vimeo.com/video/638816781"
+        "vimeo_url": "https://player.vimeo.com/video/638816717"
       },
-      "correct": "correct",
-      "feedback": "",
+      "correct": "half",
+      "feedback": "Not the Best: Your response asked a question that generated information that was useful to assess the client’s risk of suicide. However, information on the specifics of the plan for the client’s current suicide ideations were needed.",
       "message": "How do you continue to assess Kelly’s suicide plan?",
       "options": [
         {
@@ -797,10 +797,10 @@
       "type": "video",
       "data": "SG4_DP11_1",
       "video": {
-        "vimeo_url": "https://player.vimeo.com/video/638821139"
+        "vimeo_url": "https://player.vimeo.com/video/638816368"
       },
       "correct": "correct",
-      "feedback": "",
+      "feedback": "Correct: Your response acknowledged that the client is contemplating suicide. Your response also asks whether or not the client has a plan to further assess risk.",
       "message": "What would you rate Kelly’s risk level?",
       "options": [
         {
@@ -825,7 +825,7 @@
       "data": "SG4_DP11_2",
       "video": null,
       "correct": "wrong",
-      "feedback": "",
+      "feedback": "Incorrect: Your response is incorrect and may not have taken into consideration the current suicide plan or means to execute the plan.",
       "message": "What would you rate Kelly’s risk level?",
       "options": [
         {
@@ -846,7 +846,7 @@
       "data": "SG4_DP11_3",
       "video": null,
       "correct": "half",
-      "feedback": "",
+      "feedback": "Not the Best: Your response may not have taken into consideration the current suicide plan or means to execute the plan.",
       "message": "What would you rate Kelly’s risk level?",
       "options": [
         {
@@ -869,7 +869,7 @@
         "vimeo_url": "https://player.vimeo.com/video/638821322"
       },
       "correct": "correct",
-      "feedback": "",
+      "feedback": "Correct: Your response identified that the client is high risk due to the current plan and means to execute the plan to take your life",
       "message": "What is your first step to develop a safety plan?",
       "options": [
         {
@@ -893,10 +893,10 @@
       "type": "video",
       "data": "SG4_DP12_2",
       "video": {
-        "vimeo_url": "https://player.vimeo.com/video/638821521"
+        "vimeo_url": "https://player.vimeo.com/video/638821699"
       },
-      "correct": "half",
-      "feedback": "",
+      "correct": "wrong",
+      "feedback": "Incorrect: Your response did not take into consideration that the client is high risk and needs immediate action. This response could place the client at further risk.",
       "message": "What is your first step to develop a safety plan?",
       "options": [
         {
@@ -918,8 +918,8 @@
       "video": {
         "vimeo_url": "https://player.vimeo.com/video/638821699"
       },
-      "correct": "correct",
-      "feedback": "",
+      "correct": "half",
+      "feedback": "Not the Best: Your response was able to identify that the client needs support. However, involving her friend may not be the best option as this matter is urgent and requires more immediate action and we can’t be sure of Talia’s commitment to follow through on care. ",
       "message": "What is your first step to develop a safety plan?",
       "options": [
         {
@@ -939,10 +939,10 @@
       "type": "video",
       "data": "SG4_DP13_1",
       "video": {
-        "vimeo_url": "https://player.vimeo.com/video/638822909"
+        "vimeo_url": "https://player.vimeo.com/video/638821322"
       },
       "correct": "correct",
-      "feedback": "",
+      "feedback": "Correct: Your response gently informed the client that the hospital would be the appropriate next step. This approach is appropriate as a preventative measure.",
       "message": "How do you encourage Kelly to go to the hospital?",
       "options": [
         {
@@ -966,10 +966,10 @@
       "type": "video",
       "data": "SG4_DP13_2",
       "video": {
-        "vimeo_url": "https://player.vimeo.com/video/638823096"
+        "vimeo_url": "https://player.vimeo.com/video/638823260"
       },
-      "correct": "half",
-      "feedback": "",
+      "correct": "wrong",
+      "feedback": "Incorrect: Your response did not take into consideration that the client is high risk and needs immediate action. This response could place the client at further risk.",
       "message": "How do you encourage Kelly to go to the hospital?",
       "options": [
         {
@@ -989,10 +989,10 @@
       "type": "video",
       "data": "SG4_DP13_3",
       "video": {
-        "vimeo_url": "https://player.vimeo.com/video/638823260"
+        "vimeo_url": "https://player.vimeo.com/video/638823096"
       },
-      "correct": "wrong",
-      "feedback": "",
+      "correct": "half",
+      "feedback": "Not the Best: Your response encouraged her to seek help. However, how to seek support was unclear.",
       "message": "How do you encourage Kelly to go to the hospital?",
       "options": [
         {
@@ -1012,10 +1012,10 @@
       "type": "video",
       "data": "SG4_DP14_1",
       "video": {
-        "vimeo_url": "https://player.vimeo.com/video/638824546"
+        "vimeo_url": "https://player.vimeo.com/video/638822909"
       },
       "correct": "correct",
-      "feedback": "",
+      "feedback": "Correct: Your response informed the client that her safety is the main priority. Your response also made it clear that the hospital is the next step to ensure her safety. ",
       "message": "How do you ensure Kelly goes to the hospital?",
       "options": [
         {
@@ -1039,10 +1039,10 @@
       "type": "video",
       "data": "SG4_DP14_2",
       "video": {
-        "vimeo_url": "https://player.vimeo.com/video/638824752"
+        "vimeo_url": "https://player.vimeo.com/video/638824898"
       },
-      "correct": "half",
-      "feedback": "",
+      "correct": "wrong",
+      "feedback": "Incorrect: Your response was incorrect. Asking a friend to take her friend to the hospital is not a good choice. Putting the responsibility on Talia is not the correct way to handle this situation.",
       "message": "How do you ensure Kelly goes to the hospital?",
       "options": [
         {
@@ -1062,10 +1062,10 @@
       "type": "video",
       "data": "SG4_DP14_3",
       "video": {
-        "vimeo_url": "https://player.vimeo.com/video/638824898"
+        "vimeo_url": "https://player.vimeo.com/video/638824752"
       },
-      "correct": "wrong",
-      "feedback": "",
+      "correct": "half",
+      "feedback": "Not the Best: Your response to escort Kelly to the hospital may not be the best option. It is best to call 911 to ensure her safety in transit to the hospital. ",
       "message": "How do you ensure Kelly goes to the hospital?",
       "options": [
         {
@@ -1083,9 +1083,11 @@
       "id": 42,
       "type": "video",
       "data": "SG4_DP15_1",
-      "video": null,
+      "video": {
+        "vimeo_url": "https://player.vimeo.com/video/638824546"
+      },
       "correct": "correct",
-      "feedback": "",
+      "feedback": "Correct: Your response may seem like an unconventional decision; however, calling the police is the best course of action. Sitting with Kelly and supporting her as needed while you both wait for the Police to respond is the correct decision in a high risk situation.",
       "message": "",
       "options": [],
       "next": null

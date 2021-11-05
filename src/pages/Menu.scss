@@ -60,8 +60,8 @@
   }
 }
 
-.Menu{
-  &__link{
+.Menu {
+  &__link {
     display: block;
     border: none;
     font-family: arial, sans-serif;
@@ -71,7 +71,7 @@
     padding: 16px;
     width: 100%;
     box-sizing: border-box;
-    &--active{
+    &--active {
       color: white;
       background-color: #446fa0;
     }

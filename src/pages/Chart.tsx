@@ -1,5 +1,5 @@
 import { useCallback, useState } from "react";
-import Modal from 'react-modal';
+import Modal from "react-modal";
 
 import "./Chart.scss";
 
@@ -8,7 +8,7 @@ interface iProps {
 }
 
 const customStyles = {
-  overlay: {zIndex: 1000}
+  overlay: { zIndex: 1000 },
 };
 
 const Chart: React.FC<iProps> = ({ image }) => {
@@ -16,15 +16,15 @@ const Chart: React.FC<iProps> = ({ image }) => {
 
   const closeModal = useCallback(() => {
     setIsOpen(false);
-  }, [])
+  }, []);
 
   const openModal = useCallback(() => {
     setIsOpen(true);
-  }, [])
+  }, []);
 
   return (
     <>
-    <Modal
+      <Modal
         className="ChartModal"
         isOpen={modalIsOpen}
         //onAfterOpen={afterOpenModal}
@@ -40,19 +40,19 @@ const Chart: React.FC<iProps> = ({ image }) => {
         />
         <button onClick={closeModal}>CLOSE</button>
       </Modal>
-    <div className="Chart container">
-      <div className="Chart__panel panel info">
-        <header>
-          <h2>Client Chart</h2>
-        </header>
-        <img
-          className="chart"
-          onClick={openModal}
-          src="/images/chart_image.png"
-          alt="Client's Chart with some background information for this visit"
-        />
+      <div className="Chart container">
+        <div className="Chart__panel panel info">
+          <header>
+            <h2>Client Chart</h2>
+          </header>
+          <img
+            className="chart"
+            onClick={openModal}
+            src="/images/chart_image.png"
+            alt="Client's Chart with some background information for this visit"
+          />
+        </div>
       </div>
-    </div>
     </>
   );
 };

@@ -1,12 +1,6 @@
 import React, { useCallback, useMemo, useState } from "react";
 
-import {
-  Switch,
-  Link,
-  Route,
-  useHistory,
-  Redirect,
-} from "react-router-dom";
+import { Switch, Link, Route, useHistory, Redirect } from "react-router-dom";
 import { FormattedMessage, useIntl } from "react-intl";
 
 import Menu from "./pages/Menu";
@@ -32,9 +26,10 @@ import { getBrowser } from "./util";
 import useGameState from "./hooks/useGameState";
 import Intro from "./pages/Intro";
 import DropDown from "./components/DropDown";
+import Research from "./pages/Research";
+import Readings from "./pages/Readings";
 
-interface iProps {
-}
+interface iProps {}
 
 const App: React.FC<iProps> = () => {
   const history = useHistory();
@@ -44,7 +39,7 @@ const App: React.FC<iProps> = () => {
 
   const gameData = useGameData("crisis_intervention", locale);
   const gameState = useGameState("crisis_intervention");
-  const [subtitlesEnabled, setSubtitlesEnabled] = useState<boolean>(false)
+  const [subtitlesEnabled, setSubtitlesEnabled] = useState<boolean>(false);
   const minSteps = gameData.decisionpoints.filter(
     ({ correct }) => correct === "correct"
   ).length;
@@ -66,44 +61,50 @@ const App: React.FC<iProps> = () => {
     )!;
   }, [gameData.decisionpoints, gameState.currentStep]);
 
-  const handleStartNewGame = useCallback((evt:React.MouseEvent<HTMLButtonElement>) => {
-    evt.currentTarget.blur()
+  const handleStartNewGame = useCallback(
+    (evt: React.MouseEvent<HTMLButtonElement>) => {
+      evt.currentTarget.blur();
 
-    gameState.newGame();
-    setNavMenuExpanded(false);
-    history.push(`/intro/`);
-    logGameEvent("", "start", "game", getBrowser(), "");
-  }, [history, logGameEvent, gameState]);
-
-  const handleResumeGame = useCallback((evt:React.MouseEvent<HTMLButtonElement>) => {
-    evt.currentTarget.blur()
-
-    var dp = currentDecisionPoint;
-    setNavMenuExpanded(false);
-
-    if (dp && lastDecisionPoint) {
-      history.push(`/summary/`);
-    } else if (gameState.videoposition > 0.1) {
-      history.push(`/video/`);
-    } else if (gameState.currentStep === 0) {
+      gameState.newGame();
+      setNavMenuExpanded(false);
       history.push(`/intro/`);
-    } else {
-      history.push(`/decision/`);
-    }
+      logGameEvent("", "start", "game", getBrowser(), "");
+    },
+    [history, logGameEvent, gameState]
+  );
 
-    logGameEvent("", "resume", "game", "", "");
-  }, [
-    history,
-    logGameEvent,
-    gameState.videoposition,
-    gameState.currentStep,
-    currentDecisionPoint,
-    lastDecisionPoint,
-  ]);
+  const handleResumeGame = useCallback(
+    (evt: React.MouseEvent<HTMLButtonElement>) => {
+      evt.currentTarget.blur();
+
+      var dp = currentDecisionPoint;
+      setNavMenuExpanded(false);
+
+      if (dp && lastDecisionPoint) {
+        history.push(`/summary/`);
+      } else if (gameState.videoposition > 0.1) {
+        history.push(`/video/`);
+      } else if (gameState.currentStep === 0) {
+        history.push(`/intro/`);
+      } else {
+        history.push(`/decision/`);
+      }
+
+      logGameEvent("", "resume", "game", "", "");
+    },
+    [
+      history,
+      logGameEvent,
+      gameState.videoposition,
+      gameState.currentStep,
+      currentDecisionPoint,
+      lastDecisionPoint,
+    ]
+  );
 
   const handleHideMenu = useCallback(() => {
-    setNavMenuExpanded(false)
-  },[]);
+    setNavMenuExpanded(false);
+  }, []);
 
   const handleOptionChosen = useCallback(
     (nextId: number, label: string) => {
@@ -162,7 +163,7 @@ const App: React.FC<iProps> = () => {
         <Link className="Button" to={`/settings/`} onClick={handleHideMenu}>
           <FormattedMessage
             id="Menu.settings"
-            defaultMessage="SETTINGS"
+            defaultMessage="Settings"
             description="Settings Button"
           />
         </Link>
@@ -170,9 +171,9 @@ const App: React.FC<iProps> = () => {
         <h1>{gameData.strings.menu.title}</h1>
 
         <button className="menu-button" onClick={handleMenuToggleButtonClick}>
-          HOME
+          Home
         </button>
-        <DropDown label="GAME">
+        <DropDown label="Game">
           <button onClick={handleStartNewGame}>New Game</button>
           <button onClick={handleResumeGame}>Resume</button>
         </DropDown>
@@ -255,7 +256,7 @@ const App: React.FC<iProps> = () => {
               ) : null}
 
               <Route path={`/settings`}>
-                <Settings 
+                <Settings
                   subtitlesEnabled={subtitlesEnabled}
                   onSubtitlesToggled={setSubtitlesEnabled}
                 />
@@ -266,7 +267,11 @@ const App: React.FC<iProps> = () => {
               </Route>
 
               <Route path={`/research`}>
-                <Resources />
+                <Research />
+              </Route>
+
+              <Route path={`/readings`}>
+                <Readings />
               </Route>
 
               <Route path={`/summary`}>
@@ -296,9 +301,7 @@ const App: React.FC<iProps> = () => {
                 />
               </Route>
 
-              <Route path={`/lo`}>
-                Something's going on here, I swear
-              </Route>
+              <Route path={`/lo`}>Something's going on here, I swear</Route>
 
               <Route path="/">
                 <Redirect to={`/instructions`} />

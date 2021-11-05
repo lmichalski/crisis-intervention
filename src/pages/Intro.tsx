@@ -10,19 +10,21 @@ interface iProps {
 
 const Intro: React.FC<iProps> = ({ strings }) => {
   const history = useHistory();
-  const label = "NEXT";
 
   const [currentMessage, setCurrentMessage] = useState(0);
   const intro = strings.introCards;
 
-  const skipToNext = useCallback((evt:React.MouseEvent<HTMLButtonElement>) => {
-    if (currentMessage < intro.length - 1) {
-      setCurrentMessage((n) => n + 1);
-      evt.currentTarget.blur()
-    } else {
-      history.push(`/video/`);
-    }
-  }, [currentMessage, history, intro.length]);
+  const skipToNext = useCallback(
+    (evt: React.MouseEvent<HTMLButtonElement>) => {
+      if (currentMessage < intro.length - 1) {
+        setCurrentMessage((n) => n + 1);
+        evt.currentTarget.blur();
+      } else {
+        history.push(`/video/`);
+      }
+    },
+    [currentMessage, history, intro.length]
+  );
 
   const text = intro[currentMessage];
 
@@ -33,9 +35,9 @@ const Intro: React.FC<iProps> = ({ strings }) => {
           <div className="content">{text}</div>
         </div>
         <footer>
-            <button className="button" onClick={skipToNext}>
-              {label}
-            </button>
+          <button className="button" onClick={skipToNext}>
+            Next
+          </button>
         </footer>
       </div>
     </div>

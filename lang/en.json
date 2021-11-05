@@ -11,18 +11,6 @@
     "defaultMessage": "Resume Game",
     "description": "resume game button"
   },
-  "Home.crisisIntervention": {
-    "defaultMessage": "Crisis Intervention",
-    "description": "Crisis intervention game name"
-  },
-  "Home.emergency": {
-    "defaultMessage": "Emergency Room",
-    "description": "Name for emergency game"
-  },
-  "Home.title": {
-    "defaultMessage": "Crisis Intervention",
-    "description": "Title for homepage"
-  },
   "Materials.title": {
     "defaultMessage": "Materials",
     "description": "Materials title"
@@ -32,7 +20,7 @@
     "description": "Client chart button"
   },
   "Menu.credits": {
-    "defaultMessage": "6. Credits",
+    "defaultMessage": "8. Credits",
     "description": "Credits Button"
   },
   "Menu.instructions": {
@@ -47,9 +35,21 @@
     "defaultMessage": "4. Essential Principles",
     "description": "Principles Button"
   },
+  "Menu.research": {
+    "defaultMessage": "7. Research",
+    "description": "Research button"
+  },
+  "Menu.resources": {
+    "defaultMessage": "6. Resources",
+    "description": "Resources button"
+  },
   "Menu.scenario": {
     "defaultMessage": "2. Scenario",
     "description": "Scenario Button"
+  },
+  "Menu.settings": {
+    "defaultMessage": "Settings",
+    "description": "Settings Button"
   },
   "Objectives.title": {
     "defaultMessage": "Learning Objectives",
@@ -58,6 +58,10 @@
   "Principles.title": {
     "defaultMessage": "Essential Principles",
     "description": "Principles title"
+  },
+  "Resources.title": {
+    "defaultMessage": "Resources",
+    "description": "resources title"
   },
   "Scenario.title": {
     "defaultMessage": "Background and Scenario",

@@ -1,14 +1,13 @@
 /********** GAME SETTINGS **********/
 
 .Settings {
-
   &__item {
     display: flex;
     flex-direction: row;
     width: 300px;
     margin: 16px;
 
-    & > *{
+    & > * {
       width: fit-content;
       flex-basis: 0;
       flex-grow: 1;
@@ -17,10 +16,10 @@
 
   &__panel {
     width: fit-content;
-    margin: auto!important;
+    margin: auto !important;
     text-transform: none;
 
-    .content{
+    .content {
       background-color: #446fa0;
       border-radius: 16px;
     }
@@ -34,7 +33,7 @@
       color: #000;
       text-align: right;
     }
-    
+
     .radio {
       float: right;
     }
@@ -47,10 +46,9 @@
       color: #fff;
       text-shadow: 0 0 2px #fff, 0 0 4px #fff;
     }
-  
+
     .radio input[type="radio"]:checked + label {
       color: #fff;
     }
-
   }
 }
