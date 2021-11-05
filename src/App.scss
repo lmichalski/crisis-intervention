@@ -47,8 +47,9 @@ button, .Button {
       background-color: transparent;
       padding: 24px;
 
-      &:hover {
+      &:hover, &:focus-within {
         background-color: cornflowerblue;
+        transition: all 0.5s ease;
       }
     }
   }
@@ -58,7 +59,6 @@ button, .Button {
 
     .banner {
       background-color: #d6dde0;
-      transition: max-height 0.2s;
 
       img {
         height: 50vh;
@@ -110,7 +110,6 @@ button, .Button {
         font-size: 24px;
         padding: 0;
 
-        transition: max-width 0.2s;
         background-color: rgb(197, 202, 233);
         padding-top: 0;
         margin-right: 10vw;

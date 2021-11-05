@@ -101,6 +101,10 @@ const App: React.FC<iProps> = ({ gameId }) => {
     url,
   ]);
 
+  const handleHideMenu = useCallback(() => {
+    setNavMenuExpanded(false)
+  },[]);
+
   const handleOptionChosen = useCallback(
     (nextId: number, label: string) => {
       const next = gameData.decisionpoints.find(({ id }) => id === nextId);
@@ -155,7 +159,7 @@ const App: React.FC<iProps> = ({ gameId }) => {
   return (
     <div className="fullscreen" style={gameData.colors as React.CSSProperties}>
       <header className="nav-header">
-        <Link className="Button" to={`${url}/settings/`}>
+        <Link className="Button" to={`${url}/settings/`} onClick={handleHideMenu}>
           <FormattedMessage
             id="Menu.settings"
             defaultMessage="SETTINGS"
