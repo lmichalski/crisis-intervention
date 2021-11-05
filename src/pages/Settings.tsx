@@ -1,4 +1,4 @@
-import React, { useCallback } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import "./Settings.scss";
 
 interface iProps {
@@ -10,21 +10,56 @@ const Settings: React.FC<iProps> = ({
   subtitlesEnabled,
   onSubtitlesToggled,
 }) => {
-  const isFullscreen = false;
+  const [isFullscreen, setIsFullscreen] = useState<boolean>(
+    !!document.fullscreenElement
+  );
 
   const handleSubtitlesChange = useCallback(
     (evt: React.ChangeEvent<HTMLInputElement>) => {
-      onSubtitlesToggled(evt.currentTarget.value === "on");
+      onSubtitlesToggled(evt.target.value === "on");
     },
     [onSubtitlesToggled]
   );
 
   const handleFullscreenChange = useCallback(
     (evt: React.ChangeEvent<HTMLInputElement>) => {
-      //(evt.currentTarget.value === "on");
+      if (!document.fullscreenElement && evt.target.value === "on") {
+        document.documentElement
+          .requestFullscreen()
+          .then(() => setIsFullscreen(true))
+          .catch((err) => {
+            alert(
+              `Error attempting to enable full-screen mode: ${err.message} (${err.name})`
+            );
+          });
+      } else if (document.fullscreenElement && evt.target.value === "off") {
+        if (document.exitFullscreen) {
+          document.exitFullscreen().then(() => setIsFullscreen(false));
+        }
+      }
     },
     []
   );
+
+  useEffect(() => {
+    const handleFullscreenChange = () => {
+      // document.fullscreenElement will point to the element that
+      // is in fullscreen mode if there is one. If there isn't one,
+      // the value of the property is null.
+      setIsFullscreen(!!document.fullscreenElement);
+      if (document.fullscreenElement) {
+        console.log(
+          `Element: ${document.fullscreenElement.id} entered full-screen mode.`
+        );
+      } else {
+        console.log("Leaving full-screen mode.");
+      }
+    };
+    document.addEventListener("fullscreenchange", handleFullscreenChange);
+
+    return () =>
+      document.removeEventListener("fullscreenchange", handleFullscreenChange);
+  }, []);
 
   return (
     <div className="container">
@@ -36,18 +71,17 @@ const Settings: React.FC<iProps> = ({
           <div className="content">
             <div className="cf">
               <h2>Display:</h2>
-              <div className="radio" onChange={handleFullscreenChange}>
+              <div className="radio">
                 <div>
                   <input
                     type="radio"
                     name="display_mode"
                     id="mode_window"
+                    value="off"
+                    checked={!isFullscreen}
+                    onChange={handleFullscreenChange}
                   />
-                  <label
-                    htmlFor="mode_window"
-                    aria-checked={!isFullscreen}
-                    ng-keydown="onFullscreenKeydown($event)"
-                  >
+                  <label htmlFor="mode_window" aria-checked={!isFullscreen}>
                     Window
                   </label>
                 </div>
@@ -57,11 +91,10 @@ const Settings: React.FC<iProps> = ({
                     name="display_mode"
                     id="mode_fullscreen"
                     value="on"
+                    checked={isFullscreen}
+                    onChange={handleFullscreenChange}
                   />
-                  <label
-                    htmlFor="mode_fullscreen"
-                    aria-checked={isFullscreen}
-                  >
+                  <label htmlFor="mode_fullscreen" aria-checked={isFullscreen}>
                     Fullscreen
                   </label>
                 </div>
@@ -70,14 +103,15 @@ const Settings: React.FC<iProps> = ({
             <br />
             <div className="cf">
               <h2>Subtitles:</h2>
-              <div className="radio" onChange={handleSubtitlesChange}>
+              <div className="radio">
                 <div>
                   <input
                     type="radio"
                     name="subtitles"
                     id="subtitles_off"
                     value="off"
-                    defaultChecked={!subtitlesEnabled}
+                    checked={!subtitlesEnabled}
+                    onChange={handleSubtitlesChange}
                   />
                   <label
                     htmlFor="subtitles_off"
@@ -92,12 +126,10 @@ const Settings: React.FC<iProps> = ({
                     name="subtitles"
                     id="subtitles_en"
                     value="on"
-                    defaultChecked={subtitlesEnabled}
+                    checked={subtitlesEnabled}
+                    onChange={handleSubtitlesChange}
                   />
-                  <label
-                    htmlFor="subtitles_en"
-                    aria-checked={subtitlesEnabled}
-                  >
+                  <label htmlFor="subtitles_en" aria-checked={subtitlesEnabled}>
                     On
                   </label>
                 </div>

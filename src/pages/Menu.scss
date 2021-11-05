@@ -15,7 +15,8 @@
     border-width: 2px;
     color: black;
 
-    &:hover, &:focus-within {
+    &:hover,
+    &:focus-within {
       color: rgb(255, 255, 255);
       background-color: #446fa0;
       transition: all 0.5s ease;
