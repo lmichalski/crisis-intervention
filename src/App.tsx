@@ -66,15 +66,18 @@ const App: React.FC<iProps> = () => {
     )!;
   }, [gameData.decisionpoints, gameState.currentStep]);
 
-  const handleStartNewGame = useCallback(() => {
+  const handleStartNewGame = useCallback((evt:React.MouseEvent<HTMLButtonElement>) => {
+    evt.currentTarget.blur()
+
     gameState.newGame();
     setNavMenuExpanded(false);
-
     history.push(`/intro/`);
     logGameEvent("", "start", "game", getBrowser(), "");
   }, [history, logGameEvent, gameState]);
 
-  const handleResumeGame = useCallback(() => {
+  const handleResumeGame = useCallback((evt:React.MouseEvent<HTMLButtonElement>) => {
+    evt.currentTarget.blur()
+
     var dp = currentDecisionPoint;
     setNavMenuExpanded(false);
 
@@ -259,6 +262,10 @@ const App: React.FC<iProps> = () => {
               </Route>
 
               <Route path={`/resources`}>
+                <Resources />
+              </Route>
+
+              <Route path={`/research`}>
                 <Resources />
               </Route>
 
