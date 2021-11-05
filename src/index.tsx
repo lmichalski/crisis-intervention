@@ -6,12 +6,16 @@ import reportWebVitals from "./reportWebVitals";
 import { IntlProvider } from "react-intl";
 import { BrowserRouter as Router } from "react-router-dom";
 import { LoggingContextProvider } from "./hooks/useLogGameEvent";
+import Modal from 'react-modal';
 
 import enMessages from "./lang-compiled/en.json";
 import frMessages from "./lang-compiled/fr.json";
 
 const locale = "en" as string;
 const messages = locale === "fr" ? frMessages : enMessages;
+
+// Make sure to bind modal to your appElement (https://reactcommunity.org/react-modal/accessibility/)
+Modal.setAppElement("#root");
 
 ReactDOM.render(
   <React.StrictMode>

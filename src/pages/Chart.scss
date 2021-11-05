@@ -1,3 +1,19 @@
+.ChartModal {
+  z-index: 100;
+  .chart {
+    display: block;
+    max-width: 90vw;
+    max-height: 90vh;
+    margin: auto;
+    z-index: 100;
+    cursor: pointer;
+  }
+  
+  button {
+    margin: 12px auto;
+  }
+}
+
 .body .view .Chart {
   height: 100%;
   box-sizing: border-box;
@@ -12,13 +28,13 @@
     gap: 1rem;
 
     .chart {
-      height: 0;
       flex-grow: 1;
       padding: 0;
       box-sizing: border-box;
       max-width: 100%;
       object-fit: contain;
       margin: auto;
+      cursor: pointer;
     }
   }
 
