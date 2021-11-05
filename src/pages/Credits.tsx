@@ -36,20 +36,22 @@ const Credits: React.FC<{}> = () => {
 
               <h3>Research Project Manager</h3>
               <ul>
-              <li>
-                <span className="person">Roxanne Ramjattan, PhD, MSW, RSW</span>
-              </li>
+                <li>
+                  <span className="person">
+                    Roxanne Ramjattan, PhD, MSW, RSW
+                  </span>
+                </li>
               </ul>
 
               <h3>Virtual Gaming Simulation Consultant</h3>
               <ul>
-              <li>
-                <span className="person">Margaret Verkuyl, NP, PHC, MN</span>
-              </li>
-              <span className="title">
-                Professor <br />
-              </span>
-              <span className="organization">Nursing Centennial College</span>
+                <li>
+                  <span className="person">Margaret Verkuyl, NP, PHC, MN</span>
+                </li>
+                <span className="title">
+                  Professor <br />
+                </span>
+                <span className="organization">Nursing Centennial College</span>
               </ul>
 
               <h3>Cast</h3>
