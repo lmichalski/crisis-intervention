@@ -1,5 +1,5 @@
 import { FormattedMessage } from "react-intl";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./Menu.scss";
 
 interface iProps {
@@ -26,80 +26,78 @@ const Menu: React.FC<iProps> = ({
           <div className="content">
             <ul className="controls">
               <li>
-                <Link to={`/instructions/`}>
+                <NavLink to={`/instructions/`} className="Menu__link" activeClassName="Menu__link--active">
                   <FormattedMessage
                     id="Menu.instructions"
                     defaultMessage="1. How to Play"
                     description="How to Play Button"
                   />
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link to={`/scenario/`}>
+                <NavLink to={`/scenario/`} className="Menu__link" activeClassName="Menu__link--active">
                   <FormattedMessage
                     id="Menu.scenario"
                     defaultMessage="2. Scenario"
                     description="Scenario Button"
                   />
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link to={`/objectives/`}>
+                <NavLink to={`/objectives/`} className="Menu__link" activeClassName="Menu__link--active">
                   <FormattedMessage
                     id="Menu.objectives"
                     defaultMessage="3. Learning Objectives"
                     description="Objectives Button"
                   />
-                </Link>
+                </NavLink>
               </li>
-              {showPrinciples ? (
                 <li>
-                  <Link to={`/principles/`}>
+                  <NavLink to={`/principles/`} className="Menu__link" activeClassName="Menu__link--active">
                     <FormattedMessage
                       id="Menu.principles"
                       defaultMessage="4. Essential Principles"
                       description="Principles Button"
                     />
-                  </Link>
+                  </NavLink>
                 </li>
-              ) : null}
               <li>
-                <Link to={`/chart/`}>
+                <NavLink to={`/chart/`} className="Menu__link" activeClassName="Menu__link--active">
                   <FormattedMessage
                     id="Menu.chart"
                     defaultMessage="5. Client Chart"
                     description="Client chart button"
                   />
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link to={`/resources/`}>
+                <NavLink to={`/resources/`} className="Menu__link" activeClassName="Menu__link--active">
                   <FormattedMessage
                     id="Menu.resources"
                     defaultMessage="6. Resources"
                     description="Resources button"
                   />
-                </Link>
+                </NavLink>
               </li>
 
               <li>
-                <Link to={`/research/`}>
+                <NavLink to={`/research/`} className="Menu__link" activeClassName="Menu__link--active">
                   <FormattedMessage
                     id="Menu.research"
                     defaultMessage="7. Research"
                     description="Research button"
                   />
-                </Link>
+                </NavLink>
               </li>
 
               <li>
-                <Link to={`/credits/`}>
+                <NavLink to={`/credits/`} className="Menu__link" activeClassName="Menu__link--active">
                   <FormattedMessage
                     id="Menu.credits"
                     defaultMessage="8. Credits"
                     description="Credits Button"
                   />
-                </Link>
+                </NavLink>
               </li>
             </ul>
           </div>
