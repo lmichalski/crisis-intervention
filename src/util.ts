@@ -1,6 +1,5 @@
 import { useCallback } from "react";
 import { useHistory } from "react-router";
-import { useParams } from "react-router-dom";
 import useLogGameEvent from "./hooks/useLogGameEvent";
 
 export function generateUUID(): string {

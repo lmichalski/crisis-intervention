@@ -1,6 +1,6 @@
 import { useCallback } from "react";
 import { FormattedMessage } from "react-intl";
-import { useHistory, useParams } from "react-router";
+import { useHistory } from "react-router";
 import { DecisionPoint } from "../hooks/useGameData";
 import "./Feedback.scss";
 
