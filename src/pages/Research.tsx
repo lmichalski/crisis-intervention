@@ -1,6 +1,6 @@
 import { FormattedMessage } from "react-intl";
 
-const Resources: React.FC<{}> = () => {
+const Research: React.FC<{}> = () => {
   return (
     <div className="container">
       <div className="panel credits">
@@ -8,14 +8,14 @@ const Resources: React.FC<{}> = () => {
           <h2>
             <FormattedMessage
               id="Resources.title"
-              defaultMessage="Resources"
+              defaultMessage="Research"
               description="resources title"
             />
           </h2>
         </header>
         <div className="main">
           <div className="content cf">
-            <h2>page-content-goes-here</h2>
+            <h2>research-goes-here</h2>
           </div>
         </div>
       </div>
@@ -23,4 +23,4 @@ const Resources: React.FC<{}> = () => {
   );
 };
 
-export default Resources;
+export default Research;

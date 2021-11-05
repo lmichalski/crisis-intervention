@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import "./Menu.scss";
 
 interface iProps {
-  startNewGame: () => void;
-  resumeGame: () => void;
+  startNewGame: (evt:React.MouseEvent<HTMLButtonElement>) => void;
+  resumeGame: (evt:React.MouseEvent<HTMLButtonElement>) => void;
   gamesaved: boolean;
   strings: {
     title: string;
