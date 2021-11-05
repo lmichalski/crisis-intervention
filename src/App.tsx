@@ -47,6 +47,7 @@ const App: React.FC<iProps> = ({ gameId }) => {
 
   const gameData = useGameData(gameId, locale);
   const gameState = useGameState(gameId);
+  const [subtitlesEnabled, setSubtitlesEnabled] = useState<boolean>(false)
   const minSteps = gameData.decisionpoints.filter(
     ({ correct }) => correct === "correct"
   ).length;
@@ -255,7 +256,10 @@ const App: React.FC<iProps> = ({ gameId }) => {
               ) : null}
 
               <Route path={`${path}/settings`}>
-                <Settings />
+                <Settings 
+                  subtitlesEnabled={subtitlesEnabled}
+                  onSubtitlesToggled={setSubtitlesEnabled}
+                />
               </Route>
 
               <Route path={`${path}/resources`}>
@@ -284,6 +288,8 @@ const App: React.FC<iProps> = ({ gameId }) => {
                   onVideoFinished={handleVideoFinished}
                   videoposition={gameState.videoposition}
                   setVideoposition={gameState.setVideoposition}
+                  subtitlesEnabled={subtitlesEnabled}
+                  onSubtitlesToggled={setSubtitlesEnabled}
                 />
               </Route>
 

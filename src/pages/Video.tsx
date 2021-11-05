@@ -13,6 +13,8 @@ interface iProps {
   onVideoFinished: () => void;
   videoposition: number;
   setVideoposition: (t: number) => void;
+  subtitlesEnabled: boolean;
+  onSubtitlesToggled: (enabled: boolean) => void;
 }
 
 const Video: React.FC<iProps> = ({
@@ -20,6 +22,8 @@ const Video: React.FC<iProps> = ({
   onVideoFinished,
   videoposition,
   setVideoposition,
+  subtitlesEnabled,
+  onSubtitlesToggled,
 }) => {
   const location = useLocation();
   const history = useHistory();
@@ -202,12 +206,28 @@ const Video: React.FC<iProps> = ({
         logGameEvent("", "finish", "video", dp.data, "");
       });
 
+      player.on("texttrackchange", (data: { language: string | null }) => {
+        onSubtitlesToggled(!!data.language);
+      });
+
       return () => {
         player.off("timeupdate");
         player.off("ended");
+        player.off("texttrackchange");
       };
     }
-  }, [setVideoposition, dp.data, logGameEvent, skipVideo]);
+  }, [setVideoposition, dp.data, logGameEvent, skipVideo, onSubtitlesToggled]);
+
+  useEffect(() => {
+    if (iframeRef.current) {
+      const player = new Player(iframeRef.current);
+      if (subtitlesEnabled) {
+        player.enableTextTrack("en");
+      } else {
+        player.disableTextTrack();
+      }
+    }
+  }, [subtitlesEnabled]);
 
   return (
     <div className="video">
@@ -217,7 +237,10 @@ const Video: React.FC<iProps> = ({
             <iframe
               ref={iframeRef}
               // style={{height: (iframeRef.current?.scrollWidth ?? 600) * 9/16}}
-              src={dp.video.vimeo_url + "?autoplay=1&texttrack=en"}
+              src={
+                dp.video.vimeo_url +
+                `?autoplay=1${subtitlesEnabled ? "&texttrack=en" : ""}`
+              }
               frameBorder={0}
               allow="autoplay; texttrack; fullscreen; picture-in-picture"
               allowFullScreen

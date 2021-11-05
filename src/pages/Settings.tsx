@@ -1,8 +1,23 @@
+import React, { useCallback } from "react";
 import "./Settings.scss";
 
-const Settings: React.FC<{}> = () => {
+interface iProps {
+  subtitlesEnabled: boolean;
+  onSubtitlesToggled: (enabled: boolean) => void;
+}
+
+const Settings: React.FC<iProps> = ({
+  subtitlesEnabled,
+  onSubtitlesToggled,
+}) => {
   const isFullscreen = false;
-  const subtitlesOn = false;
+
+  const handleSubtitlesChange = useCallback(
+    (evt: React.ChangeEvent<HTMLInputElement>) => {
+      onSubtitlesToggled(evt.target.value === "on");
+    },
+    [onSubtitlesToggled]
+  );
 
   return (
     <div className="container">
@@ -58,21 +73,20 @@ const Settings: React.FC<{}> = () => {
             <br />
             <div className="cf">
               <h2>Subtitles:</h2>
-              <div className="radio">
+              <div className="radio" onChange={handleSubtitlesChange}>
                 <div>
                   <input
                     type="radio"
                     name="subtitles"
                     id="subtitles_off"
-                    ng-model="sg.subtitles"
-                    ng-value="false"
-                    ng-change="saveState()"
+                    value="off"
+                    defaultChecked={!subtitlesEnabled}
                   />
                   <label
                     htmlFor="subtitles_off"
                     tabIndex={0}
                     role="radio"
-                    aria-checked={!subtitlesOn}
+                    aria-checked={!subtitlesEnabled}
                     ng-keydown="onSubtitlesKeydown($event)"
                   >
                     Off
@@ -83,16 +97,14 @@ const Settings: React.FC<{}> = () => {
                     type="radio"
                     name="subtitles"
                     id="subtitles_en"
-                    ng-model="sg.subtitles"
-                    ng-value="true"
-                    ng-change="saveState()"
+                    value="on"
+                    defaultChecked={subtitlesEnabled}
                   />
                   <label
                     htmlFor="subtitles_en"
                     tabIndex={0}
                     role="radio"
-                    aria-checked={subtitlesOn}
-                    ng-keydown="onSubtitlesKeydown($event)"
+                    aria-checked={subtitlesEnabled}
                   >
                     On
                   </label>
