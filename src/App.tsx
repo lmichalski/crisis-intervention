@@ -2,12 +2,13 @@ import React, { useCallback, useMemo, useState } from "react";
 
 import {
   Switch,
+  Link,
   Route,
   useHistory,
   useRouteMatch,
   Redirect,
 } from "react-router-dom";
-import { useIntl } from "react-intl";
+import { FormattedMessage, useIntl } from "react-intl";
 
 import Menu from "./pages/Menu";
 import "./App.scss";
@@ -31,6 +32,7 @@ import useLogGameEvent from "./hooks/useLogGameEvent";
 import { getBrowser } from "./util";
 import useGameState from "./hooks/useGameState";
 import Intro from "./pages/Intro";
+import DropDown from "./components/DropDown";
 
 interface iProps {
   gameId: string;
@@ -70,7 +72,7 @@ const App: React.FC<iProps> = ({ gameId }) => {
     gameState.newGame();
     setNavMenuExpanded(false);
 
-    history.push(`${url}/chart/`);
+    history.push(`${url}/intro/`);
     logGameEvent("", "start", "game", getBrowser(), "");
   }, [history, logGameEvent, url, gameState]);
 
@@ -153,13 +155,23 @@ const App: React.FC<iProps> = ({ gameId }) => {
   return (
     <div className="fullscreen" style={gameData.colors as React.CSSProperties}>
       <header className="nav-header">
-        <button className="settings-button">SETTINGS</button>
+        <Link className="Button" to={`${url}/settings/`}>
+          <FormattedMessage
+            id="Menu.settings"
+            defaultMessage="SETTINGS"
+            description="Settings Button"
+          />
+        </Link>
+
         <h1>{gameData.strings.menu.title}</h1>
 
         <button className="menu-button" onClick={handleMenuToggleButtonClick}>
           HOME
         </button>
-        <button className="Link">GAME</button>
+        <DropDown label="GAME">
+          <button onClick={handleStartNewGame}>New Game</button>
+          <button onClick={handleResumeGame}>Resume</button>
+        </DropDown>
       </header>
 
       <div className="content">
@@ -175,13 +187,15 @@ const App: React.FC<iProps> = ({ gameId }) => {
         </div>
 
         <div className="body">
-          <div className="nav-content">
+          <div
+            className={`nav-content ${
+              navMenuExpanded
+                ? "nav-content--expanded"
+                : "nav-content--collapsed"
+            }`}
+          >
             <div className="nav-menu-title">Module Content</div>
-            <nav
-              className={`nav-menu ${
-                navMenuExpanded ? "nav-menu--expanded" : "nav-menu--collapsed"
-              }`}
-            >
+            <nav className="nav-menu">
               <Menu
                 strings={gameData.strings.menu}
                 startNewGame={handleStartNewGame}
