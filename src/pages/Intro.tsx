@@ -1,5 +1,5 @@
 import { useCallback, useState } from "react";
-import { useHistory, useParams } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import "./Intro.scss";
 
 interface iProps {
@@ -10,7 +10,6 @@ interface iProps {
 
 const Intro: React.FC<iProps> = ({ strings }) => {
   const history = useHistory();
-  const { game_id } = useParams<{ game_id: string }>();
   const label = "NEXT";
 
   const [currentMessage, setCurrentMessage] = useState(0);
@@ -21,9 +20,9 @@ const Intro: React.FC<iProps> = ({ strings }) => {
       setCurrentMessage((n) => n + 1);
       evt.currentTarget.blur()
     } else {
-      history.push(`/games/${game_id}/video/`);
+      history.push(`/video/`);
     }
-  }, [currentMessage, history, intro.length, game_id]);
+  }, [currentMessage, history, intro.length]);
 
   const text = intro[currentMessage];
 

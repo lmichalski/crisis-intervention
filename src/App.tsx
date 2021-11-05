@@ -5,7 +5,6 @@ import {
   Link,
   Route,
   useHistory,
-  useRouteMatch,
   Redirect,
 } from "react-router-dom";
 import { FormattedMessage, useIntl } from "react-intl";
@@ -35,18 +34,16 @@ import Intro from "./pages/Intro";
 import DropDown from "./components/DropDown";
 
 interface iProps {
-  gameId: string;
 }
 
-const App: React.FC<iProps> = ({ gameId }) => {
+const App: React.FC<iProps> = () => {
   const history = useHistory();
-  let { path, url } = useRouteMatch();
 
   const logGameEvent = useLogGameEvent();
   const locale = useIntl().locale;
 
-  const gameData = useGameData(gameId, locale);
-  const gameState = useGameState(gameId);
+  const gameData = useGameData("crisis_intervention", locale);
+  const gameState = useGameState("crisis_intervention");
   const [subtitlesEnabled, setSubtitlesEnabled] = useState<boolean>(false)
   const minSteps = gameData.decisionpoints.filter(
     ({ correct }) => correct === "correct"
@@ -56,8 +53,8 @@ const App: React.FC<iProps> = ({ gameId }) => {
   const handleMenuToggleButtonClick = useCallback(() => {
     setNavMenuExpanded(true);
 
-    history.push(`${url}/instructions/`);
-  }, [history, url]);
+    history.push(`/instructions/`);
+  }, [history]);
 
   const lastDecisionPoint =
     gameData.decisionpoints[gameData.decisionpoints.length - 1].id ===
@@ -73,22 +70,22 @@ const App: React.FC<iProps> = ({ gameId }) => {
     gameState.newGame();
     setNavMenuExpanded(false);
 
-    history.push(`${url}/intro/`);
+    history.push(`/intro/`);
     logGameEvent("", "start", "game", getBrowser(), "");
-  }, [history, logGameEvent, url, gameState]);
+  }, [history, logGameEvent, gameState]);
 
   const handleResumeGame = useCallback(() => {
     var dp = currentDecisionPoint;
     setNavMenuExpanded(false);
 
     if (dp && lastDecisionPoint) {
-      history.push(`${url}/summary/`);
+      history.push(`/summary/`);
     } else if (gameState.videoposition > 0.1) {
-      history.push(`${url}/video/`);
+      history.push(`/video/`);
     } else if (gameState.currentStep === 0) {
-      history.push(`${url}/intro/`);
+      history.push(`/intro/`);
     } else {
-      history.push(`${url}/decision/`);
+      history.push(`/decision/`);
     }
 
     logGameEvent("", "resume", "game", "", "");
@@ -99,7 +96,6 @@ const App: React.FC<iProps> = ({ gameId }) => {
     gameState.currentStep,
     currentDecisionPoint,
     lastDecisionPoint,
-    url,
   ]);
 
   const handleHideMenu = useCallback(() => {
@@ -116,21 +112,21 @@ const App: React.FC<iProps> = ({ gameId }) => {
 
       switch (next?.type) {
         case "video":
-          history.push(`${url}/video/`);
+          history.push(`/video/`);
           break;
         case "lo":
           if (next.feedback > "") {
             // If there's feedback, show it then advance
-            history.push(`${url}/feedback/`);
+            history.push(`/feedback/`);
           } else {
-            history.push(`${url}/lo/`);
+            history.push(`/lo/`);
           }
           break;
       }
 
       // google analytics ???
     },
-    [gameData.decisionpoints, history, logGameEvent, gameState, url]
+    [gameData.decisionpoints, history, logGameEvent, gameState]
   );
 
   const handleVideoFinished = useCallback(() => {
@@ -138,29 +134,29 @@ const App: React.FC<iProps> = ({ gameId }) => {
     gameState.setVideoposition(0);
 
     if (lastDecisionPoint) {
-      history.push(`${url}/summary/`);
+      history.push(`/summary/`);
     } else if (dp && dp.options.length > 0) {
       if (dp.feedback > "") {
-        history.push(`${url}/feedback/`);
+        history.push(`/feedback/`);
       } else {
         // No feedback means go directly to the decision
-        history.push(`${url}/decision/`);
+        history.push(`/decision/`);
       }
     } else {
       gameState.setCurrentStep(gameState.currentStep + 1);
       if (dp?.next) {
         // If there are no options, go to the next decision point
-        history.push(`${url}/lo/`);
+        history.push(`/lo/`);
       } else {
-        history.push(`${url}/transition/`);
+        history.push(`/transition/`);
       }
     }
-  }, [currentDecisionPoint, history, lastDecisionPoint, gameState, url]);
+  }, [currentDecisionPoint, history, lastDecisionPoint, gameState]);
 
   return (
     <div className="fullscreen" style={gameData.colors as React.CSSProperties}>
       <header className="nav-header">
-        <Link className="Button" to={`${url}/settings/`} onClick={handleHideMenu}>
+        <Link className="Button" to={`/settings/`} onClick={handleHideMenu}>
           <FormattedMessage
             id="Menu.settings"
             defaultMessage="SETTINGS"
@@ -215,58 +211,58 @@ const App: React.FC<iProps> = ({ gameId }) => {
 
           <div className="view" role="application">
             <Switch>
-              <Route path={`${path}/credits`}>
+              <Route path={`/credits`}>
                 <Credits />
               </Route>
 
-              <Route path={`${path}/decision`}>
+              <Route path={`/decision`}>
                 <Decision
                   decisionPoint={currentDecisionPoint}
                   onOptionChosen={handleOptionChosen}
                 />
               </Route>
 
-              <Route path={`${path}/feedback`}>
+              <Route path={`/feedback`}>
                 <Feedback decisionPoint={currentDecisionPoint} />
               </Route>
 
-              <Route path={`${path}/instructions`}>
+              <Route path={`/instructions`}>
                 <Instructions
                   minSteps={minSteps}
                   strings={gameData.strings.instructions}
                 />
               </Route>
 
-              <Route path={`${path}/intro`}>
+              <Route path={`/intro`}>
                 <Intro strings={gameData.strings.intro} />
               </Route>
 
-              <Route path={`${path}/objectives`}>
+              <Route path={`/objectives`}>
                 <Objectives strings={gameData.strings.objectives} />
               </Route>
 
-              <Route path={`${path}/chart`}>
+              <Route path={`/chart`}>
                 <Chart image={""} />
               </Route>
 
               {gameData.strings.principles ? (
-                <Route path={`${path}/principles`}>
+                <Route path={`/principles`}>
                   <Principles strings={gameData.strings.principles} />
                 </Route>
               ) : null}
 
-              <Route path={`${path}/settings`}>
+              <Route path={`/settings`}>
                 <Settings 
                   subtitlesEnabled={subtitlesEnabled}
                   onSubtitlesToggled={setSubtitlesEnabled}
                 />
               </Route>
 
-              <Route path={`${path}/resources`}>
+              <Route path={`/resources`}>
                 <Resources />
               </Route>
 
-              <Route path={`${path}/summary`}>
+              <Route path={`/summary`}>
                 <Summary
                   decisionPoints={gameData.decisionpoints}
                   gameProgress={gameState.progress}
@@ -274,15 +270,15 @@ const App: React.FC<iProps> = ({ gameId }) => {
                 />
               </Route>
 
-              <Route path={`${path}/scenario`}>
+              <Route path={`/scenario`}>
                 <Scenario strings={gameData.strings.intro} />
               </Route>
 
-              <Route path={`${path}/transition`}>
+              <Route path={`/transition`}>
                 <Transition decisionPoint={currentDecisionPoint} />
               </Route>
 
-              <Route path={`${path}/video`}>
+              <Route path={`/video`}>
                 <Video
                   decisionPoint={currentDecisionPoint}
                   onVideoFinished={handleVideoFinished}
@@ -293,12 +289,12 @@ const App: React.FC<iProps> = ({ gameId }) => {
                 />
               </Route>
 
-              <Route path={`${path}/lo`}>
+              <Route path={`/lo`}>
                 Something's going on here, I swear
               </Route>
 
               <Route path="/">
-                <Redirect to={`${url}/instructions`} />
+                <Redirect to={`/instructions`} />
               </Route>
             </Switch>
           </div>
