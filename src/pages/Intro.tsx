@@ -11,14 +11,15 @@ interface iProps {
 const Intro: React.FC<iProps> = ({ strings }) => {
   const history = useHistory();
   const { game_id } = useParams<{ game_id: string }>();
-  const label = "Next";
+  const label = "NEXT";
 
   const [currentMessage, setCurrentMessage] = useState(0);
   const intro = strings.introCards;
 
-  const skipToNext = useCallback(() => {
+  const skipToNext = useCallback((evt:React.MouseEvent<HTMLButtonElement>) => {
     if (currentMessage < intro.length - 1) {
       setCurrentMessage((n) => n + 1);
+      evt.currentTarget.blur()
     } else {
       history.push(`/games/${game_id}/video/`);
     }
@@ -28,16 +29,14 @@ const Intro: React.FC<iProps> = ({ strings }) => {
 
   return (
     <div className="container">
-      <div className="panel intro">
+      <div className="intro">
         <div className="main">
           <div className="content">{text}</div>
         </div>
         <footer>
-          <p className="controls">
             <button className="button" onClick={skipToNext}>
               {label}
             </button>
-          </p>
         </footer>
       </div>
     </div>
