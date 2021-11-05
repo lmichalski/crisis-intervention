@@ -16,100 +16,133 @@ const Credits: React.FC<{}> = () => {
         </header>
         <div className="main">
           <div className="content cf">
-            <h2>Funder</h2>
-            <ul>
-              <li>eCampusOntario</li>
+            <div className="credits-content">
+              <h3>Funder</h3>
+              <ul>
+                <li>
+                  eCampusOntario (
+                  <span>
+                    <a
+                      href="https://www.ecampusontario.ca/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      ecampusontario.ca
+                    </a>
+                  </span>
+                  ){" "}
+                </li>
+              </ul>
+
+              <h3>Research Project Manager</h3>
+              <ul>
               <li>
-                <a
-                  href="https://www.ecampusontario.ca/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  ecampusontario.ca
-                </a>
+                <span className="person">Roxanne Ramjattan, PhD, MSW, RSW</span>
               </li>
-            </ul>
+              </ul>
 
-            <h2>Research Project Manager</h2>
-            <ul>
-              <li>Roxanne Ramjattan, PhD, MSW, RSW</li>
-            </ul>
+              <h3>Virtual Gaming Simulation Consultant</h3>
+              <ul>
+              <li>
+                <span className="person">Margaret Verkuyl, NP, PHC, MN</span>
+              </li>
+              <span className="title">
+                Professor <br />
+              </span>
+              <span className="organization">Nursing Centennial College</span>
+              </ul>
 
-            <h2>Virtual Gaming Simulation Consultant</h2>
-            <ul>
-              <li>Margaret Verkuyl, NP, PHC, MN</li>
-              <li>Professor, Nursing Centennial College</li>
-            </ul>
+              <h3>Cast</h3>
+              <ul>
+                <li>Michael Jenkins (Therapist, Marcus)</li>
+                <li>Catherine Ouimet (Client, Kelly)</li>
+                <li>Cintra Ramkissoon (Friend, Talia)</li>
+              </ul>
 
-            <h2>Cast</h2>
-            <ul>
-              <li>Michael Jenkins (Therapist, Marcus)</li>
-              <li>Catherine Ouimet (Client, Kelly)</li>
-              <li>Cintra Ramkissoon (Friend, Talia)</li>
-            </ul>
+              <h3>Film Producer</h3>
+              <ul>
+                <li>Ryan Marley</li>
+              </ul>
 
-            <h2>Film Producer</h2>
-            <ul>
-              <li>Ryan Marley</li>
-            </ul>
+              <h3>Editor</h3>
+              <ul>
+                <li>Guino Anderson</li>
+              </ul>
 
-            <h2>Editor</h2>
-            <ul>
-              <li>Guino Anderson</li>
-            </ul>
+              <h3>Website Designer</h3>
+              <ul>
+                <li>Lucas Michalski</li>
+              </ul>
 
-            <h2>Website Designer</h2>
-            <ul>
-              <li>Lucas Michalski</li>
-            </ul>
+              <h3>Research Assistants</h3>
+              <h4>Winter 2021</h4>
+              <ul>
+                <li>Grace (Jasper) Bakker </li>
+                <li>Jen Humber </li>
+                <li>Ivan Lange </li>
+                <li>Sophia Miller </li>
+                <li>Cintra Ramkissoon </li>
+              </ul>
+              <h4>Summer 2021</h4>
+              <ul>
+                <li>Daniella Antongiovanni </li>
+                <li>Damon Dam </li>
+                <li>Sandrine Bendavid </li>
+                <li>Tiffani Lucas </li>
+                <li>Megan Williams</li>
+              </ul>
+              <h4>Fall 2021</h4>
+              <ul>
+                <li>Daniella Antongiovanni </li>
+                <li>Damon Dam </li>
+                <li>Sandrine Bendavid </li>
+                <li>Tiffani Lucas </li>
+              </ul>
 
-            <h2>Research Assistants</h2>
-            <h3>Winter 2021</h3>
-            <ul>
-              <li>Grace (Jasper) Bakker </li>
-              <li>Jen Humber </li>
-              <li>Ivan Lange </li>
-              <li>Sophia Miller </li>
-              <li>Cintra Ramkissoon </li>
-            </ul>
-            <h3>Summer 2021</h3>
-            <ul>
-              <li>Daniella Antongiovanni </li>
-              <li>Damon Dam </li>
-              <li>Sandrine Bendavid </li>
-              <li>Tiffani Lucas </li>
-              <li>Megan Williams</li>
-            </ul>
-            <h3>Fall 2021</h3>
-            <ul>
-              <li>Daniella Antongiovanni </li>
-              <li>Damon Dam </li>
-              <li>Sandrine Bendavid </li>
-              <li>Tiffani Lucas </li>
-            </ul>
+              <h3>Advisory Committee</h3>
+              <ul>
+                <li>
+                  <span className="person">Maris Karklins</span>
+                </li>
+                <span className="title">
+                  Assistive Technologist, Counselling and Accessibility Services{" "}
+                  <br />
+                </span>
+                <span className="organization">Seneca College</span>
 
-            <h2>Advisory Committee</h2>
-            <div className="advisory-committee">
-              <h4>Maris Karklins</h4>
-              <h5>
-                Assistive Technologist, Counselling and Accessibility Services{" "}
-              </h5>
-              <h6>Seneca College </h6>
+                <li>
+                  <span className="person">Erica Watson, MSW, RSW</span>
+                </li>
+                <span className="title">
+                  Clinical Supervisor & Educational Coordinator <br />
+                </span>
+                <span className="organization">
+                  SickKids Centre | Garry Hurvitz Center for Community Mental
+                  Health
+                </span>
 
-              <h4>Erica Watson, MSW, RSW</h4>
-              <h5>Clinical Supervisor & Educational Coordinator </h5>
-              <h6>
-                SickKids Centre | Garry Hurvitz Center for Community Mental
-                Health{" "}
-              </h6>
+                <li>
+                  <span className="person">Seemab Mushtaq, BA</span>
+                </li>
+                <span className="title">
+                  Crisis Worker <br />
+                </span>
+                <span className="organization">
+                  Distress Centre of Greater Toronto
+                </span>
 
-              <h4>Seemab Mushtaq, BA</h4>
-              <h5>Crisis Worker </h5>
-              <h6>Distress Centre of Greater Toronto </h6>
-
-              <h4>Rebecca Oliveira, RN, BScN, CPMHN</h4>
-              <h5>Nurse Educator </h5>
-              <h6>Center for Addiction and Mental Health </h6>
+                <li>
+                  <span className="person">
+                    Rebecca Oliveira, RN, BScN, CPMHN
+                  </span>
+                </li>
+                <span className="title">
+                  Nurse Educator <br />
+                </span>
+                <span className="organization">
+                  Center for Addiction and Mental Health
+                </span>
+              </ul>
             </div>
           </div>
         </div>

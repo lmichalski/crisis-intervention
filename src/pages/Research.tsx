@@ -1,7 +1,6 @@
 import { FormattedMessage } from "react-intl";
 import "./Research.scss";
 
-
 const Research: React.FC<{}> = () => {
   return (
     <div className="container">
