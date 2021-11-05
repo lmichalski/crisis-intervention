@@ -1,71 +1,72 @@
 /********** MENU **********/
 
+.Menu .panel .main {
+  font-size: 20px;
 
-.container .panel .main {
+  .divider {
+    width: 5px;
+    height: 16px;
+  }
 
-	font-size: 20px;
+  .controls li {
+    line-height: 120%;
+    padding: 16px;
+    border-color: #223c60;
+    border-style: solid;
+    border-width: 2px;
+    color: black;
 
-	.divider{
-		width:5px;
-		height: 16px;
-	}
+    &:hover {
+      color: rgb(255, 255, 255);
+      background-color: #446fa0;
+      transition: all 0.5s ease;
+    }
 
-	.controls li {
-		padding: 5px 0 19px 0px;
-		line-height: 120%;
+    a {
+      background: none;
+      border: none;
+      padding: 0;
+      font-family: arial, sans-serif;
+      color: inherit;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
 
-		a{
-			background: none;
-			border: none;
-			padding: 0;
-			font-family: arial, sans-serif;
-			color: rgb(0, 0, 0);
-			text-decoration: none;
-			cursor: pointer;
+  .game-buttons {
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 8px;
 
-			&:hover{
-				color: rgb(255, 255, 255);
-				text-shadow: 0 0 10px black, 0 0 20px black;
-				color: var(--primary-text-highlight);
-				transform: scale3d(1.05, 1.05, 1.05);
-			}
-		}
-	}
+    button {
+      font-size: 24px;
+      padding-left: 12px;
+      padding-right: 12px;
+      padding: 12px;
+      width: 100%;
+      background-color: rgb(100, 149, 237);
 
-	.game-buttons{
-		padding: 8px;
-		box-sizing: border-box;
-		border-radius: 8px;
+      border-color: rgb(100, 149, 237);
+      border-width: 4px;
+      border-style: solid;
 
-		button {
-			font-size: 24px;
-			padding-left: 12px;
-			padding-right: 12px;
-			padding: 12px;
-			width: 100%;
-			background-color: rgb(100, 149, 237);
+      box-sizing: border-box;
+      cursor: pointer;
+      border-radius: 12%/50%;
 
-			border-color: rgb(100, 149, 237);
-			border-width: 4px;
-			border-style: solid;
-			
-			box-sizing: border-box;
-			cursor: pointer;
-			border-radius: 12%/50%;
+      // &.disabled,
+      // &.disabled:hover {
+      // 	color: rgb(46, 57, 71);
+      // 	cursor: default;
+      // 	text-shadow: none;
+      // 	box-shadow: none;
+      // 	background-color: gray;
+      // }
 
-			// &.disabled, 
-			// &.disabled:hover {
-			// 	color: rgb(46, 57, 71);
-			// 	cursor: default;
-			// 	text-shadow: none;
-			// 	box-shadow: none;
-			// 	background-color: gray;
-			// }
-
-			&:hover {
-				color: rgb(18, 39, 77);
-				background-color: rgb(205, 220, 243);
-			}
-		}
-	}
+      &:hover {
+        color: rgb(18, 39, 77);
+        background-color: rgb(205, 220, 243);
+      }
+    }
+  }
 }

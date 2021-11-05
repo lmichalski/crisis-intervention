@@ -1,38 +1,78 @@
 {
-  "Main.title": {
-    "defaultMessage": "Emergency Room Care",
-    "description": "Menu page title"
+  "Credits.title": {
+    "defaultMessage": "Credits",
+    "description": "credits title"
+  },
+  "Feedback.title": {
+    "defaultMessage": "Feedback",
+    "description": "feedback title"
+  },
+  "General.resume": {
+    "defaultMessage": "Resume Game",
+    "description": "resume game button"
+  },
+  "Home.crisisIntervention": {
+    "defaultMessage": "Crisis Intervention",
+    "description": "Crisis intervention game name"
+  },
+  "Home.emergency": {
+    "defaultMessage": "Emergency Room",
+    "description": "Name for emergency game"
+  },
+  "Home.title": {
+    "defaultMessage": "Crisis Intervention",
+    "description": "Title for homepage"
+  },
+  "Materials.title": {
+    "defaultMessage": "Materials",
+    "description": "Materials title"
+  },
+  "Menu.chart": {
+    "defaultMessage": "5. Client Chart",
+    "description": "Client chart button"
   },
   "Menu.credits": {
-    "defaultMessage": "Credits",
+    "defaultMessage": "6. Credits",
     "description": "Credits Button"
   },
-  "Menu.exit": {
-    "defaultMessage": "Exit Game",
-    "description": "Exit Game Button"
-  },
-  "Menu.gameOptions": {
-    "defaultMessage": "Game Options",
-    "description": "Options Button"
-  },
   "Menu.instructions": {
-    "defaultMessage": "How to Play",
+    "defaultMessage": "1. How to Play",
     "description": "How to Play Button"
   },
-  "Menu.newGame": {
-    "defaultMessage": "New Game",
-    "description": "New Game Button"
-  },
   "Menu.objectives": {
-    "defaultMessage": "Learning Objectives",
+    "defaultMessage": "3. Learning Objectives",
     "description": "Objectives Button"
   },
-  "Menu.resumeGame": {
-    "defaultMessage": "Resume Game",
-    "description": "Resume Game Button"
+  "Menu.principles": {
+    "defaultMessage": "4. Essential Principles",
+    "description": "Principles Button"
+  },
+  "Menu.scenario": {
+    "defaultMessage": "2. Scenario",
+    "description": "Scenario Button"
   },
   "Objectives.title": {
     "defaultMessage": "Learning Objectives",
     "description": "Learning Objectives title"
+  },
+  "Principles.title": {
+    "defaultMessage": "Essential Principles",
+    "description": "Principles title"
+  },
+  "Scenario.title": {
+    "defaultMessage": "Background and Scenario",
+    "description": "Scenario title"
+  },
+  "Summary.title": {
+    "defaultMessage": "Congratulations!",
+    "description": "Summary title"
+  },
+  "Transition.title": {
+    "defaultMessage": "Game Paused",
+    "description": "game paused transition title"
+  },
+  "materials.link": {
+    "defaultMessage": "Practice Materials",
+    "description": "Link to Practice Materials"
   }
 }

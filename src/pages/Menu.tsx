@@ -24,42 +24,16 @@ const Menu: React.FC<iProps> = ({
   const { game_id } = useParams<{ game_id: string }>();
 
   return (
-    <div className="container">
+    <div className="Menu container">
       <div className="panel menu">
         <div className="main">
           <div className="content">
-            <ul className="game-buttons">
-              <li>
-                <button className="Link" onClick={startNewGame}>
-                  <FormattedMessage
-                    id="Menu.newGame"
-                    defaultMessage="New Game"
-                    description="New Game Button"
-                  />
-                </button>
-              </li>
-
-              <div className="divider"></div>
-
-              <li>
-                <button
-                  className={`Link ${gamesaved ? "active" : "disabled"}`}
-                  onClick={resumeGame}
-                >
-                  <FormattedMessage
-                    id="Menu.resumeGame"
-                    defaultMessage="Resume Game"
-                    description="Resume Game Button"
-                  />
-                </button>
-              </li>
-            </ul>
             <ul className="controls">
               <li>
                 <Link to={`/games/${game_id}/instructions/`}>
                   <FormattedMessage
                     id="Menu.instructions"
-                    defaultMessage="How to Play"
+                    defaultMessage="1. How to Play"
                     description="How to Play Button"
                   />
                 </Link>
@@ -68,7 +42,7 @@ const Menu: React.FC<iProps> = ({
                 <Link to={`/games/${game_id}/scenario/`}>
                   <FormattedMessage
                     id="Menu.scenario"
-                    defaultMessage="Scenario"
+                    defaultMessage="2. Scenario"
                     description="Scenario Button"
                   />
                 </Link>
@@ -77,7 +51,7 @@ const Menu: React.FC<iProps> = ({
                 <Link to={`/games/${game_id}/objectives/`}>
                   <FormattedMessage
                     id="Menu.objectives"
-                    defaultMessage="Learning Objectives"
+                    defaultMessage="3. Learning Objectives"
                     description="Objectives Button"
                   />
                 </Link>
@@ -87,7 +61,7 @@ const Menu: React.FC<iProps> = ({
                   <Link to={`/games/${game_id}/principles/`}>
                     <FormattedMessage
                       id="Menu.principles"
-                      defaultMessage="Essential Principles"
+                      defaultMessage="4. Essential Principles"
                       description="Principles Button"
                     />
                   </Link>
@@ -97,7 +71,7 @@ const Menu: React.FC<iProps> = ({
                 <Link to={`/games/${game_id}/chart/`}>
                   <FormattedMessage
                     id="Menu.chart"
-                    defaultMessage="Client Chart"
+                    defaultMessage="5. Client Chart"
                     description="Client chart button"
                   />
                 </Link>
@@ -115,17 +89,8 @@ const Menu: React.FC<iProps> = ({
                 <Link to={`/games/${game_id}/credits/`}>
                   <FormattedMessage
                     id="Menu.credits"
-                    defaultMessage="Credits"
+                    defaultMessage="6. Credits"
                     description="Credits Button"
-                  />
-                </Link>
-              </li>
-              <li>
-                <Link to={`/games/${game_id}./`}>
-                  <FormattedMessage
-                    id="Menu.exit"
-                    defaultMessage="Exit Game"
-                    description="Exit Game Button"
                   />
                 </Link>
               </li>

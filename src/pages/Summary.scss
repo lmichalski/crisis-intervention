@@ -1,43 +1,43 @@
 /********** GAME SUMMARY **********/
 
 .main.summary {
-	height: 600px;
-	overflow-y: auto;
+  height: 600px;
+  overflow-y: auto;
 }
 .summary .score {
-	color: #fff;
+  color: #fff;
 }
 .summary a {
-	color: #fff;
+  color: #fff;
 }
 .summary li {
-	margin: 0 auto;
-	margin-left: 60px;
-	padding: 10px 0;
+  margin: 0 auto;
+  margin-left: 60px;
+  padding: 10px 0;
 }
 .summary .responses {
-	/*display: none;*/
-	overflow-y: auto;
-	min-height: 300px;
-	margin-top: 0;
-	padding: 10px;
-	background-color: #fff;
+  /*display: none;*/
+  overflow-y: auto;
+  min-height: 300px;
+  margin-top: 0;
+  padding: 10px;
+  background-color: #fff;
 }
 .summary .responses.expanded {
-	display: block;
+  display: block;
 }
 .summary h2 {
-	margin-top: 40px;
+  margin-top: 40px;
 }
 .summary .correct {
-	color: #393;
+  color: #393;
 }
 .summary .wrong {
-	color: red;
+  color: red;
 }
 .summary a {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 .links {
-	margin: 40px 0;
+  margin: 40px 0;
 }

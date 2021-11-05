@@ -29,6 +29,7 @@ import Scenario from "./pages/Scenario";
 import useLogGameEvent from "./hooks/useLogGameEvent";
 import { getBrowser } from "./util";
 import useGameState from "./hooks/useGameState";
+import Intro from "./pages/Intro";
 
 interface iProps {
   gameId: string;
@@ -48,10 +49,11 @@ const App: React.FC<iProps> = ({ gameId }) => {
   ).length;
 
   const [navMenuExpanded, setNavMenuExpanded] = useState(true);
-  const handleMenuToggleButtonClick = useCallback(
-    () => setNavMenuExpanded((expanded) => !expanded),
-    []
-  );
+  const handleMenuToggleButtonClick = useCallback(() => {
+    setNavMenuExpanded(true);
+
+    history.push(`${url}/instructions/`);
+  }, [history, url]);
 
   const lastDecisionPoint =
     gameData.decisionpoints[gameData.decisionpoints.length - 1].id ===
@@ -147,38 +149,46 @@ const App: React.FC<iProps> = ({ gameId }) => {
   return (
     <div className="fullscreen" style={gameData.colors as React.CSSProperties}>
       <header className="nav-header">
-        <button className="icon-menu" onClick={handleMenuToggleButtonClick}>
-          <i className="icomoon icon-menu-2"></i>
-        </button>
+        <button className="settings-button">SETTINGS</button>
         <h1>{gameData.strings.menu.title}</h1>
+
+        <button className="menu-button" onClick={handleMenuToggleButtonClick}>
+          HOME
+        </button>
+        <button className="Link">GAME</button>
       </header>
 
       <div className="content">
-        <div className={`banner ${
-              navMenuExpanded ? "banner--expanded" : "banner--collapsed"
-            }`}>
+        <div
+          className={`banner ${
+            navMenuExpanded ? "banner--expanded" : "banner--collapsed"
+          }`}
+        >
           <img
-            src="/images/hands-clasping.jpg"
-            alt="interracial hands reaching for each other"
+            src="/images/hands-reaching.png"
+            alt="a black and a white hand reaching for each other"
           ></img>
         </div>
 
         <div className="body">
-          <nav
-            className={`nav-menu ${
-              navMenuExpanded ? "nav-menu--expanded" : "nav-menu--collapsed"
-            }`}
-          >
-            <Menu
-              strings={gameData.strings.menu}
-              startNewGame={handleStartNewGame}
-              resumeGame={handleResumeGame}
-              gamesaved={gameState.gamesaved}
-              pagesToShow={{
-                principles: !!gameData.strings.principles,
-              }}
-            />
-          </nav>
+          <div className="nav-content">
+            <div className="nav-menu-title">Module Content</div>
+            <nav
+              className={`nav-menu ${
+                navMenuExpanded ? "nav-menu--expanded" : "nav-menu--collapsed"
+              }`}
+            >
+              <Menu
+                strings={gameData.strings.menu}
+                startNewGame={handleStartNewGame}
+                resumeGame={handleResumeGame}
+                gamesaved={gameState.gamesaved}
+                pagesToShow={{
+                  principles: !!gameData.strings.principles,
+                }}
+              />
+            </nav>
+          </div>
 
           <div className="view" role="application">
             <Switch>
@@ -202,6 +212,10 @@ const App: React.FC<iProps> = ({ gameId }) => {
                   minSteps={minSteps}
                   strings={gameData.strings.instructions}
                 />
+              </Route>
+
+              <Route path={`${path}/intro`}>
+                <Intro strings={gameData.strings.intro} />
               </Route>
 
               <Route path={`${path}/objectives`}>
@@ -248,7 +262,7 @@ const App: React.FC<iProps> = ({ gameId }) => {
               </Route>
 
               <Route path={`${path}/lo`}>
-                Somethings going on here, I swear
+                Something's going on here, I swear
               </Route>
 
               <Route path="/">

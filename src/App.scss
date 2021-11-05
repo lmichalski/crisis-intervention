@@ -1,194 +1,191 @@
 @charset 'utf-8';
-@use 'css/icomoon.css';
+@use "css/icomoon.css";
 
 @import url(//fonts.googleapis.com/css?family=Roboto+Condensed:400,700);
 
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  /*optional*/
+  font-family: arial, sans-serif;
+  /*input has OS specific font-family*/
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  cursor: pointer;
 
-button{
-	background: none;
-	border: none;
-	padding: 0;
-	/*optional*/
-	font-family: arial, sans-serif;
-	/*input has OS specific font-family*/
-	color: rgb(255, 255, 255);
-	text-decoration: none;
-	cursor: pointer;
-
-	font-size: 20px;
-	padding: 8px;
-	border-radius: 8px;
-	background-color: cornflowerblue;
-
-	&:hover{
-		color: cornflowerblue;
-		background-color: white;
-	}
+  font-size: 20px;
+  padding: 8px;
+  border-radius: 8px;
+  background-color: cornflowerblue;
 }
 
 .fullscreen {
-	height: 100vh;
-	display: flex;
-	flex-direction: column;
-	background-color: rgb(255, 255, 255);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
 
-	.nav-header {
-		display: flex;
-		flex: row;
+  .nav-header {
+    display: flex;
+    flex: row;
 
-		padding: 16px;
-		// background-color: rgb(255, 200, 50);
-		// border-bottom: black 2px solid;
-		// box-shadow: 0px 5px 5px black;
-		z-index: 1000;
+    color: white;
+    padding: 16px;
+    background-color: #446fa0;
+    // border-bottom: black 2px solid;
+    // box-shadow: 0px 5px 5px black;
+    z-index: 1000;
 
-		h1 {
-		margin: auto;
-		}
+    h1 {
+      margin: auto;
+    }
 
-		button{
-			color: black;
-			font-size: 36px;
-			background-color: transparent;
+    button {
+      font-size: 24px;
+      background-color: transparent;
 
-			&:hover{
-				color: white;
-				background-color: cornflowerblue;
-			}
-		}
-	}
-	.content{
-		display: flex;
-		flex-direction: column;
+      &:hover {
+        background-color: cornflowerblue;
+      }
+    }
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
 
-		.banner{
-			background-color: #394458;
-			transition: max-height 0.2s;
+    .banner {
+      background-color: #d6dde0;
+      transition: max-height 0.2s;
 
-			img {
-				height: 50vh;
-			}
+      img {
+        height: 50vh;
+      }
 
-			&--collapsed {
-				max-width: 0;
-				padding-left: 0;
-				padding-right: 0;
+      &--collapsed {
+        max-width: 0;
+        padding-left: 0;
+        padding-right: 0;
 
-				img {
-					display: none;
-				}
-			}
-		}
+        img {
+          display: none;
+        }
+      }
+    }
 
-		.body {
-			display: flex;
-			flex-direction: row;
-			flex-grow: 1;
+    .body {
+      display: flex;
+      flex-direction: row;
+      flex-grow: 1;
+      background-color: #223c60;
+      padding-top: 32px;
 
-			.container{
-				font-size: 20px;
-				margin: 32px;
-			}
-		
-			.nav-menu {
-				height: 100%;
-				box-sizing: border-box;
-				max-width: 100%;
+      .container {
+        font-size: 20px;
+        // margin: 32px;
+      }
 
-				font-weight: 300;
-				font-size: 20px;
-				padding: 0;
+      .nav-content {
+        order: 2;
 
-				transition: max-width 0.2s;
-				background-color: rgb(197, 202, 233);
-				padding-top: 0;
-				padding: 0 32px;
-				overflow: hidden;
+        .nav-menu-title {
+          font-size: 32px;
+          color: white;
+        }
+      }
 
-				order: 2;
+      .nav-menu {
+        box-sizing: border-box;
+        max-width: 100%;
 
-				.content{
-					padding-top: 16px;
-				}
+        font-weight: 300;
+        font-size: 24px;
+        padding: 0;
 
-				.container {
-					width: max-content;
-					overflow: visible;
-					margin: auto;
-				}
-				
-				ul {
-					list-style: none;
-					padding: 0;
-					
-					.controls{
-						margin: 4px;
-						background-color: white;
-						border-color: black;
-						border-radius: 4px;
-						border-width: 2px;
-						border-style: solid;
-					}
-				}
-		
-				&--collapsed {
-					max-width: 0;
-					padding-left: 0;
-					padding-right: 0;
-				}
-			}
-		
-			.view {
-				display: block;
-				flex-basis: 0;
-				flex-grow: 1;
-				width: 0;
-				background-color: rgb(57, 68, 88);
+        transition: max-width 0.2s;
+        background-color: rgb(197, 202, 233);
+        padding-top: 0;
+        margin-right: 10vw;
+        overflow: hidden;
 
-				order: 1;
+        .container {
+          width: max-content;
+          overflow: visible;
+          margin: auto;
+        }
 
-				h2 {
-					color: white;
-					margin: 0;
-				}
+        ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
 
-				.panel {
-					display: flex;
-					flex-flow: column nowrap;
-					align-items: flex-start;
+          .controls {
+            margin: 4px;
+            background-color: white;
+            border-color: black;
+            border-radius: 4px;
+            border-width: 2px;
+            border-style: solid;
+          }
+        }
 
-					color: white;
+        &--collapsed {
+          max-width: 0;
+          padding-left: 0;
+          padding-right: 0;
+        }
+      }
 
-					// width: 450px;
-					max-width: 95%;
-					max-height: 95%;
-					padding: 30px 40px;
-					box-sizing: border-box;
-					background-color: var(--theme-primary);
-					border-radius: 16px;
-				}
+      .view {
+        display: block;
+        flex-basis: 0;
+        flex-grow: 1;
+        width: 0;
 
-				.container{
-					// padding: 16px;
-					// background-color: rgb(100, 100, 100);
-					// border-radius: 16px;
-					// border-color: black;
-					// border-style: solid;
-					// border-width: 2px;
+        order: 1;
 
-					.content ul {
-						padding-left: 20px;
+        h2 {
+          color: white;
+          margin: 0;
+        }
 
-						li {
-							margin-bottom: 8px;
-						}
-					}
-				}
+        .panel {
+          display: flex;
+          flex-flow: column nowrap;
+          align-items: flex-start;
 
-				ul  {
-					padding: 0;
-				}
-			}
-		}
-}}
+          color: white;
 
+          // width: 450px;
+          max-width: 95%;
+          max-height: 95%;
+          padding: 0px 40px;
+          box-sizing: border-box;
+          border-radius: 16px;
+          margin-left: 10vw;
+        }
+
+        .container {
+          // padding: 16px;
+          // background-color: rgb(100, 100, 100);
+          // border-radius: 16px;
+          // border-color: black;
+          // border-style: solid;
+          // border-width: 2px;
+
+          .content ul {
+            padding-left: 20px;
+
+            li {
+              margin-bottom: 8px;
+            }
+          }
+        }
+
+        ul {
+          padding: 0;
+        }
+      }
+    }
+  }
+}

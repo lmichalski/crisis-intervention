@@ -1,83 +1,84 @@
 /********** DECISION POINT **********/
 
-.progress { 
-	position: relative; 
-	display: inline-block;
-	box-sizing: border-box; 
-	width: 300px; 
-	height: 16px; 
-	padding: 1px;
-	background-color: var(--theme-dark);
-	background-color: rgba(0, 0, 0, .5);
-	border-radius: 8px;
+.progress {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 300px;
+  height: 16px;
+  padding: 1px;
+  background-color: var(--theme-dark);
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
 }
-.progress .bar { 
-	position: relative; 
-	width: 14px; 
-	height: 14px;
-	min-width: 14px;
-	background-color: #fff; 
-	border-radius: 8px;
+.progress .bar {
+  position: relative;
+  width: 14px;
+  height: 14px;
+  min-width: 14px;
+  background-color: #fff;
+  border-radius: 8px;
 }
 .question {
-	// // position: absolute;
-	// top: 5%;
-	// left: 0;
-	// right: 0;
-	// height: 50%;
-	// margin: 0 5%;
-	font-size: 1.4em;
-	text-align: center;
-	color:  var(--primary-text-highlight);
-	padding: 72px;
+  // // position: absolute;
+  // top: 5%;
+  // left: 0;
+  // right: 0;
+  // height: 50%;
+  // margin: 0 5%;
+  font-size: 1.4em;
+  text-align: center;
+  color: var(--primary-text-highlight);
+  padding: 72px;
 }
 .question .vertical_outer {
-	vertical-align: bottom;
+  vertical-align: bottom;
 }
 .question .vertical_inner {
-	vertical-align: middle;
+  vertical-align: middle;
 }
 .option_box {
-	// position: absolute;
-	// left: 0;
-	// right: 0;
-	// bottom: 5%;
-	min-height: 30%;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	text-align: center;
+  // position: absolute;
+  // left: 0;
+  // right: 0;
+  // bottom: 5%;
+  min-height: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
 }
 .option {
-	display: block;
-	width: 30%;
-	max-width: 500px;
-	height: 160px;
-	padding: .4em;
-	box-sizing: border-box;
-	font-size: 1em;
-	overflow-wrap: break-word;
+  display: block;
+  width: 30%;
+  max-width: 500px;
+  height: 160px;
+  padding: 0.4em;
+  box-sizing: border-box;
+  font-size: 1em;
+  overflow-wrap: break-word;
 }
 .option button {
-	display: block;
-	font: inherit;
-	text-align: inherit;
-	border: none;
-	box-sizing: border-box;
-	width: 100%;
-	height: 100%;
-	margin: 0;
-	padding: 20px;
-	border-radius: 13px;
-	background-color: #000;
-	background-color: var(--option-background);
-	color: var(--primary-text-highlight);
-	cursor: pointer;
-	transition: all .1s linear;
+  display: block;
+  font: inherit;
+  text-align: inherit;
+  border: none;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 20px;
+  border-radius: 13px;
+  background-color: #000;
+  background-color: var(--option-background);
+  color: var(--primary-text-highlight);
+  cursor: pointer;
+  transition: all 0.1s linear;
 }
 .option button:hover {
-	color: black;
-	background-color: var(--primary-text-color);
-	box-shadow: 0 0 10px var(--option-background), 0 0 20px var(--option-background);
-	transform: scale3d(1.05, 1.05, 1.05);
+  color: black;
+  background-color: var(--primary-text-color);
+  box-shadow: 0 0 10px var(--option-background),
+    0 0 20px var(--option-background);
+  transform: scale3d(1.05, 1.05, 1.05);
 }
