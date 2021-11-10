@@ -1,5 +1,6 @@
 import { useCallback, useState } from "react";
 import Modal from "react-modal";
+import ChartContent from "../components/ChartContent";
 import Polaroid from "../components/Polaroid";
 
 import "./Chart.scss";
@@ -53,6 +54,7 @@ const Chart: React.FC<iProps> = ({ image }) => {
             alt="Client's Chart with some background information for this visit"
           />
           <Polaroid></Polaroid>
+          <ChartContent></ChartContent>
         </div>
       </div>
     </>

@@ -1,0 +1,79 @@
+.body .Chart .ChartContent {
+  display: flex;
+  flex-direction: column;
+  color: black;
+  background-color: white;
+
+  padding-top: 32px;
+
+  h2 {
+    color: black !important;
+    font-weight: 500;
+    font-size: 28px;
+    margin: 0 0 0 0;
+  }
+  h3 {
+    color: black !important;
+    font-weight: 500;
+    font-size: 24px;
+    margin: 16px;
+  }
+
+  hr {
+    border-top: 1px solid gray;
+    width: 90%;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
+  .Chart-title{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .Chart-basic-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .Chart-address{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+  }
+
+  .Chart-client-profile{
+    margin: 0 32px;
+
+      .Chart-profile-columns{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+      }
+  }
+
+  .Chart-presenting-problems{
+      margin: 0 32px;
+  }
+
+  .Chart-languages{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .Chart-key-info{
+      margin: 0 32px;
+      
+      ul{
+        padding: 0 28px;
+        margin: 0;
+      }
+  }
+
+  .Chart-footer{
+      margin: 0 32px;
+  }
+}
