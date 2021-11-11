@@ -47,14 +47,14 @@ const Chart: React.FC<iProps> = ({ image }) => {
           <header>
             <h2>Client Chart</h2>
           </header>
-          <img
-            className="chart"
-            onClick={openModal}
-            src="/images/chart_image.png"
-            alt="Client's Chart with some background information for this visit"
-          />
-          <Polaroid></Polaroid>
-          <ChartContent></ChartContent>
+          <div className="Chart-folder">
+            <div className="Chart-folder-left">
+              <Polaroid></Polaroid>
+            </div>
+            <div className="Chart-folder-right">
+              <ChartContent></ChartContent>
+            </div>
+          </div>
         </div>
       </div>
     </>

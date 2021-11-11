@@ -6,8 +6,8 @@ const Polaroid: React.FC = () => {
       <img
         src="/images/patient-photo-cropped.jpg"
         alt="Caucasian patient sitting and looking at the camera"
-        width="284"
-        height="213"
+        width="200"
+        height="150"
       ></img>
       <p className="caption">Client: Kelly FLynn</p>
     </div>
