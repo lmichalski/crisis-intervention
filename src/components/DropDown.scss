@@ -34,8 +34,7 @@
     }
   }
 
-  &:hover &__content,
-  &:focus-within &__content {
+  &--expanded &__content {
     display: flex;
     flex-direction: column;
     align-items: flex-end;

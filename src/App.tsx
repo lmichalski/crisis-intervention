@@ -1,4 +1,4 @@
-import React, { useCallback, useMemo, useState } from "react";
+import React, { useCallback, useMemo, useRef, useState } from "react";
 
 import { Switch, Link, Route, useHistory, Redirect } from "react-router-dom";
 import { FormattedMessage, useIntl } from "react-intl";
@@ -28,6 +28,7 @@ import Intro from "./pages/Intro";
 import DropDown from "./components/DropDown";
 import Research from "./pages/Research";
 import Readings from "./pages/Readings";
+import MenuItems from "./components/MenuItems";
 
 interface iProps {}
 
@@ -177,6 +178,13 @@ const App: React.FC<iProps> = () => {
           <button onClick={handleStartNewGame}>New Game</button>
           <button onClick={handleResumeGame}>Resume</button>
         </DropDown>
+        <DropDown className="nav-header__content-dropdown" label="Content">
+        <MenuItems
+          pagesToShow={{
+            principles: !!gameData.strings.principles,
+          }} 
+        />
+          </DropDown>
       </header>
 
       <div className="content">
@@ -202,10 +210,6 @@ const App: React.FC<iProps> = () => {
             <div className="nav-menu-title">Module Content</div>
             <nav className="nav-menu">
               <Menu
-                strings={gameData.strings.menu}
-                startNewGame={handleStartNewGame}
-                resumeGame={handleResumeGame}
-                gamesaved={gameState.gamesaved}
                 pagesToShow={{
                   principles: !!gameData.strings.principles,
                 }}

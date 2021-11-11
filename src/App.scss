@@ -32,6 +32,60 @@ button,
     display: flex;
     flex-direction: row;
 
+    @media only screen and (max-width: 700px) {
+      flex-direction: column;
+      h1 {
+        order: -1;
+      }
+      > * {
+        text-align: center;
+        > * {
+          margin: 0 auto;
+        }
+      }
+        .nav-header__content-dropdown{
+          display: block;
+          ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+          }
+
+          li {
+            line-height: 120%;
+            border-color: #223c60;
+            border-style: solid;
+            color: black;
+        
+            &:hover,
+            &:focus-within {
+              color: rgb(255, 255, 255);
+              background-color: #446fa0;
+              transition: all 0.5s ease;
+            }
+          }
+
+          .Menu__link {
+            display: block;
+            border: none;
+            font-family: arial, sans-serif;
+            color: inherit;
+            text-decoration: none;
+            text-decoration-line: none;
+            text-decoration-thickness: initial;
+            text-decoration-style: initial;
+            text-decoration-color: initial;
+            cursor: pointer;
+            padding: 16px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        }
+      
+
+    }
+
     color: white;
     background-color: #446fa0;
     // border-bottom: black 2px solid;
@@ -56,12 +110,16 @@ button,
       }
     }
   }
+
   .content {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
     .banner {
       background-color: #d6dde0;
+      @media only screen and (max-width: 700px) {
+        display: none;
+      }
 
       img {
         height: 50vh;
@@ -84,6 +142,22 @@ button,
       flex-grow: 1;
       background-color: #223c60;
       padding-top: 32px;
+
+      @media only screen and (max-width: 700px) {
+        flex-direction: column;
+        > div {
+          width: 100%;
+        }
+
+        div.nav-content { 
+          display: none;
+        }
+
+        div.view { 
+          order: 2; 
+        }
+
+      }
 
       .container {
         font-size: 20px;
@@ -118,6 +192,12 @@ button,
         padding-top: 0;
         margin-right: 10vw;
         overflow: hidden;
+        
+        &__content-dropdown{
+          display: none;
+        }
+
+
 
         .container {
           width: max-content;
@@ -154,6 +234,14 @@ button,
           margin: 0;
         }
 
+        @media only screen and (max-width: 700px) {
+          width: 100%;;
+          .panel{
+          padding: 16px;
+          margin: 0;
+          }
+        }
+
         .panel {
           display: flex;
           flex-flow: column nowrap;
@@ -168,6 +256,8 @@ button,
           box-sizing: border-box;
           border-radius: 16px;
           margin-left: 10vw;
+
+          
         }
 
         .container {
