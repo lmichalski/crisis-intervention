@@ -114,14 +114,35 @@ button,
     flex-direction: column;
     flex-grow: 1;
     .banner {
+      display: flex;
+      flex-direction: row;
       background-color: #d6dde0;
       @media only screen and (max-width: 700px) {
         display: none;
       }
 
-      img {
-        height: 50vh;
+      .quote {
+        color: rgba(16, 33, 51, 0.8);
+        font-size: 32px;
+        font-weight: 400;
+        margin: 8% 0;
+        padding: 0 32px;
+
+        p {
+          padding: 0;
+          margin: 0;
+        }
+
+        span{
+          font-size: 28px;
+          font-style: italic;
+          font-weight: 200;
+        }
       }
+
+      // img {
+      //   height: 50vh;
+      // }
 
       &--collapsed {
         max-width: 0;
@@ -223,6 +244,10 @@ button,
 
         order: 1;
 
+        .feedback {
+          margin: 4vw;
+        }
+
         h2 {
           color: white;
           margin: 0;
@@ -248,8 +273,10 @@ button,
           max-height: 95%;
           padding: 0px 40px;
           box-sizing: border-box;
+          background-color: rgba(16, 33, 51, 0.8);
           border-radius: 16px;
-          margin: auto;
+          padding: 2vw;
+          margin: 16px auto;
         }
 
         .container {

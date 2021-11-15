@@ -194,8 +194,24 @@ const App: React.FC<iProps> = () => {
           }`}
         >
           <img
-            src="/images/hands-reaching.png"
-            alt="a black and a white hand reaching for each other"
+            src="/images/hand-left.png"
+            alt="person's hand with white skin reaching toward the centre of the screen"
+            width="360px"
+            height="480px"
+          ></img>
+          <div className="quote">
+            {" "}
+            <p>
+              Hope is being able to see that there is light despite all the
+              darkness.
+            </p>{" "}
+            <span className="quoted-person">Desmond Tutu</span>
+          </div>
+          <img
+            src="/images/hand-right.png"
+            alt="person's hand with black skin reaching toward the centre of the screen"
+            width="360px"
+            height="480px"
           ></img>
         </div>
 
