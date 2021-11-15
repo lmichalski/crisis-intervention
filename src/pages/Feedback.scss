@@ -2,6 +2,21 @@
 
 .feedback {
   width: 700px;
+
+  .button {
+    border-radius: 8px;
+    padding: 16px;
+    font-size: 24px;
+    background-color: #446fa0;
+
+    &:hover {
+      background-color: cornflowerblue;
+      transition: all 0.3s ease;
+      color: var(--primary-text-highlight);
+      text-shadow: 0 0 10px white;
+      box-shadow: 0 0 10px black;
+    }
+  }
 }
 .feedback .main {
   text-transform: none;
