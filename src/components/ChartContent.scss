@@ -9,13 +9,13 @@
   h2 {
     color: black !important;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 24px;
     margin: 0 0 0 0;
   }
   h3 {
     color: black !important;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 20px;
     margin: 16px;
   }
 
@@ -27,7 +27,7 @@
   }
 
   div {
-    font-size: 14px;
+    font-size: 18px;
   }
 
   .Chart-title {
@@ -39,13 +39,15 @@
   .Chart-basic-info {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0 32px
   }
 
   .Chart-address {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0 32px;
   }
 
   .Chart-client-profile {
@@ -54,7 +56,8 @@
     .Chart-profile-columns {
       display: flex;
       flex-direction: row;
-      justify-content: space-around;
+      justify-content: space-between;
+      padding: 0 16px;
     }
   }
 
@@ -78,6 +81,6 @@
   }
 
   .Chart-footer {
-    margin: 0 5%;
+    margin: 0 5% 2% 5%;
   }
 }

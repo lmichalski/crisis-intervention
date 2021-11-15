@@ -1,5 +1,7 @@
-import { useCallback, useState } from "react";
-import Modal from "react-modal";
+// import { useCallback, useState } from "react";
+// import Modal from "react-modal";
+import { useCallback } from "react";
+import { useHistory } from "react-router";
 import ChartContent from "../components/ChartContent";
 import Polaroid from "../components/Polaroid";
 
@@ -9,24 +11,35 @@ interface iProps {
   image: string;
 }
 
-const customStyles = {
-  overlay: { zIndex: 1000 },
-};
+// const customStyles = {
+//   overlay: { zIndex: 1000 },
+// };
 
 const Chart: React.FC<iProps> = ({ image }) => {
-  const [modalIsOpen, setIsOpen] = useState(false);
+  // const [modalIsOpen, setIsOpen] = useState(false);
 
-  const closeModal = useCallback(() => {
-    setIsOpen(false);
-  }, []);
+  // const closeModal = useCallback(() => {
+  //   setIsOpen(false);
+  // }, []);
 
-  const openModal = useCallback(() => {
-    setIsOpen(true);
-  }, []);
+  // const openModal = useCallback(() => {
+  //   setIsOpen(true);
+  // }, []);
+
+  const history = useHistory();
+
+  const handleClickNext = useCallback(
+    (evt: React.MouseEvent<HTMLButtonElement>) => {
+      evt.currentTarget.blur();
+
+      history.push(`/intro/`);
+    },
+    [history]
+  );
 
   return (
     <>
-      <Modal
+      {/* <Modal
         className="ChartModal"
         isOpen={modalIsOpen}
         //onAfterOpen={afterOpenModal}
@@ -41,7 +54,7 @@ const Chart: React.FC<iProps> = ({ image }) => {
           alt="Client's Chart with some background information for this visit"
         />
         <button onClick={closeModal}>CLOSE</button>
-      </Modal>
+      </Modal> */}
       <div className="Chart container">
         <div className="Chart__panel panel info">
           <header>
@@ -56,9 +69,15 @@ const Chart: React.FC<iProps> = ({ image }) => {
             </div>
           </div>
         </div>
+        <button className="next-button" onClick={handleClickNext}>Next</button>
       </div>
     </>
   );
 };
 
 export default Chart;
+
+// function logGameEvent(arg0: string, arg1: string, arg2: string, arg3: any, arg4: string) {
+//   throw new Error("Function not implemented.");
+// }
+

@@ -21,10 +21,8 @@ const Instructions: React.FC<iProps> = ({ minSteps, strings }) => {
           </div>
         </header>
 
-        <div>
-          <h2>How to Play</h2>
-        </div>
         <div className="main">
+          <h2>How to Play</h2>
           <div className="content cf">
             <ul>
               <li>

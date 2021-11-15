@@ -6,7 +6,7 @@ interface iProps {
   pagesToShow: {
     principles: boolean;
   };
-  onItemClicked?: () => void
+  onItemClicked?: () => void;
 }
 
 const MenuItems: React.FC<iProps> = ({
@@ -14,7 +14,6 @@ const MenuItems: React.FC<iProps> = ({
   onItemClicked,
   pagesToShow: { principles: showPrinciples },
 }) => {
-
   return (
     <ul className="controls">
       <li>

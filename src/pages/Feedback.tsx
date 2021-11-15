@@ -25,15 +25,15 @@ const Feedback: React.FC<iProps> = ({ decisionPoint: dp }) => {
   return (
     <div className="container">
       <div className="panel feedback" role="alert">
-        <header>
+        <div>
           <FormattedMessage
             id="Feedback.title"
             defaultMessage="Feedback"
             description="feedback title"
             tagName="h2"
           />
-        </header>
-        <div className="main">{dp?.feedback}</div>
+          <div className="main">{dp?.feedback}</div>
+        </div>
         <footer>
           <p className="controls">
             <button className="button" onClick={goNext}>

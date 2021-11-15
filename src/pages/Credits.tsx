@@ -17,22 +17,22 @@ const Credits: React.FC<{}> = () => {
         <div className="main">
           <div className="content cf">
             <div className="credits-content">
-              <h3>Funder</h3>
-              <ul>
-                <li>
-                  eCampusOntario (
+              <h3>Funding</h3>
+                <p>
+                  This project is made possible with funding by the Government
+                  of Ontario and the Virtual Learning Strategy. To learn more
+                  about the Virtual Learning Strategy visit {" "}
                   <span>
                     <a
-                      href="https://www.ecampusontario.ca/"
+                      href="https://vls.ecampusontario.ca/"
                       target="_blank"
                       rel="noreferrer"
                     >
-                      ecampusontario.ca
+                      vls.ecampusontario.ca
                     </a>
                   </span>
-                  ){" "}
-                </li>
-              </ul>
+                  {". "}
+                </p>
 
               <h3>Research Project Manager</h3>
               <ul>

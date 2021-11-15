@@ -4,12 +4,17 @@ body {
 }
 
 div.polaroid {
-  width: 200px;
-  padding: 10px 10px 10px 10px;
+  width: 280px;
+  padding: 20px 20px 10px 20px;
   color: black;
   border: 1px solid #bfbfbf;
   background-color: white;
   box-shadow: 10px 10px 5px #aaaaaa;
+  
+  .caption {
+    font-size: 24px;
+    font-family: cursive;
+  }
 }
 
 div.rotate_right {

@@ -1,4 +1,4 @@
-import React, { useCallback, useMemo, useRef, useState } from "react";
+import React, { useCallback, useMemo, useState } from "react";
 
 import { Switch, Link, Route, useHistory, Redirect } from "react-router-dom";
 import { FormattedMessage, useIntl } from "react-intl";
@@ -68,7 +68,7 @@ const App: React.FC<iProps> = () => {
 
       gameState.newGame();
       setNavMenuExpanded(false);
-      history.push(`/intro/`);
+      history.push(`/chart/`);
       logGameEvent("", "start", "game", getBrowser(), "");
     },
     [history, logGameEvent, gameState]
@@ -179,12 +179,12 @@ const App: React.FC<iProps> = () => {
           <button onClick={handleResumeGame}>Resume</button>
         </DropDown>
         <DropDown className="nav-header__content-dropdown" label="Content">
-        <MenuItems
-          pagesToShow={{
-            principles: !!gameData.strings.principles,
-          }} 
-        />
-          </DropDown>
+          <MenuItems
+            pagesToShow={{
+              principles: !!gameData.strings.principles,
+            }}
+          />
+        </DropDown>
       </header>
 
       <div className="content">

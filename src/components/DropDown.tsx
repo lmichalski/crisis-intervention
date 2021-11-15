@@ -7,21 +7,28 @@ interface iProps {
 }
 
 const DropDown: React.FC<iProps> = ({ className, label, children }) => {
-
-  const [expanded, setExpanded] = useState(false)
+  const [expanded, setExpanded] = useState(false);
   const toggleExpanded = useCallback(() => {
-      setExpanded(e => !e)
-  },[])
+    setExpanded((e) => !e);
+  }, []);
 
   const collapse = useCallback(() => {
-    setExpanded(false)
-  }, [])
-  const baseClassName = `DropDown DropDown${expanded ? '--expanded' : '-collapsed'}`
+    setExpanded(false);
+  }, []);
+  const baseClassName = `DropDown DropDown${
+    expanded ? "--expanded" : "-collapsed"
+  }`;
 
   return (
-    <div className={className ? `${baseClassName} ${className}` : baseClassName}>
-      <button onClick={toggleExpanded} className="DropDown__button">{label}</button>
-      <div className="DropDown__content" onClick={collapse}>{children}</div>
+    <div
+      className={className ? `${baseClassName} ${className}` : baseClassName}
+    >
+      <button onClick={toggleExpanded} className="DropDown__button">
+        {label}
+      </button>
+      <div className="DropDown__content" onClick={collapse}>
+        {children}
+      </div>
     </div>
   );
 };
