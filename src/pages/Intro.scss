@@ -22,22 +22,29 @@
   max-height: 95%;
   padding: 0px 40px;
   box-sizing: border-box;
+  background-color: rgba(16, 33, 51, 0.8);
   border-radius: 16px;
-  margin-left: 10vw;
-  margin-right: 10vw;
+  padding: 2vw;
+  margin: 10vw;
 
   footer {
     width: 100%;
     margin-top: 16px;
 
     button {
+      margin: auto;
+      border-radius: 8px;
+      padding: 16px;
+      font-size: 24px;
       background-color: #446fa0;
 
-      margin: auto;
-      padding: 16px;
-      border-radius: 8px;
-
-      &:hover,
+      &:hover {
+        background-color: cornflowerblue;
+        transition: all 0.3s ease;
+        color: var(--primary-text-highlight);
+        text-shadow: 0 0 10px white;
+        box-shadow: 0 0 10px black;
+      }
       &:focus-within {
         background-color: cornflowerblue;
       }
