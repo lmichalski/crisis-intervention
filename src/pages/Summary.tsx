@@ -86,47 +86,41 @@ const Summary: React.FC<iProps> = ({
         ) : (
           <Text>
             <Text>
-            {" "}
-            However, if you give only correct answers it should only take 11
-            questions to complete the scenario. Your selections had the
-            following results: {"\n"}</Text>
-            
-            {/* <img
+              {" "}
+              However, if you give only correct answers it should only take 11
+              questions to complete the scenario. Your selections had the
+              following results: {"\n"}
+              {/* <img
               src="/images/icon-correct.png"
               alt="green circular checkmark icon"
               width="20"
               height="20"
             ></img> */}
-            <Text>Correct:{" "}
-            {progress.filter(({ correct }) => correct === "correct").length}
-            {"\n"}
-            </Text>
-
-            {/* <img
+              Correct:{" "}
+              {progress.filter(({ correct }) => correct === "correct").length}
+              {"\n"}
+              {/* <img
               src="/images/icon-partial.png"
               alt="yellow triangular warning icon"
               width="20"
               height="20"
             ></img> */}
-            <Text>{'Not-the-Best: '}
-            {progress.filter(({ correct }) => correct === "half").length} 
-            {' \n'}
-            </Text>
-
-            {/* <img
+              {"Not-the-Best: "}
+              {progress.filter(({ correct }) => correct === "half").length}
+              {""}
+              {/* <img
               src="/images/icon-incorrect.png"
               alt="red circular x icon"
               width="20"
               height="20"
             ></img> */}
-            <Text>Incorrect:{" "}
-            {progress.filter(({ correct }) => correct === "wrong").length} 
-            {"\n"}
+              Incorrect:{" "}
+              {progress.filter(({ correct }) => correct === "wrong").length +
+                "\n"}
+              {"\n"}
             </Text>
 
-            <Text>
-            See if you can improve your results next time!{" "}
-            </Text>
+            <Text>See if you can improve your results next time! </Text>
           </Text>
         )}
         {/* <Text>
