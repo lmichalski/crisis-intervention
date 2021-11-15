@@ -1,9 +1,9 @@
-.content .body .view .Chart{
+.content .body .view .Chart {
   display: flex;
   flex-direction: column;
   align-content: center;
 
-  .next-button{
+  .next-button {
     width: 10vw;
     margin: 16px auto;
     background-color: #446fa0;
@@ -12,7 +12,7 @@
     font-size: 24px;
     padding: 16pxpx;
 
-    &:hover{
+    &:hover {
       background-color: cornflowerblue;
     }
   }

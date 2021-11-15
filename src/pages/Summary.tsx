@@ -6,7 +6,6 @@ import {
   Document,
   Page,
   Text,
-  Link,
   View,
 } from "@react-pdf/renderer";
 import { Font } from "@react-pdf/renderer";
@@ -86,16 +85,51 @@ const Summary: React.FC<iProps> = ({
           </Text>
         ) : (
           <Text>
+            <Text>
             {" "}
             However, if you give only correct answers it should only take 11
-            questions to complete the scenario. You selected not-the-best-answer{" "}
-            {progress.filter(({ correct }) => correct === "half").length} times.
-            You selected the wrong answer{" "}
-            {progress.filter(({ correct }) => correct === "wrong").length}{" "}
-            times. See if you can improve your results next time!{" "}
+            questions to complete the scenario. Your selections had the
+            following results: {"\n"}</Text>
+            
+            {/* <img
+              src="/images/icon-correct.png"
+              alt="green circular checkmark icon"
+              width="20"
+              height="20"
+            ></img> */}
+            <Text>Correct:{" "}
+            {progress.filter(({ correct }) => correct === "correct").length}
+            {"\n"}
+            </Text>
+
+            {/* <img
+              src="/images/icon-partial.png"
+              alt="yellow triangular warning icon"
+              width="20"
+              height="20"
+            ></img> */}
+            <Text>{'Not-the-Best: '}
+            {progress.filter(({ correct }) => correct === "half").length} 
+            {' \n'}
+            </Text>
+
+            {/* <img
+              src="/images/icon-incorrect.png"
+              alt="red circular x icon"
+              width="20"
+              height="20"
+            ></img> */}
+            <Text>Incorrect:{" "}
+            {progress.filter(({ correct }) => correct === "wrong").length} 
+            {"\n"}
+            </Text>
+
+            <Text>
+            See if you can improve your results next time!{" "}
+            </Text>
           </Text>
         )}
-        <Text>
+        {/* <Text>
           Document this encounter by clicking on the practice documentation
           icon. There you will find a blank documentation form. Once you are
           done, compare your documentation to the sample provided.{" "}
@@ -107,7 +141,7 @@ const Summary: React.FC<iProps> = ({
             self-debriefing questions
           </Link>{" "}
           to optimise your learning experience. Scroll down to view results.
-        </Text>
+        </Text> */}
       </>
     );
   } else {

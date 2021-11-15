@@ -18,21 +18,21 @@ const Credits: React.FC<{}> = () => {
           <div className="content cf">
             <div className="credits-content">
               <h3>Funding</h3>
-                <p>
-                  This project is made possible with funding by the Government
-                  of Ontario and the Virtual Learning Strategy. To learn more
-                  about the Virtual Learning Strategy visit {" "}
-                  <span>
-                    <a
-                      href="https://vls.ecampusontario.ca/"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      vls.ecampusontario.ca
-                    </a>
-                  </span>
-                  {". "}
-                </p>
+              <p>
+                This project is made possible with funding by the Government of
+                Ontario and the Virtual Learning Strategy. To learn more about
+                the Virtual Learning Strategy visit{" "}
+                <span>
+                  <a
+                    href="https://vls.ecampusontario.ca/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    vls.ecampusontario.ca
+                  </a>
+                </span>
+                {". "}
+              </p>
 
               <h3>Research Project Manager</h3>
               <ul>

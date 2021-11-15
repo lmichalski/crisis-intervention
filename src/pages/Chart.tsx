@@ -69,7 +69,9 @@ const Chart: React.FC<iProps> = ({ image }) => {
             </div>
           </div>
         </div>
-        <button className="next-button" onClick={handleClickNext}>Next</button>
+        <button className="next-button" onClick={handleClickNext}>
+          Next
+        </button>
       </div>
     </>
   );
@@ -80,4 +82,3 @@ export default Chart;
 // function logGameEvent(arg0: string, arg1: string, arg2: string, arg3: any, arg4: string) {
 //   throw new Error("Function not implemented.");
 // }
-
