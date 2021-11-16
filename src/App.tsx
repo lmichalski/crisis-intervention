@@ -1,6 +1,13 @@
-import React, { useCallback, useMemo, useState } from "react";
+import React, { useCallback, useEffect, useMemo, useState } from "react";
 
-import { Switch, Link, Route, useHistory, Redirect } from "react-router-dom";
+import {
+  Switch,
+  Link,
+  Route,
+  useHistory,
+  Redirect,
+  useLocation,
+} from "react-router-dom";
 import { FormattedMessage, useIntl } from "react-intl";
 
 import Menu from "./pages/Menu";
@@ -29,23 +36,42 @@ import DropDown from "./components/DropDown";
 import Research from "./pages/Research";
 import Readings from "./pages/Readings";
 import MenuItems from "./components/MenuItems";
+import { addListener } from "process";
 
 interface iProps {}
 
 const App: React.FC<iProps> = () => {
   const history = useHistory();
+  const location = useLocation();
 
   const logGameEvent = useLogGameEvent();
   const locale = useIntl().locale;
 
   const gameData = useGameData("crisis_intervention", locale);
   const gameState = useGameState("crisis_intervention");
-  const [subtitlesEnabled, setSubtitlesEnabled] = useState<boolean>(false);
+  const [subtitlesEnabled, setSubtitlesEnabled] = useState<boolean>(true);
   const minSteps = gameData.decisionpoints.filter(
     ({ correct }) => correct === "correct"
   ).length;
 
-  const [navMenuExpanded, setNavMenuExpanded] = useState(true);
+  let onExpandedNavMenuPage:boolean
+  
+  const base = location.pathname.split("/")[1];
+  switch (base) {
+    case "video":
+    case "decision":
+    case "intro":
+    case "summary":
+    case "settings":
+    case "feedback":
+      onExpandedNavMenuPage = false;
+    
+    break;
+    default:
+      onExpandedNavMenuPage = true
+  }
+
+  const [navMenuExpanded, setNavMenuExpanded] = useState(onExpandedNavMenuPage);
   const handleMenuToggleButtonClick = useCallback(() => {
     setNavMenuExpanded(true);
 
@@ -161,6 +187,10 @@ const App: React.FC<iProps> = () => {
   return (
     <div className="fullscreen" style={gameData.colors as React.CSSProperties}>
       <header className="nav-header">
+        <button className="menu-button" onClick={handleMenuToggleButtonClick}>
+          Home
+        </button>
+
         <Link className="Button" to={`/settings/`} onClick={handleHideMenu}>
           <FormattedMessage
             id="Menu.settings"
@@ -171,9 +201,6 @@ const App: React.FC<iProps> = () => {
 
         <h1>{gameData.strings.menu.title}</h1>
 
-        <button className="menu-button" onClick={handleMenuToggleButtonClick}>
-          Home
-        </button>
         <DropDown label="Game">
           <button onClick={handleStartNewGame}>New Game</button>
           <button onClick={handleResumeGame}>Resume</button>
