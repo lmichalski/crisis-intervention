@@ -1,10 +1,11 @@
-import { useMemo } from "react";
+import React, { useMemo } from "react";
 import { FormattedMessage } from "react-intl";
 import "./Summary.scss";
 import {
   PDFDownloadLink,
   Document,
   Page,
+  Image,
   Text,
   View,
 } from "@react-pdf/renderer";
@@ -64,66 +65,96 @@ const Summary: React.FC<iProps> = ({
       return progress;
     }, [decisionPoints, gameProgress]);
 
-  let message: JSX.Element;
+  let message: (webrender: boolean) => JSX.Element;
 
   if (completed) {
-    message = (
-      <>
-        <Text>
-          You have completed the game by answering{" "}
-          <Text style={{ fontWeight: "bold" }}>
-            {" "}
-            {progress.length} questions
-          </Text>
-          .
-        </Text>
-        {progress.length ===
-        decisionPoints.filter(({ correct }) => correct === "correct").length ? (
-          <Text>
-            You've demonstrated the best possible result! Now play it one more
-            time to make sure it wasn't mere luck :)
-          </Text>
-        ) : (
-          <Text>
-            <Text>
-              {" "}
-              However, if you give only correct answers it should only take 11
-              questions to complete the scenario. Your selections had the
-              following results: {"\n"}
-              {/* <img
-              src="/images/icon-correct.png"
-              alt="green circular checkmark icon"
-              width="20"
-              height="20"
-            ></img> */}
-              Correct:{" "}
-              {progress.filter(({ correct }) => correct === "correct").length}
-              {"\n"}
-              {/* <img
-              src="/images/icon-partial.png"
-              alt="yellow triangular warning icon"
-              width="20"
-              height="20"
-            ></img> */}
-              {"Not-the-Best: "}
-              {progress.filter(({ correct }) => correct === "half").length}
-              {""}
-              {/* <img
-              src="/images/icon-incorrect.png"
-              alt="red circular x icon"
-              width="20"
-              height="20"
-            ></img> */}
-              Incorrect:{" "}
-              {progress.filter(({ correct }) => correct === "wrong").length +
-                "\n"}
-              {"\n"}
-            </Text>
+    message = (webrender) => {
+      const tags = webrender
+        ? {
+            br: () => <br />,
+            img: (props: React.ImgHTMLAttributes<HTMLImageElement>) => (
+              <img {...props} />
+            ),
+            text: ({
+              style,
+              children,
+            }: React.HTMLAttributes<HTMLSpanElement> &
+              React.ComponentProps<typeof Text>) => (
+              <span style={style}>{children}</span>
+            ),
+          }
+        : {
+            br: () => <>{"\n"}</>,
+            img: ({ src }: React.ImgHTMLAttributes<HTMLImageElement>) => (
+              <Image src={src}></Image>
+            ),
+            text: ({
+              style,
+              children,
+            }: React.HTMLAttributes<HTMLSpanElement> &
+              React.ComponentProps<typeof Text>) => (
+              <Text style={style}>{children}</Text>
+            ),
+          };
 
-            <Text>See if you can improve your results next time! </Text>
-          </Text>
-        )}
-        {/* <Text>
+      return (
+        <>
+          <tags.text>
+            You have completed the game by answering{" "}
+            <tags.text style={{ fontWeight: "bold" }}>
+              {" "}
+              {progress.length} questions
+            </tags.text>
+            .
+          </tags.text>
+          {progress.length ===
+          decisionPoints.filter(({ correct }) => correct === "correct")
+            .length ? (
+            <tags.text>
+              You've demonstrated the best possible result! Now play it one more
+              time to make sure it wasn't mere luck :)
+            </tags.text>
+          ) : (
+            <tags.text>
+              <tags.text>
+                {" "}
+                However, if you give only correct answers it should only take 11
+                questions to complete the scenario. Your selections had the
+                following results:
+                <tags.br />
+                <tags.img
+                  src="/images/icon-correct.png"
+                  alt="green circular checkmark icon"
+                  width="20"
+                  height="20"
+                />{" "}
+                Correct:{" "}
+                {progress.filter(({ correct }) => correct === "correct").length}
+                <tags.br />
+                <tags.img
+                  src="/images/icon-partial.png"
+                  alt="yellow triangular warning icon"
+                  width="20"
+                  height="20"
+                />{" "}
+                Not-the-Best:{" "}
+                {progress.filter(({ correct }) => correct === "half").length}
+                <tags.br />
+                <tags.img
+                  src="/images/icon-incorrect.png"
+                  alt="red circular x icon"
+                  width="20"
+                  height="20"
+                />{" "}
+                Incorrect:{" "}
+                {progress.filter(({ correct }) => correct === "wrong").length}
+                <tags.br />
+              </tags.text>
+
+              <tags.text>See if you can improve your results next time! </tags.text>
+            </tags.text>
+          )}
+          {/* <Text>
           Document this encounter by clicking on the practice documentation
           icon. There you will find a blank documentation form. Once you are
           done, compare your documentation to the sample provided.{" "}
@@ -136,10 +167,11 @@ const Summary: React.FC<iProps> = ({
           </Link>{" "}
           to optimise your learning experience. Scroll down to view results.
         </Text> */}
-      </>
-    );
+        </>
+      );
+    };
   } else {
-    message = (
+    message = () => (
       <Text>
         You have answered{" "}
         <Text style={{ fontWeight: "bold" }}> {progress.length} questions</Text>
@@ -191,7 +223,7 @@ const Summary: React.FC<iProps> = ({
               Emergency Game Report
             </Text>
             <Text style={{ fontSize: 24 }}>Summary</Text>
-            <View>{message}</View>
+            <View>{message(false)}</View>
             <Text style={{ fontSize: 24 }}>Your Responses</Text>
             <View>{responses}</View>
           </View>
@@ -214,7 +246,7 @@ const Summary: React.FC<iProps> = ({
         </header>
         <div className="main summary">
           <div className="content">
-            <div>{message}</div>
+            <div>{message(true)}</div>
             <h2 style={{ fontSize: 24 }}>Your Answers:</h2>
             <ol className="responses">
               {progress.map((dp) => (
