@@ -125,7 +125,7 @@ button,
         color: rgba(16, 33, 51, 0.8);
         font-size: 32px;
         font-weight: 400;
-        margin: 8% 0;
+        margin: auto;
         padding: 0 32px;
 
         p {
@@ -133,7 +133,7 @@ button,
           margin: 0;
         }
 
-        span{
+        span {
           font-size: 28px;
           font-style: italic;
           font-weight: 200;
@@ -148,10 +148,7 @@ button,
         max-width: 0;
         padding-left: 0;
         padding-right: 0;
-
-        img {
-          display: none;
-        }
+        display: none;
       }
     }
 
@@ -183,6 +180,7 @@ button,
 
       .nav-content {
         order: 2;
+        overflow: hidden;
 
         .nav-menu-title {
           font-size: 28px;

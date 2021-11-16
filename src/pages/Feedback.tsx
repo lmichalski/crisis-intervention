@@ -1,4 +1,4 @@
-import { useCallback } from "react";
+import { useCallback, useMemo } from "react";
 import { FormattedMessage } from "react-intl";
 import { useHistory } from "react-router";
 import { DecisionPoint } from "../hooks/useGameData";
@@ -22,6 +22,35 @@ const Feedback: React.FC<iProps> = ({ decisionPoint: dp }) => {
     }
   }, [dp?.type, history]);
 
+  const correctnessIcon = useMemo(() => {
+    switch (dp?.correct) {
+      case "half":
+        return (
+          <>
+            <img
+              src="/images/icon-partial.png"
+              alt="yellow triangular warning icon"
+              width="20"
+              height="20"
+            ></img>
+            &nbsp;<span>Not-the-Best</span>
+          </>
+        );
+      case "wrong":
+        return (
+          <>
+            <img
+              src="/images/icon-incorrect.png"
+              alt="red circular x icon"
+              width="20"
+              height="20"
+            ></img>
+            &nbsp;<span>Incorrect</span>
+          </>
+        );
+    }
+  }, [dp?.correct]);
+
   return (
     <div className="container">
       <div className="panel feedback" role="alert">
@@ -32,6 +61,7 @@ const Feedback: React.FC<iProps> = ({ decisionPoint: dp }) => {
             description="feedback title"
             tagName="h2"
           />
+          {correctnessIcon}
           <div className="main">{dp?.feedback}</div>
         </div>
         <footer>
