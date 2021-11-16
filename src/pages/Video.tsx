@@ -236,10 +236,7 @@ const Video: React.FC<iProps> = ({
             <iframe
               ref={iframeRef}
               // style={{height: (iframeRef.current?.scrollWidth ?? 600) * 9/16}}
-              src={
-                dp.video.vimeo_url +
-                `?autoplay=1${subtitlesEnabled ? "&texttrack=en" : ""}`
-              }
+              src={dp.video.vimeo_url + `?autoplay=1`}
               frameBorder={0}
               allow="autoplay; texttrack; fullscreen; picture-in-picture"
               allowFullScreen
