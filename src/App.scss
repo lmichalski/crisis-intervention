@@ -3,6 +3,8 @@
 
 @import url(//fonts.googleapis.com/css?family=Roboto+Condensed:400,700);
 
+$max-mobile-width:800px;
+
 button,
 .Button {
   display: flex;
@@ -34,7 +36,7 @@ button,
     position: sticky;
     top: 0;
 
-    @media only screen and (max-width: 700px) {
+    @media only screen and (max-width: $max-mobile-width) {
       flex-direction: column;
       h1 {
         order: -1;
@@ -115,11 +117,16 @@ button,
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+
     .banner {
       display: flex;
       flex-direction: row;
+      justify-content: space-between;
+
       background-color: #d6dde0;
-      @media only screen and (max-width: 700px) {
+
+
+      @media only screen and (max-width: $max-mobile-width) {
         display: none;
       }
 
@@ -128,7 +135,11 @@ button,
         font-size: 32px;
         font-weight: 400;
         margin: auto;
-        padding: 0 32px;
+        max-width: 400px;
+
+        @media only screen and (max-width: 900px) {
+          display: none;
+        }
 
         p {
           padding: 0;
@@ -160,7 +171,7 @@ button,
       flex-grow: 1;
       background-color: #223c60;
 
-      @media only screen and (max-width: 700px) {
+      @media only screen and (max-width: $max-mobile-width) {
         flex-direction: column;
         > div {
           width: 100%;
@@ -253,7 +264,7 @@ button,
           margin: 0;
         }
 
-        @media only screen and (max-width: 700px) {
+        @media only screen and (max-width: $max-mobile-width) {
           width: 100%;
           .panel {
             padding: 16px;
