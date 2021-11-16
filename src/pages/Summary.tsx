@@ -72,8 +72,8 @@ const Summary: React.FC<iProps> = ({
       const tags = webrender
         ? {
             br: () => <br />,
-            img: (props: React.ImgHTMLAttributes<HTMLImageElement>) => (
-              <img {...props} />
+            img: ({alt, ...props}: React.ImgHTMLAttributes<HTMLImageElement> & {alt:string}) => (
+              <img alt = {alt} {...props} />
             ),
             text: ({
               style,
