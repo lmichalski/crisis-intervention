@@ -151,7 +151,9 @@ const Summary: React.FC<iProps> = ({
                 <tags.br />
               </tags.text>
 
-              <tags.text>See if you can improve your results next time! </tags.text>
+              <tags.text>
+                See if you can improve your results next time!{" "}
+              </tags.text>
             </tags.text>
           )}
           {/* <Text>

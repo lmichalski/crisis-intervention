@@ -97,7 +97,7 @@
         "vimeo_url": "https://player.vimeo.com/video/638787265"
       },
       "correct": "wrong",
-      "feedback": "Incorrect: Your response indicated that you made a strong assumption without gathering information. The response lacked empathy and did not allow the client to discuss what brought them into the centre. The response also inquires about a potentially very personal matter without giving the client a chance to acclimatize to the setting or to you. As a result, therapeutic rapport was not established and the client no longer wants services. ",
+      "feedback": "Your response indicated that you made a strong assumption without gathering information. The response lacked empathy and did not allow the client to discuss what brought them into the centre. The response also inquires about a potentially very personal matter without giving the client a chance to acclimatize to the setting or to you. As a result, therapeutic rapport was not established and the client no longer wants services. ",
       "message": "How do you start the conversation with Kelly?",
       "options": [
         {
@@ -120,7 +120,7 @@
         "vimeo_url": "https://player.vimeo.com/video/638787017"
       },
       "correct": "half",
-      "feedback": "Not the Best: Your response indicated that you were able to notice the client’s current state; however, the approach was too forward and caused the client to feel uncomfortable. This may not have been the best way to greet a distressed client. The client should be given the space to open up.",
+      "feedback": "Your response indicated that you were able to notice the client’s current state; however, the approach was too forward and caused the client to feel uncomfortable. This may not have been the best way to greet a distressed client. The client should be given the space to open up.",
       "message": "How do you start the conversation with Kelly?",
       "options": [
         {
@@ -170,7 +170,7 @@
         "vimeo_url": "https://player.vimeo.com/video/635497123"
       },
       "correct": "wrong",
-      "feedback": "Incorrect: Your response lacked empathy and did not illicit trust or foster a working relationship",
+      "feedback": "Your response lacked empathy and did not illicit trust or foster a working relationship",
       "message": "How do you help Kelly to feel free to share what's going on?",
       "options": [
         {
@@ -193,7 +193,7 @@
         "vimeo_url": "https://player.vimeo.com/video/638787934"
       },
       "correct": "half",
-      "feedback": "Not the Best: Your response asked an important question; however, the response overlooked the client’s feeling state and moved too quickly to an action-oriented question. This did not make the client feel comfortable to speak openly.",
+      "feedback": "Your response asked an important question; however, the response overlooked the client’s feeling state and moved too quickly to an action-oriented question. This did not make the client feel comfortable to speak openly.",
       "message": "How do you help Kelly to feel free to share what's going on?",
       "options": [
         {
@@ -243,7 +243,7 @@
         "vimeo_url": "https://player.vimeo.com/video/638790544"
       },
       "correct": "wrong",
-      "feedback": "Incorrect: Your response used language of blame and caused the client to act defensively. It can harm the rapport you have built so far.",
+      "feedback": "Your response used language of blame and caused the client to act defensively. It can harm the rapport you have built so far.",
       "message": "How do you gather more information?",
       "options": [
         {
@@ -266,7 +266,7 @@
         "vimeo_url": "https://player.vimeo.com/video/638790260"
       },
       "correct": "half",
-      "feedback": "Not the Best: Your response acknowledged the client has support; however, you were unable to effectively gather more information.",
+      "feedback": "Your response acknowledged the client has support; however, you were unable to effectively gather more information.",
       "message": "How do you gather more information?",
       "options": [
         {
@@ -316,7 +316,7 @@
         "vimeo_url": "https://player.vimeo.com/video/638799355"
       },
       "correct": "wrong",
-      "feedback": "Incorrect: Your response made the client feel judged and caused the client to shut down.",
+      "feedback": "Your response made the client feel judged and caused the client to shut down.",
       "message": "How do you address Kelly’s unhealthy behaviours?",
       "options": [
         {
@@ -339,7 +339,7 @@
         "vimeo_url": "https://player.vimeo.com/video/638799204"
       },
       "correct": "half",
-      "feedback": "Not the Best: Your response expressed some concern for her unhealthy behaviours and wanting to explore further. It made a connection to feelings. However, the approach may have been judgmental and may not have elicited an honest response from the client.",
+      "feedback": "Your response expressed some concern for her unhealthy behaviours and wanting to explore further. It made a connection to feelings. However, the approach may have been judgmental and may not have elicited an honest response from the client.",
       "message": "How do you address Kelly’s unhealthy behaviours?",
       "options": [
         {
@@ -389,7 +389,7 @@
         "vimeo_url": "https://player.vimeo.com/video/638805863"
       },
       "correct": "wrong",
-      "feedback": "Incorrect: Your response seemed judgmental and was ineffective.",
+      "feedback": "Your response seemed judgmental and was ineffective.",
       "message": "How do you proceed?",
       "options": [
         {
@@ -412,7 +412,7 @@
         "vimeo_url": "https://player.vimeo.com/video/638805787"
       },
       "correct": "half",
-      "feedback": "Not the Best: Your response used an open-ended question to gather more information; however, the question was too broad and did not demonstrate active listening. As well, you failed to validate Kelly’s feelings.",
+      "feedback": "Your response used an open-ended question to gather more information; however, the question was too broad and did not demonstrate active listening. As well, you failed to validate Kelly’s feelings.",
       "message": "How do you proceed?",
       "options": [
         {
@@ -462,7 +462,7 @@
         "vimeo_url": "https://player.vimeo.com/video/638807927"
       },
       "correct": "wrong",
-      "feedback": "Incorrect: Your response assumes that the client considers her family a support system. Your response also appeared judgmental.",
+      "feedback": "Your response assumes that the client considers her family a support system. Your response also appeared judgmental.",
       "message": "How do you inquire about Kelly’s support system?",
       "options": [
         {
@@ -485,7 +485,7 @@
         "vimeo_url": "https://player.vimeo.com/video/638807836"
       },
       "correct": "half",
-      "feedback": "Not the Best: Your response acknowledged the client’s need for additional support. However, you asked a closed-ended question and may have made the client feel uneasy.",
+      "feedback": "Your response acknowledged the client’s need for additional support. However, you asked a closed-ended question and may have made the client feel uneasy.",
       "message": "How do you inquire about Kelly’s support system?",
       "options": [
         {
@@ -535,7 +535,7 @@
         "vimeo_url": "https://player.vimeo.com/video/638810050"
       },
       "correct": "wrong",
-      "feedback": "Incorrect: Your response is invalidating the client’s feelings and making her feel unimportant. ",
+      "feedback": "Your response is invalidating the client’s feelings and making her feel unimportant. ",
       "message": "How do you find out more about Kelly’s coping mechanisms?",
       "options": [
         {
@@ -558,7 +558,7 @@
         "vimeo_url": "https://player.vimeo.com/video/638809936"
       },
       "correct": "half",
-      "feedback": "Not the Best: Your response slightly acknowledged the client’s stressors; however, the question asked was closed-ended and may seem judgmental. ",
+      "feedback": "Your response slightly acknowledged the client’s stressors; however, the question asked was closed-ended and may seem judgmental. ",
       "message": "How do you find out more about Kelly’s coping mechanisms?",
       "options": [
         {
@@ -608,7 +608,7 @@
         "vimeo_url": "https://player.vimeo.com/video/638813749"
       },
       "correct": "wrong",
-      "feedback": "Incorrect: Your response was too abrupt and presented as insensitive",
+      "feedback": "Your response was too abrupt and presented as insensitive",
       "message": "What is your response to Kelly’s admission of having negative thoughts?",
       "options": [
         {
@@ -631,7 +631,7 @@
         "vimeo_url": "https://player.vimeo.com/video/638813605"
       },
       "correct": "half",
-      "feedback": "Not the Best: With the information being told to you, this question would not be the most important response to ask given Kelly’s current situation.",
+      "feedback": "With the information being told to you, this question would not be the most important response to ask given Kelly’s current situation.",
       "message": "What is your response to Kelly’s admission of having negative thoughts?",
       "options": [
         {
@@ -681,7 +681,7 @@
         "vimeo_url": "https://player.vimeo.com/video/638816237"
       },
       "correct": "wrong",
-      "feedback": "Incorrect: Your response did not generate more information about the intent or plan to commit suicide which is needed to assess risk.",
+      "feedback": "Your response did not generate more information about the intent or plan to commit suicide which is needed to assess risk.",
       "message": "How do you respond to Kelly’s suicidal thoughts?",
       "options": [
         {
@@ -704,7 +704,7 @@
         "vimeo_url": "https://player.vimeo.com/video/638816147"
       },
       "correct": "half",
-      "feedback": "Not the Best: Your response appeared too broad and was not able to generate additional information to assess for risk. ",
+      "feedback": "Your response appeared too broad and was not able to generate additional information to assess for risk. ",
       "message": "How do you respond to Kelly’s suicidal thoughts?",
       "options": [
         {
@@ -754,7 +754,7 @@
         "vimeo_url": "https://player.vimeo.com/video/638816781"
       },
       "correct": "wrong",
-      "feedback": "Incorrect: Your response elicits feelings about one of her sources of stress. This response was unhelpful as it places additional pressure on the client. In addition, it doesn’t get to the goal of assessing her current risk.",
+      "feedback": "Your response elicits feelings about one of her sources of stress. This response was unhelpful as it places additional pressure on the client. In addition, it doesn’t get to the goal of assessing her current risk.",
       "message": "How do you continue to assess Kelly’s suicide plan?",
       "options": [
         {
@@ -777,7 +777,7 @@
         "vimeo_url": "https://player.vimeo.com/video/638816717"
       },
       "correct": "half",
-      "feedback": "Not the Best: Your response asked a question that generated information that was useful to assess the client’s risk of suicide. However, information on the specifics of the plan for the client’s current suicide ideations were needed.",
+      "feedback": "Your response asked a question that generated information that was useful to assess the client’s risk of suicide. However, information on the specifics of the plan for the client’s current suicide ideations were needed.",
       "message": "How do you continue to assess Kelly’s suicide plan?",
       "options": [
         {
@@ -825,7 +825,7 @@
       "data": "SG4_DP11_2",
       "video": null,
       "correct": "wrong",
-      "feedback": "Incorrect: Your response is incorrect and may not have taken into consideration the current suicide plan or means to execute the plan.",
+      "feedback": "Your response is incorrect and may not have taken into consideration the current suicide plan or means to execute the plan.",
       "message": "What would you rate Kelly’s risk level?",
       "options": [
         {
@@ -846,7 +846,7 @@
       "data": "SG4_DP11_3",
       "video": null,
       "correct": "half",
-      "feedback": "Not the Best: Your response may not have taken into consideration the current suicide plan or means to execute the plan.",
+      "feedback": "Your response may not have taken into consideration the current suicide plan or means to execute the plan.",
       "message": "What would you rate Kelly’s risk level?",
       "options": [
         {
@@ -896,7 +896,7 @@
         "vimeo_url": "https://player.vimeo.com/video/638821699"
       },
       "correct": "wrong",
-      "feedback": "Incorrect: Your response did not take into consideration that the client is high risk and needs immediate action. This response could place the client at further risk.",
+      "feedback": "Your response did not take into consideration that the client is high risk and needs immediate action. This response could place the client at further risk.",
       "message": "What is your first step to develop a safety plan?",
       "options": [
         {
@@ -919,7 +919,7 @@
         "vimeo_url": "https://player.vimeo.com/video/638821699"
       },
       "correct": "half",
-      "feedback": "Not the Best: Your response was able to identify that the client needs support. However, involving her friend may not be the best option as this matter is urgent and requires more immediate action and we can’t be sure of Talia’s commitment to follow through on care. ",
+      "feedback": "Your response was able to identify that the client needs support. However, involving her friend may not be the best option as this matter is urgent and requires more immediate action and we can’t be sure of Talia’s commitment to follow through on care. ",
       "message": "What is your first step to develop a safety plan?",
       "options": [
         {
@@ -969,7 +969,7 @@
         "vimeo_url": "https://player.vimeo.com/video/638823260"
       },
       "correct": "wrong",
-      "feedback": "Incorrect: Your response did not take into consideration that the client is high risk and needs immediate action. This response could place the client at further risk.",
+      "feedback": "Your response did not take into consideration that the client is high risk and needs immediate action. This response could place the client at further risk.",
       "message": "How do you encourage Kelly to go to the hospital?",
       "options": [
         {
@@ -992,7 +992,7 @@
         "vimeo_url": "https://player.vimeo.com/video/638823096"
       },
       "correct": "half",
-      "feedback": "Not the Best: Your response encouraged her to seek help. However, how to seek support was unclear.",
+      "feedback": "Your response encouraged her to seek help. However, how to seek support was unclear.",
       "message": "How do you encourage Kelly to go to the hospital?",
       "options": [
         {
@@ -1042,7 +1042,7 @@
         "vimeo_url": "https://player.vimeo.com/video/638824898"
       },
       "correct": "wrong",
-      "feedback": "Incorrect: Your response was incorrect. Asking a friend to take her friend to the hospital is not a good choice. Putting the responsibility on Talia is not the correct way to handle this situation.",
+      "feedback": "Your response was incorrect. Asking a friend to take her friend to the hospital is not a good choice. Putting the responsibility on Talia is not the correct way to handle this situation.",
       "message": "How do you ensure Kelly goes to the hospital?",
       "options": [
         {
@@ -1065,7 +1065,7 @@
         "vimeo_url": "https://player.vimeo.com/video/638824752"
       },
       "correct": "half",
-      "feedback": "Not the Best: Your response to escort Kelly to the hospital may not be the best option. It is best to call 911 to ensure her safety in transit to the hospital. ",
+      "feedback": "Your response to escort Kelly to the hospital may not be the best option. It is best to call 911 to ensure her safety in transit to the hospital. ",
       "message": "How do you ensure Kelly goes to the hospital?",
       "options": [
         {
