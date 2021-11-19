@@ -24,11 +24,11 @@ const Principles: React.FC<iProps> = ({ strings }) => {
         <div className="main">
           <div className="content cf">
             <p>{strings.paragraph}</p>
-            <ul>
+            <ol>
               {strings.bullet_list.map((list_item) => (
                 <li>{list_item}</li>
               ))}
-            </ul>
+            </ol>
           </div>
         </div>
       </div>

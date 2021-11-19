@@ -14,9 +14,7 @@
     },
     "intro": {
       "introCards": [
-        "Trigger Warning: This virtual gaming simulation contains sensitive information that may be triggering for some players. If at any time you are unable to continue playing, please take a break or stop immediately. If you continue to feel triggered, please use the resources provided to obtain immediate support.",
-        "This virtual gaming simulation will play a snapshot of a scenario followed by a question. Each question will have 3 decision points (one correct response, one somewhat correct response, and one incorrect response). The somewhat correct response and incorrect response will provide feedback to explain why it was not the best response; whereas, the correct response will allow you to continue playing the game. A final report on your performance will be provided upon completion. ",
-        "Scenario: Kelly's roommate Talia is worried about Kelly's late nights of partying and drinking. Kelly has been more distant towards Talia and has not been in contact with her family for a long time. Talia has expressed concern for kelly and urged her to make an appointment to address her current state."
+        "Kelly's roommate Talia is worried about Kelly's late nights of partying and drinking. Kelly has been more distant towards Talia and has not been in contact with her family for a long time. Talia has expressed concern for kelly and urged her to make an appointment to address her current state."
       ]
     },
     "objectives": {
@@ -38,7 +36,8 @@
         "At the end of the game you will see a summary report with links to the suggested module readings.",
         "This game has sound. Adjust your volume accordingly.",
         "The game makes use of high-resolution videos, which require high-speed Internet.",
-        "The game will take 30-60 minutes to complete."
+        "The game will take 30-60 minutes to complete.",
+        "Trigger Warning: This virtual gaming simulation contains sensitive information that may be triggering for some players. If at any time you are unable to continue playing, please take a break or stop immediately. If you continue to feel triggered, please use the resources provided to obtain support."
       ]
     },
     "principles": {

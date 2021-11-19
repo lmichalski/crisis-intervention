@@ -112,7 +112,7 @@ const MenuItems: React.FC<iProps> = ({
         >
           <FormattedMessage
             id="Menu.resources"
-            defaultMessage="7. Resources"
+            defaultMessage="7. Crisis Resources"
             description="Resources button"
           />
         </NavLink>

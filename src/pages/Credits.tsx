@@ -31,7 +31,8 @@ const Credits: React.FC<{}> = () => {
                     vls.ecampusontario.ca
                   </a>
                 </span>
-                {". "}
+                , in partnership with Seneca College, School of Community
+                Services.
               </p>
 
               <h3>Research Project Manager</h3>
@@ -41,6 +42,12 @@ const Credits: React.FC<{}> = () => {
                     Roxanne Ramjattan, PhD, MSW, RSW
                   </span>
                 </li>
+                <span className="title">
+                  Professor <br />
+                </span>
+                <span className="organization">
+                  Seneca College, School of Community Services
+                </span>
               </ul>
 
               <h3>Virtual Gaming Simulation Consultant</h3>
@@ -49,9 +56,9 @@ const Credits: React.FC<{}> = () => {
                   <span className="person">Margaret Verkuyl, NP, PHC, MN</span>
                 </li>
                 <span className="title">
-                  Professor <br />
+                  Professor, Nursing <br />
                 </span>
-                <span className="organization">Nursing Centennial College</span>
+                <span className="organization">Nursing Centennial College, School of Community and Health Studies</span>
               </ul>
 
               <h3>Cast</h3>
@@ -76,10 +83,20 @@ const Credits: React.FC<{}> = () => {
                 <li>Lucas Michalski</li>
               </ul>
 
+              <h3>Research Coordinator (Summer 2021 - Fall 2021)</h3>
+              <ul>
+                <li>Tessa Bond</li>
+              </ul>
+
               <h3>Research Assistants</h3>
+              <span className="title">
+                Seneca College, School of Community Services, <br />
+                Bachelor of Community Mental Health Program
+                <br />
+              </span>
               <h4>Winter 2021</h4>
               <ul>
-                <li>Grace (Jasper) Bakker </li>
+                <li>Jasper Bakker </li>
                 <li>Jen Humber </li>
                 <li>Ivan Lange </li>
                 <li>Sophia Miller </li>

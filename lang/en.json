@@ -20,7 +20,7 @@
     "description": "Client chart button"
   },
   "Menu.credits": {
-    "defaultMessage": "9. Credits",
+    "defaultMessage": "8. Credits",
     "description": "Credits Button"
   },
   "Menu.instructions": {
@@ -35,16 +35,12 @@
     "defaultMessage": "3. Essential Principles",
     "description": "Principles Button"
   },
-  "Menu.readings": {
-    "defaultMessage": "7. Readings",
-    "description": "Readings button"
-  },
   "Menu.research": {
     "defaultMessage": "6. Research",
     "description": "Research button"
   },
   "Menu.resources": {
-    "defaultMessage": "8. Resources",
+    "defaultMessage": "7. Crisis Resources",
     "description": "Resources button"
   },
   "Menu.scenario": {
@@ -72,11 +68,11 @@
     "description": "research title"
   },
   "Resources.title": {
-    "defaultMessage": "Resources",
+    "defaultMessage": "Crisis Resources",
     "description": "resources title"
   },
   "Scenario.title": {
-    "defaultMessage": "Background and Scenario",
+    "defaultMessage": "Client Background",
     "description": "Scenario title"
   },
   "Summary.title": {

@@ -15,7 +15,7 @@ const Objectives: React.FC<iProps> = ({ strings }) => {
           <h2>
             <FormattedMessage
               id="Scenario.title"
-              defaultMessage="Background and Scenario"
+              defaultMessage="Client Background"
               description="Scenario title"
             />
           </h2>

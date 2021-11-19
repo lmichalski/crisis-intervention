@@ -228,8 +228,8 @@ const App: React.FC<iProps> = () => {
           <div className="quote">
             {" "}
             <p>
-              Hope is being able to see that there is light despite all the
-              darkness.
+              "Hope is being able to see that there is light despite all the
+              darkness."
             </p>{" "}
             <span className="quoted-person">Desmond Tutu</span>
           </div>

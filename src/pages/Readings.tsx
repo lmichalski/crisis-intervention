@@ -17,14 +17,6 @@ const Readings: React.FC<{}> = () => {
           <div className="content cf">
             <ul>
               <li>
-                Bucago, C., Cheung, H., & Zhang, M. (2019). Suicide Risk
-                Assessment and the Role of the Community Pharmacist. Pharmacy
-                Connection. Retrieved from
-                https://pharmacyconnection.ca/suicide-risk-assessment-and-the-role-of-the-community-
-                pharmacist-fall-2019/{" "}
-              </li>
-
-              <li>
                 Centre for Addiction and Mental Health. CAMH Suicide Prevention
                 and Assessment Handbook. (2011). Retrieved January 28th, 2021,
                 from http://www.antoniocasella.eu/salute/CAMH_2011.pdf{" "}

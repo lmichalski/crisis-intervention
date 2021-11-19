@@ -1,4 +1,5 @@
 import { FormattedMessage } from "react-intl";
+import "./Resources.scss";
 
 const Resources: React.FC<{}> = () => {
   return (
@@ -8,7 +9,7 @@ const Resources: React.FC<{}> = () => {
           <h2>
             <FormattedMessage
               id="Resources.title"
-              defaultMessage="Resources"
+              defaultMessage="Crisis Resources"
               description="resources title"
             />
           </h2>
@@ -19,7 +20,7 @@ const Resources: React.FC<{}> = () => {
               <h2>Canada</h2>
 
               <li>
-                <span>
+                <span className="resource-name">
                   Crisis Services Canada <br />
                 </span>
                 <span>
@@ -29,7 +30,7 @@ const Resources: React.FC<{}> = () => {
               </li>
 
               <li>
-                <span>
+                <span className="resource-name">
                   Kids Help Phone <br />
                 </span>
                 <span>
@@ -42,7 +43,7 @@ const Resources: React.FC<{}> = () => {
               <h2>Ontario, Canada</h2>
 
               <li>
-                <span>
+                <span className="resource-name">
                   Distress Centres of Greater Toronto <br />
                 </span>
                 <span>
@@ -53,7 +54,7 @@ const Resources: React.FC<{}> = () => {
               </li>
 
               <li>
-                <span>
+                <span className="resource-name">
                   {" "}
                   Gerstein Centre <br />
                 </span>
@@ -67,7 +68,7 @@ const Resources: React.FC<{}> = () => {
               <h2>United States</h2>
 
               <li>
-                <span>
+                <span className="resource-name">
                   {" "}
                   National Suicide Prevention Lifeline <br />
                 </span>
