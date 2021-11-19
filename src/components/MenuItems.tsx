@@ -30,20 +30,7 @@ const MenuItems: React.FC<iProps> = ({
           />
         </NavLink>
       </li>
-      <li>
-        <NavLink
-          to={`/scenario/`}
-          className="Menu__link"
-          activeClassName="Menu__link--active"
-          onClick={onItemClicked}
-        >
-          <FormattedMessage
-            id="Menu.scenario"
-            defaultMessage="2. Scenario"
-            description="Scenario Button"
-          />
-        </NavLink>
-      </li>
+
       <li>
         <NavLink
           to={`/objectives/`}
@@ -53,7 +40,7 @@ const MenuItems: React.FC<iProps> = ({
         >
           <FormattedMessage
             id="Menu.objectives"
-            defaultMessage="3. Learning Objectives"
+            defaultMessage="2. Learning Objectives"
             description="Objectives Button"
           />
         </NavLink>
@@ -67,8 +54,22 @@ const MenuItems: React.FC<iProps> = ({
         >
           <FormattedMessage
             id="Menu.principles"
-            defaultMessage="4. Essential Principles"
+            defaultMessage="3. Essential Principles"
             description="Principles Button"
+          />
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to={`/scenario/`}
+          className="Menu__link"
+          activeClassName="Menu__link--active"
+          onClick={onItemClicked}
+        >
+          <FormattedMessage
+            id="Menu.scenario"
+            defaultMessage="4. Client Background"
+            description="Client-Background Button"
           />
         </NavLink>
       </li>
@@ -104,21 +105,6 @@ const MenuItems: React.FC<iProps> = ({
 
       <li>
         <NavLink
-          to={`/readings/`}
-          className="Menu__link"
-          activeClassName="Menu__link--active"
-          onClick={onItemClicked}
-        >
-          <FormattedMessage
-            id="Menu.readings"
-            defaultMessage="7. Readings"
-            description="Readings button"
-          />
-        </NavLink>
-      </li>
-
-      <li>
-        <NavLink
           to={`/resources/`}
           className="Menu__link"
           activeClassName="Menu__link--active"
@@ -126,7 +112,7 @@ const MenuItems: React.FC<iProps> = ({
         >
           <FormattedMessage
             id="Menu.resources"
-            defaultMessage="8. Resources"
+            defaultMessage="7. Resources"
             description="Resources button"
           />
         </NavLink>
@@ -141,7 +127,7 @@ const MenuItems: React.FC<iProps> = ({
         >
           <FormattedMessage
             id="Menu.credits"
-            defaultMessage="9. Credits"
+            defaultMessage="8. Credits"
             description="Credits Button"
           />
         </NavLink>

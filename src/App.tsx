@@ -53,8 +53,8 @@ const App: React.FC<iProps> = () => {
     ({ correct }) => correct === "correct"
   ).length;
 
-  let onExpandedNavMenuPage:boolean
-  
+  let onExpandedNavMenuPage: boolean;
+
   const base = location.pathname.split("/")[1];
   switch (base) {
     case "video":
@@ -64,10 +64,10 @@ const App: React.FC<iProps> = () => {
     case "settings":
     case "feedback":
       onExpandedNavMenuPage = false;
-    
-    break;
+
+      break;
     default:
-      onExpandedNavMenuPage = true
+      onExpandedNavMenuPage = true;
   }
 
   const [navMenuExpanded, setNavMenuExpanded] = useState(onExpandedNavMenuPage);

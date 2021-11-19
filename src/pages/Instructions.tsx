@@ -32,28 +32,28 @@ const Instructions: React.FC<iProps> = ({ minSteps, strings }) => {
               <li>
                 Following each interaction, you will be asked to select the most
                 appropriate response. Possible responses are classified as:
-                Correct{" "}
+                {"  "}
                 <img
                   src="/images/icon-correct.png"
                   alt="green circular checkmark icon"
                   width="20"
                   height="20"
-                ></img>
-                , Not the Best{" "}
+                ></img>{" "}
+                Correct,{" "}
                 <img
                   src="/images/icon-partial.png"
                   alt="yellow triangular warning icon"
                   width="20"
                   height="20"
-                ></img>
-                , and Incorrect{" "}
+                ></img>{" "}
+                Not-the-Best, and{" "}
                 <img
                   src="/images/icon-incorrect.png"
                   alt="red circular x icon"
                   width="20"
                   height="20"
-                ></img>
-                .
+                ></img>{" "}
+                Incorrect.
               </li>
               <li>
                 You can repeat this game numerous times for practice and to

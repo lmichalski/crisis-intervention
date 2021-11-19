@@ -20,7 +20,7 @@
     "description": "Client chart button"
   },
   "Menu.credits": {
-    "defaultMessage": "8. Credits",
+    "defaultMessage": "9. Credits",
     "description": "Credits Button"
   },
   "Menu.instructions": {
@@ -28,24 +28,28 @@
     "description": "How to Play Button"
   },
   "Menu.objectives": {
-    "defaultMessage": "3. Learning Objectives",
+    "defaultMessage": "2. Learning Objectives",
     "description": "Objectives Button"
   },
   "Menu.principles": {
-    "defaultMessage": "4. Essential Principles",
+    "defaultMessage": "3. Essential Principles",
     "description": "Principles Button"
   },
+  "Menu.readings": {
+    "defaultMessage": "7. Readings",
+    "description": "Readings button"
+  },
   "Menu.research": {
-    "defaultMessage": "7. Research",
+    "defaultMessage": "6. Research",
     "description": "Research button"
   },
   "Menu.resources": {
-    "defaultMessage": "6. Resources",
+    "defaultMessage": "8. Resources",
     "description": "Resources button"
   },
   "Menu.scenario": {
-    "defaultMessage": "2. Scenario",
-    "description": "Scenario Button"
+    "defaultMessage": "4. Client Background",
+    "description": "Client-Background Button"
   },
   "Menu.settings": {
     "defaultMessage": "Settings",
@@ -58,6 +62,14 @@
   "Principles.title": {
     "defaultMessage": "Essential Principles",
     "description": "Principles title"
+  },
+  "Readings.title": {
+    "defaultMessage": "Readings",
+    "description": "readings title"
+  },
+  "Research.title": {
+    "defaultMessage": "Research",
+    "description": "research title"
   },
   "Resources.title": {
     "defaultMessage": "Resources",
