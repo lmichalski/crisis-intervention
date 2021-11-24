@@ -3,6 +3,10 @@
     "defaultMessage": "Credits",
     "description": "credits title"
   },
+  "Debrief.title": {
+    "defaultMessage": "Self-Debrief",
+    "description": "debrief title"
+  },
   "Feedback.title": {
     "defaultMessage": "Feedback",
     "description": "feedback title"
@@ -20,8 +24,12 @@
     "description": "Client chart button"
   },
   "Menu.credits": {
-    "defaultMessage": "8. Credits",
+    "defaultMessage": "9. Credits",
     "description": "Credits Button"
+  },
+  "Menu.debrief": {
+    "defaultMessage": "8. Self-Debrief",
+    "description": "Self-Debrief button"
   },
   "Menu.instructions": {
     "defaultMessage": "1. How to Play",

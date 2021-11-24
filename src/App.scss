@@ -123,11 +123,26 @@ button,
       flex-direction: row;
       justify-content: space-between;
 
-      background-color: #d6dde0;
+      // background-image: url(".../images/background.jpg");
 
       @media only screen and (max-width: $max-mobile-width) {
         display: none;
       }
+
+      .img-left {
+        width: 440px; /* width of container */
+        height: 440px; /* height of container */
+        object-fit: cover;
+        object-position: 0 80%; /* try 20px 10px */ 
+      }
+
+      .img-right {
+        width: 440px; /* width of container */
+        height: 440px; /* height of container */
+        object-fit: cover;
+        object-position: 0 -40px; /* try 20px 10px */ 
+      }
+
 
       .quote {
         color: rgba(16, 33, 51, 0.8);

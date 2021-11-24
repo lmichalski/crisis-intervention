@@ -19,7 +19,7 @@ const Resources: React.FC<{}> = () => {
             <ul>
               <h2>Canada</h2>
 
-              <li>
+              <li className="resource-item">
                 <span className="resource-name">
                   Crisis Services Canada <br />
                 </span>
@@ -29,7 +29,7 @@ const Resources: React.FC<{}> = () => {
                 <span>Telephone: 1-833-456-4566 </span>
               </li>
 
-              <li>
+              <li className="resource-item">
                 <span className="resource-name">
                   Kids Help Phone <br />
                 </span>
@@ -42,7 +42,7 @@ const Resources: React.FC<{}> = () => {
 
               <h2>Ontario, Canada</h2>
 
-              <li>
+              <li className="resource-item">
                 <span className="resource-name">
                   Distress Centres of Greater Toronto <br />
                 </span>
@@ -53,7 +53,7 @@ const Resources: React.FC<{}> = () => {
                 <span>Telephone: 416-408-HELP (4357) </span>
               </li>
 
-              <li>
+              <li className="resource-item">
                 <span className="resource-name">
                   {" "}
                   Gerstein Centre <br />
@@ -67,7 +67,7 @@ const Resources: React.FC<{}> = () => {
 
               <h2>United States</h2>
 
-              <li>
+              <li className="resource-item">
                 <span className="resource-name">
                   {" "}
                   National Suicide Prevention Lifeline <br />

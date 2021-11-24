@@ -120,6 +120,21 @@ const MenuItems: React.FC<iProps> = ({
 
       <li>
         <NavLink
+          to={`/debrief/`}
+          className="Menu__link"
+          activeClassName="Menu__link--active"
+          onClick={onItemClicked}
+        >
+          <FormattedMessage
+            id="Menu.debrief"
+            defaultMessage="8. Self-Debrief"
+            description="Self-Debrief button"
+          />
+        </NavLink>
+      </li>
+
+      <li>
+        <NavLink
           to={`/credits/`}
           className="Menu__link"
           activeClassName="Menu__link--active"
@@ -127,7 +142,7 @@ const MenuItems: React.FC<iProps> = ({
         >
           <FormattedMessage
             id="Menu.credits"
-            defaultMessage="8. Credits"
+            defaultMessage="9. Credits"
             description="Credits Button"
           />
         </NavLink>

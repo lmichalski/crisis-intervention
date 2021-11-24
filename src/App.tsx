@@ -34,8 +34,8 @@ import useGameState from "./hooks/useGameState";
 import Intro from "./pages/Intro";
 import DropDown from "./components/DropDown";
 import Research from "./pages/Research";
-import Readings from "./pages/Readings";
 import MenuItems from "./components/MenuItems";
+import Debrief from "./pages/Debrief";
 
 interface iProps {}
 
@@ -221,9 +221,10 @@ const App: React.FC<iProps> = () => {
         >
           <img
             src="/images/hand-left.png"
+            className="img-left"
             alt="person's hand with white skin reaching toward the centre of the screen"
-            width="360px"
-            height="480px"
+            width="450px"
+            height="600px"
           ></img>
           <div className="quote">
             {" "}
@@ -235,9 +236,10 @@ const App: React.FC<iProps> = () => {
           </div>
           <img
             src="/images/hand-right.png"
+            className="img-right"
             alt="person's hand with black skin reaching toward the centre of the screen"
-            width="360px"
-            height="480px"
+            width="450px"
+            height="600px"
           ></img>
         </div>
 
@@ -316,8 +318,8 @@ const App: React.FC<iProps> = () => {
                 <Research />
               </Route>
 
-              <Route path={`/readings`}>
-                <Readings />
+              <Route path={`/debrief`}>
+                <Debrief />
               </Route>
 
               <Route path={`/summary`}>

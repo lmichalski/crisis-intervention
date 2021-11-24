@@ -58,7 +58,10 @@ const Credits: React.FC<{}> = () => {
                 <span className="title">
                   Professor, Nursing <br />
                 </span>
-                <span className="organization">Nursing Centennial College, School of Community and Health Studies</span>
+                <span className="organization">
+                  Nursing Centennial College, School of Community and Health
+                  Studies
+                </span>
               </ul>
 
               <h3>Cast</h3>
