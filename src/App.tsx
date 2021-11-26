@@ -220,12 +220,19 @@ const App: React.FC<iProps> = () => {
           }`}
         >
           <img
+            src="/images/holding-hands.jpg"
+            className="img-banner"
+            alt="person's hand with white skin reaching toward the centre of the screen"
+            width="1200px"
+            height="800px">
+          </img>
+          {/* <img
             src="/images/hand-left.png"
             className="img-left"
             alt="person's hand with white skin reaching toward the centre of the screen"
             width="450px"
             height="600px"
-          ></img>
+          ></img> */}
           <div className="quote">
             {" "}
             <p>
@@ -234,13 +241,13 @@ const App: React.FC<iProps> = () => {
             </p>{" "}
             <span className="quoted-person">Desmond Tutu</span>
           </div>
-          <img
+          {/* <img
             src="/images/hand-right.png"
             className="img-right"
             alt="person's hand with black skin reaching toward the centre of the screen"
             width="450px"
             height="600px"
-          ></img>
+          ></img> */}
         </div>
 
         <div className="body">
