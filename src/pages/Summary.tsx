@@ -121,7 +121,7 @@ const Summary: React.FC<iProps> = ({
             <tags.text>
               <tags.text>
                 {" "}
-                However, if you give only correct answers it should only take 11
+                However, if you give only correct answers it should only take 14
                 questions to complete the scenario. Your selections had the
                 following results:
                 <tags.br />

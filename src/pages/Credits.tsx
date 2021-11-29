@@ -43,7 +43,7 @@ const Credits: React.FC<{}> = () => {
                   </span>
                 </li>
                 <span className="title">
-                  Professor <br />
+                  Professor, Bachelor of Community Mental Health <br />
                 </span>
                 <span className="organization">
                   Seneca College, School of Community Services

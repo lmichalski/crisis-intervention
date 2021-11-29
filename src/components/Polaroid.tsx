@@ -9,7 +9,7 @@ const Polaroid: React.FC = () => {
         width="280"
         height="210"
       ></img>
-      <p className="caption">Client: Kelly FLynn</p>
+      <p className="caption">Client: Kelly Flynn</p>
     </div>
   );
 };

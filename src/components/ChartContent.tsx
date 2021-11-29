@@ -37,7 +37,7 @@ const ChartContent: React.FC = () => {
         <h3>Client Profile</h3>
         <div className="Chart-profile-columns">
           <div>Sex: Female</div>
-          <div>DOB: 1998-10-14</div>
+          <div>DOB: 1999-10-14</div>
           <div>Age: 22</div>
         </div>
       </div>
