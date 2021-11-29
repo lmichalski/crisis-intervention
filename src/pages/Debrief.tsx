@@ -35,18 +35,22 @@ const Credits: React.FC<{}> = () => {
                 reactions, analyze issues, reflect on your performance and make
                 connections to aid in your future clinical practice.
               </p>
+
+              <h2>Reflection Questions</h2>
+
               <ol>
                 <li className="debrief-item">
-                  What are your thoughts and feelings about acting in the role of the Marcus,
-                  the mental health counsellor?
+                  What are your thoughts and feelings about acting in the role
+                  of the Marcus, the mental health counsellor?
                 </li>
                 <li className="debrief-item">
                   How did you feel in the role of the mental health counsellor
                   during this simulation?
                 </li>
                 <li className="debrief-item">
-                    Share what you learned about counselling Kelly.</li>
-                    <li className="debrief-item">
+                  Share what you learned about counselling Kelly.
+                </li>
+                <li className="debrief-item">
                   Did you play the game more than once? If so, how was this
                   helpful to you?{" "}
                 </li>
@@ -93,6 +97,10 @@ const Credits: React.FC<{}> = () => {
                 <li className="debrief-item">
                   What questions remain unanswered for you in relation to this
                   scenario?
+                </li>
+                <li className="debrief-item">
+                  At the end of the virtual gaming simulation, did you feel more
+                  or less confident to work with suicidal clients?
                 </li>
                 <li className="debrief-item">
                   How did you feel after completing this virtual gaming

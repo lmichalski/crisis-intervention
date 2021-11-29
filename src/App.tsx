@@ -219,13 +219,6 @@ const App: React.FC<iProps> = () => {
             navMenuExpanded ? "banner--expanded" : "banner--collapsed"
           }`}
         >
-          <img
-            src="/images/holding-hands.jpg"
-            className="img-banner"
-            alt="person's hand with white skin reaching toward the centre of the screen"
-            width="1200px"
-            height="800px">
-          </img>
           {/* <img
             src="/images/hand-left.png"
             className="img-left"

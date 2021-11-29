@@ -278,11 +278,11 @@ const Summary: React.FC<iProps> = ({
             }
           </PDFDownloadLink>
 
-          <Lonk to="/materials/">
+          <Lonk to="/debrief/" className="debrief">
             <FormattedMessage
-              id="materials.link"
-              defaultMessage="Practice Materials"
-              description="Link to Practice Materials"
+              id="debrief.link"
+              defaultMessage="Self Debrief"
+              description="Link to Self Debrief"
             />
           </Lonk>
 

@@ -75,6 +75,24 @@ const Instructions: React.FC<iProps> = ({ minSteps, strings }) => {
               <li>The game will take 30-60 minutes to complete.</li>
             </ul>
           </div>
+
+          <h2>Trigger Warning</h2>
+          <div>
+            This virtual gaming simulation contains sensitive information that
+            may be triggering for some players. If at any time you are unable to
+            continue playing, please take a break or stop immediately. If you
+            continue to feel triggered, please use the resources provided to
+            obtain support.
+          </div>
+
+          <h2>Scenario</h2>
+          <div>
+            Kelly's roommate Talia is worried about Kelly's late nights of
+            partying and drinking. Kelly has been more distant towards Talia and
+            has not been in contact with her family for a long time. Talia has
+            expressed concern for Kelly and urged her to make an appointment to
+            address her current state.
+          </div>
         </div>
       </div>
     </div>

@@ -14,7 +14,7 @@
     },
     "intro": {
       "introCards": [
-        "Kelly's roommate Talia is worried about Kelly's late nights of partying and drinking. Kelly has been more distant towards Talia and has not been in contact with her family for a long time. Talia has expressed concern for Kelly and urged her to make an appointment to address her current state."
+        "Trigger Warning: This virtual gaming simulation contains sensitive information that may be triggering for some players. If at any time you are unable to continue playing, please take a break or stop immediately. If you continue to feel triggered, please use the resources provided to obtain support."
       ]
     },
     "objectives": {
@@ -677,7 +677,7 @@
       "type": "video",
       "data": "SG4_DP9_2",
       "video": {
-        "vimeo_url": "https://player.vimeo.com/video/638816237"
+        "vimeo_url": "https://player.vimeo.com/video/638816147"
       },
       "correct": "wrong",
       "feedback": "Your response did not generate more information about the intent or plan to commit suicide which is needed to assess risk.",
@@ -700,7 +700,7 @@
       "type": "video",
       "data": "SG4_DP9_3",
       "video": {
-        "vimeo_url": "https://player.vimeo.com/video/638816147"
+        "vimeo_url": "https://player.vimeo.com/video/638816237"
       },
       "correct": "half",
       "feedback": "Your response appeared too broad and was not able to generate additional information to assess for risk. ",
@@ -796,7 +796,7 @@
       "type": "video",
       "data": "SG4_DP11_1",
       "video": {
-        "vimeo_url": "https://player.vimeo.com/video/638816368"
+        "vimeo_url": "https://player.vimeo.com/video/638821139"
       },
       "correct": "correct",
       "feedback": "",
@@ -863,7 +863,7 @@
       "id": 33,
       "title": "DP12_1",
       "type": "video",
-      "data": "SG4_DP10_1",
+      "data": "SG4_DP12_1",
       "video": {
         "vimeo_url": "https://player.vimeo.com/video/638821322"
       },

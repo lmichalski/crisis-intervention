@@ -33,7 +33,8 @@ const Feedback: React.FC<iProps> = ({ decisionPoint: dp }) => {
               width="20"
               height="20"
             ></img>
-            &nbsp;<span>Not-the-Best</span>
+            &nbsp;
+            <span className="correctness-label">Not-the-Best Response</span>
           </>
         );
       case "wrong":
@@ -45,7 +46,7 @@ const Feedback: React.FC<iProps> = ({ decisionPoint: dp }) => {
               width="20"
               height="20"
             ></img>
-            &nbsp;<span>Incorrect</span>
+            &nbsp;<span className="correctness-label">Incorrect Response</span>
           </>
         );
     }
