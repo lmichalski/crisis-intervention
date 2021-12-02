@@ -87,11 +87,11 @@ const App: React.FC<iProps> = () => {
     )!;
   }, [gameData.decisionpoints, gameState.currentStep]);
 
-  const blurTarget = useCallback((e) => e.currentTarget.blur(), [])
+  const blurTarget = useCallback((e) => e.currentTarget.blur(), []);
 
   const handleStartNewGame = useCallback(
     (evt: React.MouseEvent<HTMLButtonElement>) => {
-      blurTarget(evt)
+      blurTarget(evt);
 
       gameState.newGame();
       setNavMenuExpanded(false);
@@ -103,7 +103,7 @@ const App: React.FC<iProps> = () => {
 
   const handleResumeGame = useCallback(
     (evt: React.MouseEvent<HTMLButtonElement>) => {
-      blurTarget(evt)
+      blurTarget(evt);
 
       var dp = currentDecisionPoint;
       setNavMenuExpanded(false);
@@ -223,13 +223,13 @@ const App: React.FC<iProps> = () => {
             navMenuExpanded ? "banner--expanded" : "banner--collapsed"
           }`}
         >
-          {/* <img
-            src="/images/hand-left.png"
+          <img
+            src="/images/woman-head-hold.png"
             className="img-left"
-            alt="person's hand with white skin reaching toward the centre of the screen"
-            width="450px"
+            alt="middle-aged asian woman holding her head in distress"
+            width="600px"
             height="600px"
-          ></img> */}
+          ></img>
           <div className="quote">
             {" "}
             <p>
