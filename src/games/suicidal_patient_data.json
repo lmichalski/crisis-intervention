@@ -142,7 +142,7 @@
         "vimeo_url": "https://player.vimeo.com/video/638786250"
       },
       "correct": "correct",
-      "feedback": "",
+      "feedback": "Correct: Your response indicated that you attempted to build rapport and create a safe space. By choosing this response your client was more willing to continue speaking with you.",
       "message": "How do you help Kelly to feel free to share what's going on?",
       "options": [
         {
@@ -215,7 +215,7 @@
         "vimeo_url": "https://player.vimeo.com/video/638787456"
       },
       "correct": "correct",
-      "feedback": "",
+      "feedback": "Correct: Your response was able to validate and normalize the client’s feelings and addressed their discomfort. In addition, the response invited the client to speak openly and displayed active listening.",
       "message": "How do you gather more information?",
       "options": [
         {
@@ -288,7 +288,7 @@
         "vimeo_url": "https://player.vimeo.com/video/638789427"
       },
       "correct": "correct",
-      "feedback": "",
+      "feedback": "Correct: Your response reminded the client of their positive support. Your response also used a reflective question to gather information.",
       "message": "How do you address Kelly’s unhealthy behaviours?",
       "options": [
         {
@@ -361,7 +361,7 @@
         "vimeo_url": "https://player.vimeo.com/video/638798953"
       },
       "correct": "correct",
-      "feedback": "",
+      "feedback": "Correct: Your response acknowledged that there are negative impacts of the client’s unhealthy behaviours without judgement. Your response also asked open-ended questions to encourage discussion.",
       "message": "How do you proceed?",
       "options": [
         {
@@ -434,7 +434,7 @@
         "vimeo_url": "https://player.vimeo.com/video/638805599"
       },
       "correct": "correct",
-      "feedback": "",
+      "feedback": "Correct: Your response paraphrased the client’s situation and reflected the client’s feelings. This response allowed the client to reflect on their behaviour.",
       "message": "How do you inquire about Kelly’s support system?",
       "options": [
         {
@@ -507,7 +507,7 @@
         "vimeo_url": "https://player.vimeo.com/video/638807487"
       },
       "correct": "correct",
-      "feedback": "",
+      "feedback": "Correct: Your response acknowledged some of the client’s existing support system and you asked an open-ended question to gather more information. ",
       "message": "How do you find out more about Kelly’s coping mechanisms?",
       "options": [
         {
@@ -580,7 +580,7 @@
         "vimeo_url": "https://player.vimeo.com/video/638809605"
       },
       "correct": "correct",
-      "feedback": "",
+      "feedback": "Correct: Your response acknowledged the client’s stressors, validated her need for support, and asked an open-ended question to gather more information. ",
       "message": "What is your response to Kelly’s admission of having negative thoughts?",
       "options": [
         {
@@ -653,7 +653,7 @@
         "vimeo_url": "https://player.vimeo.com/video/638813395"
       },
       "correct": "correct",
-      "feedback": "",
+      "feedback": "Correct: Your response displayed active listening and empathy. Your response also inquired about self-harm and suicidality to further access risk.",
       "message": "How do you respond to Kelly’s suicidal thoughts?",
       "options": [
         {
@@ -726,7 +726,7 @@
         "vimeo_url": "https://player.vimeo.com/video/638815887"
       },
       "correct": "correct",
-      "feedback": "",
+      "feedback": "Correct: Your response helped to gather further information to assess the client’s risk level. Your response was also helpful as it inquired if the client was in imminent danger. ",
       "message": "How do you continue to assess Kelly’s suicide plan?",
       "options": [
         {
@@ -799,7 +799,7 @@
         "vimeo_url": "https://player.vimeo.com/video/638821139"
       },
       "correct": "correct",
-      "feedback": "",
+      "feedback": "Correct: Your response acknowledged that the client is contemplating suicide. Your response also asks whether or not the client has a plan to further assess risk.",
       "message": "What would you rate Kelly’s risk level?",
       "options": [
         {
@@ -868,7 +868,7 @@
         "vimeo_url": "https://player.vimeo.com/video/638821322"
       },
       "correct": "correct",
-      "feedback": "",
+      "feedback": "Correct: Your response identified that the client is high risk due to the current plan and means to execute the plan to take your life",
       "message": "What is your first step to develop a safety plan?",
       "options": [
         {
@@ -941,7 +941,7 @@
         "vimeo_url": "https://player.vimeo.com/video/638821322"
       },
       "correct": "correct",
-      "feedback": "",
+      "feedback": "Correct: Your response gently informed the client that the hospital would be the appropriate next step. This approach is appropriate as a preventative measure.",
       "message": "How do you encourage Kelly to go to the hospital?",
       "options": [
         {
@@ -1014,7 +1014,7 @@
         "vimeo_url": "https://player.vimeo.com/video/638822909"
       },
       "correct": "correct",
-      "feedback": "",
+      "feedback": "Correct: Your response informed the client that her safety is the main priority. Your response also made it clear that the hospital is the next step to ensure her safety. ",
       "message": "How do you ensure Kelly goes to the hospital?",
       "options": [
         {
@@ -1086,7 +1086,7 @@
         "vimeo_url": "https://player.vimeo.com/video/638824546"
       },
       "correct": "correct",
-      "feedback": "",
+      "feedback": "Correct: Your response may seem like an unconventional decision; however, calling the police is the best course of action. Sitting with Kelly and supporting her as needed while you both wait for the Police to respond is the correct decision in a high risk situation.",
       "message": "",
       "options": [],
       "next": null
