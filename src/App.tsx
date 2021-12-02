@@ -169,10 +169,10 @@ const App: React.FC<iProps> = () => {
     if (lastDecisionPoint) {
       history.push(`/summary/`);
     } else if (dp && dp.options.length > 0) {
-      if (dp.feedback > "") {
+      if (dp.correct !== "correct" && dp.feedback > "") {
         history.push(`/feedback/`);
       } else {
-        // No feedback means go directly to the decision
+        // No feedback, or a correct answer means go directly to the decision
         history.push(`/decision/`);
       }
     } else {
