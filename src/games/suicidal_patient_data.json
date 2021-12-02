@@ -169,7 +169,7 @@
         "vimeo_url": "https://player.vimeo.com/video/638788143"
       },
       "correct": "wrong",
-      "feedback": "Your response lacked empathy and did not illicit trust or foster a working relationship",
+      "feedback": "Your response lacked empathy and did not illicit trust or foster a working relationship.",
       "message": "How do you help Kelly to feel free to share what's going on?",
       "options": [
         {
@@ -192,7 +192,7 @@
         "vimeo_url": "https://player.vimeo.com/video/638787934"
       },
       "correct": "half",
-      "feedback": "Your response asked an important question; however, the response overlooked the client’s feeling state and moved too quickly to an action-oriented question. This did not make the client feel comfortable to speak openly.",
+      "feedback": "Your response asked an important question; however, the response overlooked the client’s emotional state and moved too quickly to an action-oriented question. This did not make the client feel comfortable to speak openly.",
       "message": "How do you help Kelly to feel free to share what's going on?",
       "options": [
         {
@@ -227,7 +227,7 @@
           "next": 8
         },
         {
-          "label": "Ask open-ended question to facilitate discussion",
+          "label": "Ask an open-ended question to facilitate discussion",
           "next": 9
         }
       ],
@@ -411,7 +411,7 @@
         "vimeo_url": "https://player.vimeo.com/video/638805787"
       },
       "correct": "half",
-      "feedback": "Your response used an open-ended question to gather more information; however, the question was too broad and did not demonstrate active listening. As well, you failed to validate Kelly’s feelings.",
+      "feedback": "Your response used an open-ended question to gather more information; however, the question was too broad and did not demonstrate active listening.",
       "message": "How do you proceed?",
       "options": [
         {
@@ -588,7 +588,7 @@
           "next": 22
         },
         {
-          "label": "Discuss selfcare",
+          "label": "Discuss self-care",
           "next": 23
         },
         {
@@ -776,7 +776,7 @@
         "vimeo_url": "https://player.vimeo.com/video/638816717"
       },
       "correct": "half",
-      "feedback": "Your response asked a question that generated information that was useful to assess the client’s risk of suicide. However, information on the specifics of the plan for the client’s current suicide ideations were needed.",
+      "feedback": "Your response asked a question that generated information that was useful to assess the client’s risk of suicide. However, additional follow-up questions were needed.",
       "message": "How do you continue to assess Kelly’s suicide plan?",
       "options": [
         {
@@ -1064,12 +1064,12 @@
         "vimeo_url": "https://player.vimeo.com/video/638824752"
       },
       "correct": "half",
-      "feedback": "Your response to escort Kelly to the hospital may not be the best option. It is best to call 911 to ensure her safety in transit to the hospital. ",
+      "feedback": "Your response to escort Kelly to the hospital may not be the best course of action for this high-risk situation.",
       "message": "How do you ensure Kelly goes to the hospital?",
       "options": [
         {
-          "label": "Escort Kelly to hospital",
-          "next": 41
+          "label": "Talia escorts Kelly to hospital",
+          "next": 40
         },
         {
           "label": "Call 911",

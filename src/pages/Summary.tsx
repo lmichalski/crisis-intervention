@@ -146,44 +146,38 @@ const Summary: React.FC<iProps> = ({
               </tags.text>
 
               <tags.view style={{ padding: "5mm" }}>
-                  <tags.text>
-                    <tags.img
-                      src="/images/icon-correct.png"
-                      alt="green circular checkmark icon"
-                      width="20"
-                      height="20"
-                    />{" "}
-                    Correct:{" "}
-                    {
-                      progress.filter(({ correct }) => correct === "correct")
-                        .length
-                    }
-                    <tags.br />
-                    <tags.img
-                      src="/images/icon-partial.png"
-                      alt="yellow triangular warning icon"
-                      width="20"
-                      height="20"
-                    />{" "}
-                    Not-the-Best:{" "}
-                    {
-                      progress.filter(({ correct }) => correct === "half")
-                        .length
-                    }
-                    <tags.br />
-                    <tags.img
-                      src="/images/icon-incorrect.png"
-                      alt="red circular x icon"
-                      width="20"
-                      height="20"
-                    />{" "}
-                    Incorrect:{" "}
-                    {
-                      progress.filter(({ correct }) => correct === "wrong")
-                        .length
-                    }
-                  </tags.text>
-                </tags.view>
+                <tags.text>
+                  <tags.img
+                    src="/images/icon-correct.png"
+                    alt="green circular checkmark icon"
+                    width="20"
+                    height="20"
+                  />{" "}
+                  Correct:{" "}
+                  {
+                    progress.filter(({ correct }) => correct === "correct")
+                      .length
+                  }
+                  <tags.br />
+                  <tags.img
+                    src="/images/icon-partial.png"
+                    alt="yellow triangular warning icon"
+                    width="20"
+                    height="20"
+                  />{" "}
+                  Not-the-Best:{" "}
+                  {progress.filter(({ correct }) => correct === "half").length}
+                  <tags.br />
+                  <tags.img
+                    src="/images/icon-incorrect.png"
+                    alt="red circular x icon"
+                    width="20"
+                    height="20"
+                  />{" "}
+                  Incorrect:{" "}
+                  {progress.filter(({ correct }) => correct === "wrong").length}
+                </tags.text>
+              </tags.view>
 
               <tags.text>
                 See if you can improve your results next time!{"\n\n"}
