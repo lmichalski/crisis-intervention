@@ -634,7 +634,7 @@
       "message": "What is your response to Kelly’s admission of having negative thoughts?",
       "options": [
         {
-          "label": "Explore Kelly personal habits",
+          "label": "Explore Kelly's personal habits",
           "next": 22
         },
         {

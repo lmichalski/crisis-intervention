@@ -117,6 +117,7 @@ button,
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+    justify-content: left;
 
     .banner {
       display: flex;
@@ -288,7 +289,7 @@ button,
         .panel {
           display: flex;
           flex-flow: column nowrap;
-          align-items: center;
+          align-items: flex-start;
 
           color: white;
 
