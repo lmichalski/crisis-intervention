@@ -51,9 +51,8 @@
   border-radius: 8px;
   display: inline-block;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     background-color: cornflowerblue;
   }
 }
-
-
