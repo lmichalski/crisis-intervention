@@ -47,23 +47,28 @@ const Summary: React.FC<iProps> = ({
 }) => {
   // const [progress, setProgress] = useState([])
 
-  let progress: { question: string; answer: string; correct: Correctness }[] =
-    useMemo(() => {
-      let progress = [];
-      var i;
-      for (i = 0; i < gameProgress.length; i++) {
-        const dp = gameProgress[i];
-        const current = decisionPoints.find(({ id }) => id === dp.id)!;
-        const next = decisionPoints.find(({ id }) => id === dp.option)!;
+  let progress: {
+    question: string;
+    answer: string;
+    correct: Correctness;
+    feedback: string;
+  }[] = useMemo(() => {
+    let progress = [];
+    var i;
+    for (i = 0; i < gameProgress.length; i++) {
+      const dp = gameProgress[i];
+      const current = decisionPoints.find(({ id }) => id === dp.id)!;
+      const next = decisionPoints.find(({ id }) => id === dp.option)!;
 
-        progress.push({
-          question: current.message,
-          answer: dp.label,
-          correct: next.correct,
-        });
-      }
-      return progress;
-    }, [decisionPoints, gameProgress]);
+      progress.push({
+        question: current.message,
+        answer: dp.label,
+        correct: next.correct,
+        feedback: next.feedback,
+      });
+    }
+    return progress;
+  }, [decisionPoints, gameProgress]);
 
   let message: (webrender: boolean) => JSX.Element;
 
@@ -85,6 +90,13 @@ const Summary: React.FC<iProps> = ({
               React.ComponentProps<typeof Text>) => (
               <span style={style}>{children}</span>
             ),
+            view: ({
+              style,
+              children,
+            }: React.HTMLAttributes<HTMLDivElement> &
+              React.ComponentProps<typeof View>) => (
+              <div style={style}>{children}</div>
+            ),
           }
         : {
             br: () => <>{"\n"}</>,
@@ -97,6 +109,13 @@ const Summary: React.FC<iProps> = ({
             }: React.HTMLAttributes<HTMLSpanElement> &
               React.ComponentProps<typeof Text>) => (
               <Text style={style}>{children}</Text>
+            ),
+            view: ({
+              style,
+              children,
+            }: React.HTMLAttributes<HTMLDivElement> &
+              React.ComponentProps<typeof View>) => (
+              <View style={style}>{children}</View>
             ),
           };
 
@@ -118,46 +137,58 @@ const Summary: React.FC<iProps> = ({
               time to make sure it wasn't mere luck :)
             </tags.text>
           ) : (
-            <tags.text>
+            <tags.view>
               <tags.text>
                 {" "}
                 However, if you give only correct answers it should only take 14
                 questions to complete the scenario. Your selections had the
                 following results:
-                <tags.br />
-                <tags.img
-                  src="/images/icon-correct.png"
-                  alt="green circular checkmark icon"
-                  width="20"
-                  height="20"
-                />{" "}
-                Correct:{" "}
-                {progress.filter(({ correct }) => correct === "correct").length}
-                <tags.br />
-                <tags.img
-                  src="/images/icon-partial.png"
-                  alt="yellow triangular warning icon"
-                  width="20"
-                  height="20"
-                />{" "}
-                Not-the-Best:{" "}
-                {progress.filter(({ correct }) => correct === "half").length}
-                <tags.br />
-                <tags.img
-                  src="/images/icon-incorrect.png"
-                  alt="red circular x icon"
-                  width="20"
-                  height="20"
-                />{" "}
-                Incorrect:{" "}
-                {progress.filter(({ correct }) => correct === "wrong").length}
-                <tags.br />
               </tags.text>
 
+              <tags.view style={{ padding: "5mm" }}>
+                  <tags.text>
+                    <tags.img
+                      src="/images/icon-correct.png"
+                      alt="green circular checkmark icon"
+                      width="20"
+                      height="20"
+                    />{" "}
+                    Correct:{" "}
+                    {
+                      progress.filter(({ correct }) => correct === "correct")
+                        .length
+                    }
+                    <tags.br />
+                    <tags.img
+                      src="/images/icon-partial.png"
+                      alt="yellow triangular warning icon"
+                      width="20"
+                      height="20"
+                    />{" "}
+                    Not-the-Best:{" "}
+                    {
+                      progress.filter(({ correct }) => correct === "half")
+                        .length
+                    }
+                    <tags.br />
+                    <tags.img
+                      src="/images/icon-incorrect.png"
+                      alt="red circular x icon"
+                      width="20"
+                      height="20"
+                    />{" "}
+                    Incorrect:{" "}
+                    {
+                      progress.filter(({ correct }) => correct === "wrong")
+                        .length
+                    }
+                  </tags.text>
+                </tags.view>
+
               <tags.text>
-                See if you can improve your results next time!{" "}
+                See if you can improve your results next time!{"\n\n"}
               </tags.text>
-            </tags.text>
+            </tags.view>
           )}
           {/* <Text>
           Document this encounter by clicking on the practice documentation
@@ -189,20 +220,27 @@ const Summary: React.FC<iProps> = ({
     let responses = progress.map((dp, i) => (
       <View key={i}>
         <View>
-          <Text style={{ fontWeight: "bold" }}>Q: </Text>
-          <Text>{dp.question}</Text>
+          <Text>
+            <Text style={{ fontWeight: "bold" }}>Q: </Text>
+            <Text>{dp.question}</Text>
+          </Text>
         </View>
         <View>
-          <Text style={{ fontWeight: "bold" }}>A: </Text>
-          <Text style={{ color: correctnessColors[dp.correct] }}>
-            {dp.answer} ({correctnessLabels[dp.correct]})
+          <Text>
+            <Text style={{ fontWeight: "bold" }}>A: </Text>
+            <Text style={{ color: correctnessColors[dp.correct] }}>
+              {dp.answer} ({correctnessLabels[dp.correct]})
+            </Text>
+          </Text>
+          <Text>
+            {dp.feedback} {"\n\n"}
           </Text>
         </View>
       </View>
     ));
     const html = (
       <Document>
-        <Page>
+        <Page size="letter" style={{ padding: "1in" }}>
           {/* <style
             dangerouslySetInnerHTML={{
               __html: `html, body { font-family: Helvetica, Arial, sans-serif; font-size: 14px; line-height: 130%; background-color: #ffffff; color: #000;}
@@ -227,7 +265,7 @@ const Summary: React.FC<iProps> = ({
             >
               Emergency Game Report
             </Text>
-            <Text style={{ fontSize: 24 }}>Summary</Text>
+            <Text style={{ fontSize: 24 }}>{"\nSummary"}</Text>
             <View>{message(false)}</View>
             <Text style={{ fontSize: 24 }}>Your Responses</Text>
             <View>{responses}</View>
