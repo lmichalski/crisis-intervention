@@ -14,7 +14,7 @@ export type Correctness = "correct" | "half" | "wrong";
 export interface DecisionPoint {
   id: number;
   title?: string;
-  type: string; //"video" | "string",
+  type: "video" | "string" | "lo",
   data: string;
 
   video:
