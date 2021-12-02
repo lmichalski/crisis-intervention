@@ -87,21 +87,23 @@ const App: React.FC<iProps> = () => {
     )!;
   }, [gameData.decisionpoints, gameState.currentStep]);
 
+  const blurTarget = useCallback((e) => e.currentTarget.blur(), [])
+
   const handleStartNewGame = useCallback(
     (evt: React.MouseEvent<HTMLButtonElement>) => {
-      evt.currentTarget.blur();
+      blurTarget(evt)
 
       gameState.newGame();
       setNavMenuExpanded(false);
       history.push(`/chart/`);
       logGameEvent("", "start", "game", getBrowser(), "");
     },
-    [history, logGameEvent, gameState]
+    [history, logGameEvent, gameState, blurTarget]
   );
 
   const handleResumeGame = useCallback(
     (evt: React.MouseEvent<HTMLButtonElement>) => {
-      evt.currentTarget.blur();
+      blurTarget(evt)
 
       var dp = currentDecisionPoint;
       setNavMenuExpanded(false);
@@ -125,6 +127,7 @@ const App: React.FC<iProps> = () => {
       gameState.currentStep,
       currentDecisionPoint,
       lastDecisionPoint,
+      blurTarget,
     ]
   );
 
@@ -209,6 +212,7 @@ const App: React.FC<iProps> = () => {
             pagesToShow={{
               principles: !!gameData.strings.principles,
             }}
+            onItemClicked={blurTarget}
           />
         </DropDown>
       </header>

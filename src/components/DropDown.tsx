@@ -23,7 +23,11 @@ const DropDown: React.FC<iProps> = ({ className, label, children }) => {
     <div
       className={className ? `${baseClassName} ${className}` : baseClassName}
     >
-      <button onClick={toggleExpanded} className="DropDown__button">
+      <button
+        onClick={toggleExpanded}
+        className="DropDown__button"
+        onBlur={collapse}
+      >
         {label}
       </button>
       <div className="DropDown__content" onClick={collapse}>

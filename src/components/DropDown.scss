@@ -33,7 +33,7 @@
       }
     }
   }
-
+  &:focus-within &__content,
   &--expanded &__content {
     display: flex;
     flex-direction: column;

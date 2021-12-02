@@ -6,7 +6,7 @@ interface iProps {
   pagesToShow: {
     principles: boolean;
   };
-  onItemClicked?: () => void;
+  onItemClicked?: React.MouseEventHandler<HTMLAnchorElement>;
 }
 
 const MenuItems: React.FC<iProps> = ({
