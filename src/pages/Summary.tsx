@@ -252,19 +252,6 @@ const Summary: React.FC<iProps> = ({
         <div className="main summary">
           <div className="content">
             <div>{message(true)}</div>
-            <h2 style={{ fontSize: 24 }}>Your Answers:</h2>
-            <ol className="responses">
-              {progress.map((dp) => (
-                <li>
-                  <div>{dp.question}</div>
-                  <div className={dp.correct}>
-                    <strong style={{ color: correctnessColors[dp.correct] }}>
-                      {dp.answer} ({correctnessLabels[dp.correct]})
-                    </strong>
-                  </div>
-                </li>
-              ))}
-            </ol>
           </div>
         </div>
         <footer>
@@ -278,7 +265,7 @@ const Summary: React.FC<iProps> = ({
             }
           </PDFDownloadLink>
 
-          <Lonk to="/debrief/" className="debrief">
+          <Lonk to="/debrief/" className="button">
             <FormattedMessage
               id="debrief.link"
               defaultMessage="Self Debrief"
