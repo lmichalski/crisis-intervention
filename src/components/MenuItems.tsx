@@ -61,20 +61,6 @@ const MenuItems: React.FC<iProps> = ({
       </li>
       <li>
         <NavLink
-          to={`/scenario/`}
-          className="Menu__link"
-          activeClassName="Menu__link--active"
-          onClick={onItemClicked}
-        >
-          <FormattedMessage
-            id="Menu.scenario"
-            defaultMessage="4. Client Background"
-            description="Client-Background Button"
-          />
-        </NavLink>
-      </li>
-      <li>
-        <NavLink
           to={`/chart/`}
           className="Menu__link"
           activeClassName="Menu__link--active"
@@ -82,7 +68,7 @@ const MenuItems: React.FC<iProps> = ({
         >
           <FormattedMessage
             id="Menu.chart"
-            defaultMessage="5. Client Chart"
+            defaultMessage="4. Client Chart"
             description="Client chart button"
           />
         </NavLink>
@@ -97,7 +83,7 @@ const MenuItems: React.FC<iProps> = ({
         >
           <FormattedMessage
             id="Menu.research"
-            defaultMessage="6. Research"
+            defaultMessage="5. Research"
             description="Research button"
           />
         </NavLink>
@@ -112,7 +98,7 @@ const MenuItems: React.FC<iProps> = ({
         >
           <FormattedMessage
             id="Menu.resources"
-            defaultMessage="7. Crisis Resources"
+            defaultMessage="6. Crisis Resources"
             description="Resources button"
           />
         </NavLink>
@@ -127,7 +113,7 @@ const MenuItems: React.FC<iProps> = ({
         >
           <FormattedMessage
             id="Menu.debrief"
-            defaultMessage="8. Self-Debrief"
+            defaultMessage="7. Self-Debrief"
             description="Self-Debrief button"
           />
         </NavLink>
@@ -142,7 +128,7 @@ const MenuItems: React.FC<iProps> = ({
         >
           <FormattedMessage
             id="Menu.credits"
-            defaultMessage="9. Credits"
+            defaultMessage="8. Credits"
             description="Credits Button"
           />
         </NavLink>

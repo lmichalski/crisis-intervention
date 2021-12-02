@@ -39,8 +39,10 @@
 }
 
 .polaroid {
-  position: relative;
-  left: 36vw;
+  float: right;
+  position: absolute;
+  right: 400px;
+  flex-shrink: 1;
 }
 
 .body .view .Chart {

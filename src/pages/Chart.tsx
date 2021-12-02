@@ -61,11 +61,11 @@ const Chart: React.FC<iProps> = ({ image }) => {
             <h2>Client Chart</h2>
           </header>
           <div className="Chart-folder">
-            <div className="Chart-folder-left">
-              <Polaroid></Polaroid>
-            </div>
             <div className="Chart-folder-right">
               <ChartContent></ChartContent>
+            </div>
+            <div className="Chart-folder-left">
+              <Polaroid></Polaroid>
             </div>
           </div>
         </div>
