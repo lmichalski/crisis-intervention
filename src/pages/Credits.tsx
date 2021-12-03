@@ -31,7 +31,7 @@ const Credits: React.FC<{}> = () => {
                     vls.ecampusontario.ca
                   </a>
                 </span>
-                . The project was developed by the staff and students from
+                . This project was developed by the staff and students from
                 Seneca College, School of Community Services.
               </p>
 
