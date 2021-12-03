@@ -302,6 +302,24 @@ button,
           background-color: rgba(16, 33, 51, 0.8);
           border-radius: 16px;
           padding: 2vw;
+          margin: 16px auto;
+        }
+
+        .feedback {
+          display: flex;
+          flex-flow: column nowrap;
+          align-items: center;
+
+          color: white;
+
+          // width: 450px;
+          max-width: 90%;
+          max-height: 95%;
+          padding: 0px 40px;
+          box-sizing: border-box;
+          background-color: rgba(16, 33, 51, 0.8);
+          border-radius: 16px;
+          padding: 2vw;
           margin: 16vh auto 16px auto;
         }
 

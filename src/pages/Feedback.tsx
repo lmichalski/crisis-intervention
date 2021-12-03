@@ -54,7 +54,7 @@ const Feedback: React.FC<iProps> = ({ decisionPoint: dp }) => {
 
   return (
     <div className="container">
-      <div className="panel feedback" role="alert">
+      <div className="feedback" role="alert">
         <div>
           <FormattedMessage
             id="Feedback.title"
