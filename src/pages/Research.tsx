@@ -16,48 +16,49 @@ const Research: React.FC<{}> = () => {
         </header>
         <div className="main">
           <div className="research">
+            <h3>Written By: Cintra Ramkissoon & Jasper Bakker</h3>
+
             <p>
-              According to the World Health Organization (WHO) (2019), an
-              approximate 800,000 people die every year due to suicide. Suicide
-              risk is common among individuals with underlying mental health
-              disorders, and individuals experiencing crisis situations may feel
-              inadequate when dealing with life stressors (WHO, 2019). With
-              increase occurrences of suicide, health care providers have
-              incorporated suicide risk assessment (SRA) into practice. The
-              American Psychiatric Association defines the goal of SRA as
-              “identifying factors that may increase or decrease a patient’s
-              level of suicide risk, to estimate an overall level of risk, and
-              to develop a care plan that addresses their safety and modifiable
-              contributors to suicide risk” (Bucago, Cheung, & Zhang, 2019).
-              Besides its significance, the SRA has a continuous process which
-              involves four essential principles. These principles include the
-              therapeutic relationship, communication and collaboration,
-              documentation in the assessment process, and cultural awareness.
-              Establishing a therapeutic rapport can improve the SRA process,
-              and communication is critical to ensure SRA remains consistent.
-              Organizing clear notes can help plan for treatments and
-              preventative care, as well as acknowledging culture as a potential
-              influence on suicide (Perlman, Neufeld, Martin, Goy, & Hirdes,
-              2011). Altogether these principles guide the assessment process.{" "}
+              According to the World Health Organization (WHO) (2019),
+              approximately 800,000 people die every year due to suicide.
+              Suicide risk is common among individuals with underlying mental
+              health disorders, and individuals experiencing crisis situations
+              may feel unequipped to deal with life stressors (WHO, 2019). With
+              the increase occurrences of suicide, health care providers often
+              utilize a suicide risk assessment (SRA) into their practice which
+              provides a guideline on how to support at-risk clients. SRA are
+              helpful to identify factors that may increase or decrease a
+              patient’s level of suicide risk, to estimate an overall level of
+              risk, and to develop a care plan that addresses their safety and
+              modifiable contributors to suicide risk (Jacobs et al., 2010). The
+              SRA has a continuous process which involves four essential
+              principles. These principles include the therapeutic relationship,
+              communication and collaboration, documentation in the assessment
+              process, and cultural awareness. Establishing a therapeutic
+              rapport can improve the SRA process, and communication is critical
+              to ensure SRA remains consistent. Organizing clear notes can help
+              plan for treatments and preventative care, as well as
+              acknowledging culture as a potential influence on suicide (Perlman
+              et al., 2011). Altogether these principles guide the assessment
+              process.{" "}
             </p>
 
             <p>
-              {" "}
-              On the other hand, Sadek (2018) also identifies the SRA process in
-              three steps. Step one – building a therapeutic relationship and
-              alliance with the clients and asking about suicidal ideation. As
-              previously mentioned, creating a therapeutic alliance is an
-              essential foundation for SRA which involves empathy, support, and
-              transparency (Sadek, 2018). Step two –identify risk factors,
-              noting those that can be modified to reduce risk. This step has
-              the potential to seek risk factors based on the information
-              received from the patient and collateral sources such as family
-              (Sadek, 2018). Lastly, step three – formulating risk. Make a
-              clinical judgement of the risk that a client may attempt or
-              complete suicide in the short or long term. During this step,
-              clinical formulation of risk is considered such as a low acute
-              risk, or high chronic risk (Sadek, 2018). Collectively, the three
-              steps reflect on the amount of work put into the SRA process.{" "}
+              Sadek (2018) also identifies similar steps. Step one – building a
+              therapeutic relationship and alliance with the clients and asking
+              about suicidal ideation. As previously mentioned, creating a
+              therapeutic alliance is an essential foundation for SRA which
+              involves empathy, support, and transparency (Sadek, 2018). Step
+              two –identify risk factors, noting those that can be modified to
+              reduce risk. This step has the potential to seek risk factors
+              based on the information received from the patient and collateral
+              sources such as family (Sadek, 2018). Lastly, step three –
+              formulating risk. Make a clinical judgement of the risk that a
+              client may attempt or complete suicide in the short or long term.
+              During this step, clinical formulation of risk is considered such
+              as a low acute risk, or high chronic risk (Sadek, 2018).
+              Collectively, the three steps reflect on the amount of work put
+              into the SRA process.{" "}
             </p>
 
             <p>
@@ -65,34 +66,23 @@ const Research: React.FC<{}> = () => {
               assessment should only be conducted if it is a first psychiatric
               admission, and/or the individual is exhibiting suicidal
               behaviour/ideation (Centre for Addiction and Mental Health, 2011).
-              Besides SRA’s being a complex process, it also requires extensive
-              knowledge prior to implementing it into practice. This literature
-              seeks to identify the significance of SRA, current SRAs in
-              practice, commonly used SRA tools, how to choose an effective SRA
-              tool, the different views on SRA, and the SRA benefits and
+              Conducting an SRA can be a complex process and requires extensive
+              knowledge and practice before implementing it into practice. This
+              literature seeks to identify the significance of SRA, current SRAs
+              in practice, commonly used SRA tools, how to choose an effective
+              SRA tool, the different views on SRA, and the SRA benefits and
               drawbacks.{" "}
-            </p>
-
-            <p>
-              SRA is primarily conducted in a health care setting. However, this
-              assessment should only be conducted if it is a first psychiatric
-              admission, and/or the individual is exhibiting suicidal
-              behaviour/ideation (Centre for Addiction and Mental Health, 2011).
-              Besides SRA’s being a complex process; it also requires extensive
-              knowledge prior to implementing it into practice. Therefore, this
-              literature seeks to identify the significance of SRA, current SRA
-              in effect, commonly utilized SRA tools, choosing an effective SRA
-              tool, the different views on SRA, and SRA benefits and drawbacks.{" "}
             </p>
 
             <h2>Significance of the Suicide Risk Assessment</h2>
             <p>
-              SRAs are useful tools for service providers and have been
-              identified internationally as a fundamental safety measure among
-              health care organizations (Perlman et al., 2011). Throughout
-              Canada, suicide is the ninth leading cause of death across all
-              ages, with a rate of 10.3 deaths per 100,000 people (Sadek, 2020).
-              According to the World Health Organization (WHO), suicide is one
+              SRAs are useful tools for service providers and of particular
+              importance to crisis intervention. SRAs are internationally
+              recognized as a useful safety measure among health care
+              organizations and adopted into clinical settings (Perlman et al.,
+              2011). Throughout Canada, suicide is the ninth leading cause of
+              death across all ages, with a rate of 10.3 deaths per 100,000
+              people (Sadek, 2020). According to the WHO (2019), suicide is one
               of the top 10 causes of death, and the second leading cause of
               death in people aged 15–29 years (Sadek, 2018). This illustrates
               the extreme need for accurate assessment by health care
@@ -126,24 +116,24 @@ const Research: React.FC<{}> = () => {
               competency for psychiatrists (Oquendo & Bernanke, 2017).{" "}
             </p>
 
-            <h2>Current SRA in Effect</h2>
+            <h2>Current SRA in Crisis Intervention</h2>
             <p>
-              In current literature, SRA remains an ongoing process that
+              Recent literature describes SRA as an ongoing process that
               involves various tools. SRA tools are significant to the
               assessment process, as they can provide additional information to
-              inform clinical decision-making involving suicide (CPSI et al.,
-              2021). Typically, the guidelines for SRA are standardized in
-              psychiatric facilities. Following the process of screening,
-              monitoring, intervention, and follow-up to continuously inform
-              initial care and progress in treatment, or potential changes to
-              the level of care required (Perlman et al., 2011). Prior to
-              conducting an SRA, most professionals studied the process, but
-              focusing on clinical experience is also an asset. Perlman et al.
-              (2011) recommends professionals understand the different SRA tools
-              to help navigate the process best. Two studies by Sadek (2018) and
-              Sadek et al. (2020) can agree that clinician awareness and
-              training should be required to assess for suicide risk, as
-              clinical competency is essential for patient care..
+              inform clinical decision-making involving suicide and crisis
+              intervention (CPSI et al., 2021). Typically, the guidelines for
+              SRA are standardized in psychiatric facilities. Following the
+              process of screening, monitoring, intervention, and follow-up to
+              continuously inform initial care and progress in treatment, or
+              potential changes to the level of care required (Perlman et al.,
+              2011). Prior to conducting an SRA, most professionals studied the
+              process, but focusing on clinical experience is also an asset.
+              Perlman et al. (2011) recommends professionals understand the
+              different SRA tools to help navigate the process best. Two studies
+              by Sadek (2018) and Sadek et al. (2020) can agree that clinician
+              awareness and training should be required to assess for suicide
+              risk, as clinical competency is essential for patient care.
             </p>
 
             <p>
@@ -155,7 +145,7 @@ const Research: React.FC<{}> = () => {
               essential changes are made to improve the SRA process, to
               effectively document and assist an individual at risk of suicide.
               Perlman at al. (2011) outlines resources available to support the
-              SRA process, including, clinical guides and best practice
+              SRA process, including clinical guides and best practice
               guidelines. On the other hand, effective communication remains
               critical in health care settings. Healthcare teams must maintain
               communication about patient suicide risk as an important part of
@@ -172,16 +162,15 @@ const Research: React.FC<{}> = () => {
             <h2>Commonly Utilized SRA Tools</h2>
 
             <p>
-              Research has illustrated several SRA tools in the field of
-              practice, while it is important to note, there is not one
-              prominent tool. Instruments may range from screening tools to
-              assessment tools (Sadek, 2018). Although some of the most common
-              SRA tools share similar attributes. Essentially, the tools tend to
-              focus on symptom assessment, warning signs for suicide, and
-              resiliency factors (Perlman et al., 2011). As Perlman et al.
-              (2011) states these “instruments have been designed for the
-              detection and assessment of suicide risk in a variety of
-              settings”.
+              Research has illustrated several SRA tools in the mental health
+              field, while it is important to note, there is not one prominent
+              tool. Instruments may range from screening tools to assessment
+              tools (Sadek, 2018). Although some of the most common SRA tools
+              share similar attributes. Essentially, the tools tend to focus on
+              symptom assessment, warning signs for suicide, and resiliency
+              factors (Perlman et al., 2011). As Perlman et al. (2011) states
+              these “instruments have been designed for the detection and
+              assessment of suicide risk in a variety of settings”.
             </p>
 
             <p>
@@ -197,27 +186,25 @@ const Research: React.FC<{}> = () => {
             </p>
 
             <p>
-              Evidence has proved most common SRA scales are promising, as each
-              provide adequate to strong internal consistency, but also are
-              related to other indicators of suicide risk (Perlman et al.,
+              Scholars have deemed SRA scales as promising, as each assessment
+              provides adequate to strong internal consistency (Perlman et al.,
               2011). Some of the common utilized SRA tools established in
               literature, include: the SAD Persons Scale, Beck Hopelessness
               Scale (BHS), SAFE- T and the Sadek Suicide Prevention Assessment
               (SSPA) Tool.
             </p>
 
-            <h2>The SAD Persons Scale.</h2>
+            <h3>The SAD Persons Scale.</h3>
             <p>
-              This assessment tool utilizes the acronym SAD PERSONS as a way to
-              determine the risk of an individual for suicide. The acronym
-              outlines potential risk factors, e.g. s – sex, a – age, and d –
-              depression, as a guide to understand the suicide risk. While the
-              theory of this scale is that the more areas that an individual fit
-              into, the higher risk the individual would be considered (CAMH,
-              2011).
+              This assessment tool utilizes the acronym SAD PERSONS to determine
+              the risk of an individual for suicide. The acronym outlines
+              potential risk factors, e.g. s – sex, a – age, and d – depression,
+              as a guide to understand the suicide risk. While the theory of
+              this scale is that the more areas that an individual fit into, the
+              higher risk the individual would be considered (CAMH, 2011).
             </p>
 
-            <h2>Beck Hopelessness Scale (BHS).</h2>
+            <h3>Beck Hopelessness Scale (BHS).</h3>
             <p>
               This scale was often noted in the literature as resourceful. Sadek
               (2018) stated “It was mainly designed to measure negative
@@ -235,7 +222,7 @@ const Research: React.FC<{}> = () => {
               applicable.{" "}
             </p>
 
-            <h2>SAFE-T.</h2>
+            <h3>SAFE-T.</h3>
             <p>
               The tool SAFE-T is an acronym that stands for Suicide Assessment
               Five-step Evaluation and Triage. It was developed as a
@@ -245,30 +232,29 @@ const Research: React.FC<{}> = () => {
               suicide inquiry, determine risk level and document for follow-up.
             </p>
 
-            <h2>Sadek Suicide Prevention Assessment Tool(SSPA).</h2>
+            <h3>Sadek Suicide Prevention Assessment Tool(SSPA).</h3>
             <p>
-              Research has outlined this new SRA tool that is vital in
-              practices. It captures validated risk and protective factors
+              Research has showcased this new SRA tool as vital in clinical
+              practice. It captures validated risk and protective factors
               related to the mental status of patients during the clinical
               interview, and factors related to the patient profile, in addition
               to areas of risk (Sadek et al., 2020). This tool is different and
-              more practical because it has a section for communication.
-              Potentially, it can notify other providers involved in the care of
-              the patient to be aware of their suicide risk (Sadek et al.,
-              2020). SSPA has many unique features that most tools do not. Sadek
-              (2018) believes this tool will help in areas of documenting the
-              level of the suicide risk (high, moderate, low), understand the
-              reason for assessment and to communicate SRA results with other
-              clinicians. These are critical when utilizing SRA tools on
-              patients.{" "}
+              more practical because it has a section for communication which
+              can potentially notify other providers involved in the care of the
+              patient to be aware of their suicide risk (Sadek et al., 2020).
+              SSPA has many unique features that most tools do not. Sadek (2018)
+              believes this tool will help in areas of documenting the level of
+              the suicide risk (high, moderate, low), understand the reason for
+              assessment and to communicate SRA results with other clinicians.
+              These are critical when utilizing SRA tools on patients.{" "}
             </p>
 
             <p>
               In summary, the SAD Persons Scale, BHS, SAFE- T and Sadek’s
-              Suicide Prevention Assessment Tool are commonly known in practice,
-              and continue to be utilized today. These tools each in which shed
-              light on a person’s degree risk of suicide, enabling professionals
-              to better support their patients and provide them with the best
+              Suicide Prevention Assessment Tool are commonly known in practice
+              and continue to be utilized today. These tools can each shed light
+              on a person’s degree of risk of suicide, enabling professionals to
+              better support their clients and provide them with the best
               quality of care.
             </p>
 
@@ -318,7 +304,7 @@ const Research: React.FC<{}> = () => {
               away from demographic characteristics. Current history collected
               include risk factors, clinical mental health examinations, and
               collateral sources such as violence towards self or others (Sadek,
-              2018). It is critical specific tools are made available to
+              2018). It is critical that specific tools are made available to
               different cultures to fit their particular needs. These tools may
               not only understand different cultural views on health and
               wellness but may recognize that these views can influence motives
@@ -421,15 +407,16 @@ const Research: React.FC<{}> = () => {
             <h2>Conclusion </h2>
 
             <p>
-              Suicide risk assessments are essential tools for health care
-              workers. SRAs come in many different models and have various
-              considerations that are necessary and important when using these
-              assessments. These tools allow a dialogue to be formed between
-              service provider and client and have been shown to help lower
-              suicide rates (Sadek, 2018), which is the ultimate goal of a
-              mental health professional. More research is required, but there
-              are many indications that these tools, if utilized properly, are
-              extremely useful for mental health professionals.
+              SRAs are essential tools for mental health practitioners to use
+              when working with suicidal clients. SRAs come in many different
+              models and have various considerations that are necessary and
+              important when using these assessments. These tools allow a
+              dialogue to be formed between service provider and client and have
+              been shown to help lower suicide rates (Sadek, 2018), which is the
+              ultimate goal of a mental health professional. More research is
+              required, but there are many indications that these tools, if
+              utilized properly, are extremely useful for mental health
+              professionals.
             </p>
 
             <h2>Literature </h2>
@@ -445,6 +432,13 @@ const Research: React.FC<{}> = () => {
                 Government of Canada. (2020). Suicide rates in Canada: Key
                 Statistics. Retrieved January 30, 2021 from:
                 https://www.canada.ca/en/public-health/services/publications/healthy-living/suicide-canada-key-statistics-infographic.html{" "}
+              </li>
+
+              <li className="literature-list">
+                Jacobs, D. G., Baldessarini, R. J., Conwell, Y., Fawcett, J. A.,
+                Horton, L., Meltzer, H., et al., (2010). Practice guideline for
+                the assessment and treatment of patients with suicidal
+                behaviors. American Psychiatric Association.
               </li>
 
               <li className="literature-list">
