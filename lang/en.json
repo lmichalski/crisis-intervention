@@ -20,15 +20,15 @@
     "description": "Materials title"
   },
   "Menu.chart": {
-    "defaultMessage": "5. Client Chart",
+    "defaultMessage": "4. Client Chart",
     "description": "Client chart button"
   },
   "Menu.credits": {
-    "defaultMessage": "9. Credits",
+    "defaultMessage": "8. Credits",
     "description": "Credits Button"
   },
   "Menu.debrief": {
-    "defaultMessage": "8. Self-Debrief",
+    "defaultMessage": "7. Self-Debrief",
     "description": "Self-Debrief button"
   },
   "Menu.instructions": {
@@ -44,16 +44,16 @@
     "description": "Principles Button"
   },
   "Menu.research": {
-    "defaultMessage": "6. Research",
+    "defaultMessage": "5. Research",
     "description": "Research button"
   },
   "Menu.resources": {
-    "defaultMessage": "7. Crisis Resources",
+    "defaultMessage": "6. Crisis Resources",
     "description": "Resources button"
   },
   "Menu.scenario": {
     "defaultMessage": "4. Client Background",
-    "description": "Client-Background Button"
+    "description": "Client Background Button"
   },
   "Menu.settings": {
     "defaultMessage": "Settings",
@@ -91,8 +91,8 @@
     "defaultMessage": "Game Paused",
     "description": "game paused transition title"
   },
-  "materials.link": {
-    "defaultMessage": "Practice Materials",
-    "description": "Link to Practice Materials"
+  "debrief.link": {
+    "defaultMessage": "Self Debrief",
+    "description": "Link to Self Debrief"
   }
 }

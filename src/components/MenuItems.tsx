@@ -61,6 +61,20 @@ const MenuItems: React.FC<iProps> = ({
       </li>
       <li>
         <NavLink
+          to={`/scenario/`}
+          className="Menu__link"
+          activeClassName="Menu__link--active"
+          onClick={onItemClicked}
+        >
+          <FormattedMessage
+            id="Menu.scenario"
+            defaultMessage="4. Client Background"
+            description="Client Background Button"
+          />
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
           to={`/chart/`}
           className="Menu__link"
           activeClassName="Menu__link--active"

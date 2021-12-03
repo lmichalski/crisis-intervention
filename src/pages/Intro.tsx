@@ -26,13 +26,20 @@ const Intro: React.FC<iProps> = ({ strings }) => {
     [currentMessage, history, intro.length]
   );
 
-  const text = intro[currentMessage];
-
   return (
     <div className="container">
       <div className="intro">
         <div className="main">
-          <div className="content">{text}</div>
+          <div className="content">
+            <h2>Trigger Warning</h2>
+            <p>
+              This virtual gaming simulation contains sensitive information that
+              may be triggering for some players. If at any time you are unable
+              to continue playing, please take a break or stop immediately. If
+              you continue to feel triggered, please use the resources provided
+              to obtain support.
+            </p>
+          </div>
         </div>
         <footer>
           <button className="button" onClick={skipToNext}>

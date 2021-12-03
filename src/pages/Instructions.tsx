@@ -84,15 +84,6 @@ const Instructions: React.FC<iProps> = ({ minSteps, strings }) => {
             continue to feel triggered, please use the resources provided to
             obtain support.
           </div>
-
-          <h2>Scenario</h2>
-          <div>
-            Kelly's roommate Talia is worried about Kelly's late nights of
-            partying and drinking. Kelly has been more distant towards Talia and
-            has not been in contact with her family for a long time. Talia has
-            expressed concern for Kelly and urged her to make an appointment to
-            address her current state.
-          </div>
         </div>
       </div>
     </div>

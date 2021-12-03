@@ -290,7 +290,7 @@ button,
         .panel {
           display: flex;
           flex-flow: column nowrap;
-          align-items: flex-start;
+          align-items: center;
 
           color: white;
 
@@ -302,7 +302,7 @@ button,
           background-color: rgba(16, 33, 51, 0.8);
           border-radius: 16px;
           padding: 2vw;
-          margin: 16px auto;
+          margin: 16vh auto 16px auto;
         }
 
         .container {

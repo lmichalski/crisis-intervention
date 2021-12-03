@@ -36,7 +36,7 @@ const correctnessColors: { [key in Correctness]: string } = {
 
 const correctnessLabels: { [key in Correctness]: string } = {
   correct: "CORRECT",
-  half: "PARTIALLY-CORRECT",
+  half: "NOT-THE-BEST",
   wrong: "INCORRECT",
 };
 
@@ -257,7 +257,7 @@ const Summary: React.FC<iProps> = ({
                 borderBottom: "2px solid #000000",
               }}
             >
-              Emergency Game Report
+              Crisis Intervention Feedback Report
             </Text>
             <Text style={{ fontSize: 24 }}>{"\nSummary"}</Text>
             <View>{message(false)}</View>
@@ -293,7 +293,7 @@ const Summary: React.FC<iProps> = ({
             fileName="emergency-progress.pdf"
           >
             {({ blob, url, loading, error }) =>
-              loading ? "Loading document..." : "Download Progress Report"
+              loading ? "Loading document..." : "Download Feedback Report"
             }
           </PDFDownloadLink>
 
