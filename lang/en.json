@@ -20,15 +20,15 @@
     "description": "Materials title"
   },
   "Menu.chart": {
-    "defaultMessage": "4. Client Chart",
+    "defaultMessage": "5. Client Chart",
     "description": "Client chart button"
   },
   "Menu.credits": {
-    "defaultMessage": "8. Credits",
+    "defaultMessage": "9. Credits",
     "description": "Credits Button"
   },
   "Menu.debrief": {
-    "defaultMessage": "7. Self-Debrief",
+    "defaultMessage": "8. Self-Debrief",
     "description": "Self-Debrief button"
   },
   "Menu.instructions": {
@@ -44,11 +44,11 @@
     "description": "Principles Button"
   },
   "Menu.research": {
-    "defaultMessage": "5. Research",
+    "defaultMessage": "6. Research",
     "description": "Research button"
   },
   "Menu.resources": {
-    "defaultMessage": "6. Crisis Resources",
+    "defaultMessage": "7. Crisis Resources",
     "description": "Resources button"
   },
   "Menu.scenario": {

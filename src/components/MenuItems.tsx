@@ -82,7 +82,7 @@ const MenuItems: React.FC<iProps> = ({
         >
           <FormattedMessage
             id="Menu.chart"
-            defaultMessage="4. Client Chart"
+            defaultMessage="5. Client Chart"
             description="Client chart button"
           />
         </NavLink>
@@ -97,7 +97,7 @@ const MenuItems: React.FC<iProps> = ({
         >
           <FormattedMessage
             id="Menu.research"
-            defaultMessage="5. Research"
+            defaultMessage="6. Research"
             description="Research button"
           />
         </NavLink>
@@ -112,7 +112,7 @@ const MenuItems: React.FC<iProps> = ({
         >
           <FormattedMessage
             id="Menu.resources"
-            defaultMessage="6. Crisis Resources"
+            defaultMessage="7. Crisis Resources"
             description="Resources button"
           />
         </NavLink>
@@ -127,7 +127,7 @@ const MenuItems: React.FC<iProps> = ({
         >
           <FormattedMessage
             id="Menu.debrief"
-            defaultMessage="7. Self-Debrief"
+            defaultMessage="8. Self-Debrief"
             description="Self-Debrief button"
           />
         </NavLink>
@@ -142,7 +142,7 @@ const MenuItems: React.FC<iProps> = ({
         >
           <FormattedMessage
             id="Menu.credits"
-            defaultMessage="8. Credits"
+            defaultMessage="9. Credits"
             description="Credits Button"
           />
         </NavLink>
