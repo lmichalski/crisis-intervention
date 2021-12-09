@@ -66,7 +66,7 @@
       "type": "video",
       "data": "SG4_DP1_1",
       "video": {
-        "vimeo_url": "https://player.vimeo.com/video/649304751"
+        "vimeo_url": "https://player.vimeo.com/video/638785855"
       },
       "correct": "wrong",
       "feedback": "",
@@ -531,10 +531,10 @@
       "type": "video",
       "data": "SG4_DP7_2",
       "video": {
-        "vimeo_url": "https://player.vimeo.com/video/649304698"
+        "vimeo_url": "https://player.vimeo.com/video/638810050"
       },
       "correct": "wrong",
-      "feedback": "Your response is invalidating the client’s feelings and making her feel unimportant. ",
+      "feedback": "Your response invalidated the client’s feelings and made her feel unimportant. ",
       "message": "How do you find out more about Kelly’s coping mechanisms?",
       "options": [
         {
@@ -607,7 +607,7 @@
         "vimeo_url": "https://player.vimeo.com/video/638813749"
       },
       "correct": "wrong",
-      "feedback": "Your response was too abrupt and presented as insensitive",
+      "feedback": "Your response seemed insensitive and ignored Kelly's admission of having negative thoughts.",
       "message": "What is your response to Kelly’s admission of having negative thoughts?",
       "options": [
         {
@@ -630,7 +630,7 @@
         "vimeo_url": "https://player.vimeo.com/video/638813605"
       },
       "correct": "half",
-      "feedback": "With the information being told to you, this question would not be the most important response to ask given Kelly’s current situation.",
+      "feedback": "From the information gathered thus far, the question asked did not elicit information that would be useful to Kelly's current situation.",
       "message": "What is your response to Kelly’s admission of having negative thoughts?",
       "options": [
         {
@@ -677,7 +677,7 @@
       "type": "video",
       "data": "SG4_DP9_2",
       "video": {
-        "vimeo_url": "https://player.vimeo.com/video/638816147"
+        "vimeo_url": "https://player.vimeo.com/video/638816237"
       },
       "correct": "wrong",
       "feedback": "Your response did not generate more information about the intent or plan to commit suicide which is needed to assess risk.",
@@ -700,7 +700,7 @@
       "type": "video",
       "data": "SG4_DP9_3",
       "video": {
-        "vimeo_url": "https://player.vimeo.com/video/638816237"
+        "vimeo_url": "https://player.vimeo.com/video/638816147"
       },
       "correct": "half",
       "feedback": "Your response appeared too broad and was not able to generate additional information to assess for risk. ",
@@ -776,7 +776,7 @@
         "vimeo_url": "https://player.vimeo.com/video/638816717"
       },
       "correct": "half",
-      "feedback": "Your response asked a question that generated information that was useful to assess the client’s risk of suicide. However, additional follow-up questions were needed.",
+      "feedback": "Your response asked a question that generated information that was useful to assess the client’s risk of suicide; however, additional follow-up questions were needed.",
       "message": "How do you continue to assess Kelly’s suicide plan?",
       "options": [
         {
@@ -796,7 +796,7 @@
       "type": "video",
       "data": "SG4_DP11_1",
       "video": {
-        "vimeo_url": "https://player.vimeo.com/video/652291405"
+        "vimeo_url": "https://player.vimeo.com/video/638816368"
       },
       "correct": "correct",
       "feedback": "Your response acknowledged that the client is contemplating suicide. Your response also asks whether or not the client has a plan to further assess risk.",
@@ -865,7 +865,7 @@
       "type": "video",
       "data": "SG4_DP12_1",
       "video": {
-        "vimeo_url": "https://player.vimeo.com/video/638821322"
+        "vimeo_url": "https://player.vimeo.com/video/638821139"
       },
       "correct": "correct",
       "feedback": "Your response identified that the client is high risk due to the current plan and means to execute the plan to take your life",
