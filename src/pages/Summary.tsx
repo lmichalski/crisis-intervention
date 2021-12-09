@@ -257,7 +257,16 @@ const Summary: React.FC<iProps> = ({
                 borderBottom: "2px solid #000000",
               }}
             >
-              Crisis Intervention Feedback Report
+              Crisis Intervention
+            </Text>
+            <Text
+              style={{
+                fontSize: 28,
+                paddingBottom: "0.3em",
+                borderBottom: "2px solid #000000",
+              }}
+            >
+              Feedback Report
             </Text>
             <Text style={{ fontSize: 24 }}>{"\nSummary"}</Text>
             <View>{message(false)}</View>
@@ -290,7 +299,7 @@ const Summary: React.FC<iProps> = ({
           <PDFDownloadLink
             className="button"
             document={pdfContent}
-            fileName="emergency-progress.pdf"
+            fileName="crisis-intervention-report.pdf"
           >
             {({ blob, url, loading, error }) =>
               loading ? "Loading document..." : "Download Feedback Report"
