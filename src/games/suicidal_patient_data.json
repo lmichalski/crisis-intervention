@@ -143,7 +143,7 @@
       },
       "correct": "correct",
       "feedback": "Your response indicated that you attempted to build rapport and create a safe space. By choosing this response your client was more willing to continue speaking with you.",
-      "message": "How do you help Kelly to feel free to share what's going on?",
+      "message": "How do you help Kelly feel comfortable to open up to you?",
       "options": [
         {
           "label": "Validate feelings",
@@ -170,7 +170,7 @@
       },
       "correct": "wrong",
       "feedback": "Your response lacked empathy and did not illicit trust or foster a working relationship.",
-      "message": "How do you help Kelly to feel free to share what's going on?",
+      "message": "How do you help Kelly feel comfortable to open up to you?",
       "options": [
         {
           "label": "Validate feelings",
@@ -193,7 +193,7 @@
       },
       "correct": "half",
       "feedback": "Your response asked an important question; however, the response overlooked the client’s emotional state and moved too quickly to an action-oriented question. This did not make the client feel comfortable to speak openly.",
-      "message": "How do you help Kelly to feel free to share what's going on?",
+      "message": "How do you help Kelly feel comfortable to open up to you?",
       "options": [
         {
           "label": "Validate feelings",
@@ -227,7 +227,7 @@
           "next": 8
         },
         {
-          "label": "Ask an open-ended question to facilitate discussion",
+          "label": "Ask open-ended questions to facilitate discussion",
           "next": 9
         }
       ],
@@ -250,7 +250,7 @@
           "next": 8
         },
         {
-          "label": "Ask open-ended question to facilitate discussion",
+          "label": "Ask open-ended questions to facilitate discussion",
           "next": 9
         }
       ],
@@ -273,7 +273,7 @@
           "next": 7
         },
         {
-          "label": "Ask open-ended question to facilitate discussion",
+          "label": "Ask open-ended questions to facilitate discussion",
           "next": 9
         }
       ],
@@ -611,7 +611,7 @@
       "message": "What is your response to Kelly’s admission of having negative thoughts?",
       "options": [
         {
-          "label": "Discuss selfcare",
+          "label": "Discuss self-care",
           "next": 23
         },
         {
@@ -654,7 +654,7 @@
       },
       "correct": "correct",
       "feedback": "Your response displayed active listening and empathy. Your response also inquired about self-harm and suicidality to further access risk.",
-      "message": "How do you respond to Kelly’s suicidal thoughts?",
+      "message": "How do you respond to Kelly expressing suicidal thoughts?",
       "options": [
         {
           "label": "Assess stressors further",
@@ -681,7 +681,7 @@
       },
       "correct": "wrong",
       "feedback": "Your response did not generate more information about the intent or plan to commit suicide which is needed to assess risk.",
-      "message": "How do you respond to Kelly’s suicidal thoughts?",
+      "message": "How do you respond to Kelly expressing suicidal thoughts?",
       "options": [
         {
           "label": "Ask about self-harm",
@@ -704,7 +704,7 @@
       },
       "correct": "half",
       "feedback": "Your response appeared too broad and was not able to generate additional information to assess for risk. ",
-      "message": "How do you respond to Kelly’s suicidal thoughts?",
+      "message": "How do you respond to Kelly expressing suicidal thoughts?",
       "options": [
         {
           "label": "Assess stressors further",
@@ -727,7 +727,7 @@
       },
       "correct": "correct",
       "feedback": "Your response helped to gather further information to assess the client’s risk level. Your response was also helpful as it inquired if the client was in imminent danger. ",
-      "message": "How do you continue to assess Kelly’s suicide plan?",
+      "message": "How do you continue to assess Kelly’s risk of suicide?",
       "options": [
         {
           "label": "Discuss impact of suicide on others",
@@ -754,7 +754,7 @@
       },
       "correct": "wrong",
       "feedback": "Your response elicits feelings about one of her sources of stress. This response was unhelpful as it places additional pressure on the client. In addition, it doesn’t get to the goal of assessing her current risk.",
-      "message": "How do you continue to assess Kelly’s suicide plan?",
+      "message": "How do you continue to assess Kelly’s risk of suicide?",
       "options": [
         {
           "label": "Probe failed suicide attempt",
@@ -777,7 +777,7 @@
       },
       "correct": "half",
       "feedback": "Your response asked a question that generated information that was useful to assess the client’s risk of suicide; however, additional follow-up questions were needed.",
-      "message": "How do you continue to assess Kelly’s suicide plan?",
+      "message": "How do you continue to assess Kelly’s risk of suicide?",
       "options": [
         {
           "label": "Discuss impact of suicide on others",
@@ -942,7 +942,7 @@
       },
       "correct": "correct",
       "feedback": "Your response gently informed the client that the hospital would be the appropriate next step. This approach is appropriate as a preventative measure.",
-      "message": "How do you encourage Kelly to go to the hospital?",
+      "message": "How do you proceed to provide appropriate care for Kelly?",
       "options": [
         {
           "label": "Discuss options",
@@ -969,7 +969,7 @@
       },
       "correct": "wrong",
       "feedback": "Your response did not take into consideration that the client is high risk and needs immediate action. This response could place the client at further risk.",
-      "message": "How do you encourage Kelly to go to the hospital?",
+      "message": "How do you proceed to provide appropriate care for Kelly?",
       "options": [
         {
           "label": "Discuss the need for further help",
@@ -992,7 +992,7 @@
       },
       "correct": "half",
       "feedback": "Your response encouraged her to seek help. However, how to seek support was unclear.",
-      "message": "How do you encourage Kelly to go to the hospital?",
+      "message": "How do you proceed to provide appropriate care for Kelly?",
       "options": [
         {
           "label": "Discuss options",
