@@ -69,6 +69,7 @@ const Credits: React.FC<{}> = () => {
                 <li>Michael Jenkins (Therapist, Marcus)</li>
                 <li>Catherine Ouimet (Client, Kelly)</li>
                 <li>Cintra Ramkissoon (Friend, Talia)</li>
+                <li>Tiffani Lucas (Secretary, Sofia)</li>
               </ul>
 
               <h3>Film Producer</h3>

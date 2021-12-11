@@ -134,7 +134,14 @@ const Summary: React.FC<iProps> = ({
             .length ? (
             <tags.text>
               You've demonstrated the best possible result! Now play it one more
-              time to make sure it wasn't mere luck :)
+              time to make sure it wasn't mere luck :){"\n\n"}
+              <tags.br />
+              <tags.br />
+              <tags.text>
+                If you are not involved in an organized debrief, we recommend
+                you complete the attached self-debrief to optimize your learning
+                through this virtual gaming simulation.
+              </tags.text>
             </tags.text>
           ) : (
             <tags.view>
@@ -181,6 +188,13 @@ const Summary: React.FC<iProps> = ({
 
               <tags.text>
                 See if you can improve your results next time!{"\n\n"}
+                <tags.br />
+                <tags.br />
+                <tags.text>
+                  If you are not involved in an organized debrief, we recommend
+                  you complete the attached self-debrief to optimize your
+                  learning through this virtual gaming simulation.
+                </tags.text>
               </tags.text>
             </tags.view>
           )}
