@@ -442,7 +442,7 @@
           "next": 16
         },
         {
-          "label": "Ask a general question about support",
+          "label": "Ask about additional supports",
           "next": 18
         },
         {
@@ -469,7 +469,7 @@
           "next": 17
         },
         {
-          "label": "Ask a general question about support",
+          "label": "Ask about additional supports",
           "next": 18
         }
       ],
