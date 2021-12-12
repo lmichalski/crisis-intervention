@@ -125,15 +125,6 @@ const Credits: React.FC<{}> = () => {
               <h3>Advisory Committee</h3>
               <ul>
                 <li>
-                  <span className="person">Maris Karklins</span>
-                </li>
-                <span className="title">
-                  Assistive Technologist, Counselling and Accessibility Services{" "}
-                  <br />
-                </span>
-                <span className="organization">Seneca College</span>
-
-                <li>
                   <span className="person">Erica Watson, MSW, RSW</span>
                 </li>
                 <span className="title">
@@ -153,6 +144,15 @@ const Credits: React.FC<{}> = () => {
                 <span className="organization">
                   Distress Centre of Greater Toronto
                 </span>
+
+                <li>
+                  <span className="person">Maris Karklins</span>
+                </li>
+                <span className="title">
+                  Assistive Technologist, Counselling and Accessibility Services{" "}
+                  <br />
+                </span>
+                <span className="organization">Seneca College</span>
 
                 <li>
                   <span className="person">
