@@ -18,7 +18,7 @@
       ]
     },
     "objectives": {
-      "paragraph1": "This virtual gaming simulation is focused on using the best practices for working with a suicidal client.",
+      "paragraph1": "This virtual gaming simulation uses best practices for working with a client who is suicidal.",
       "paragraph2": "By the end of this virtual gaming simulation, you will be able to:",
       "bullet_list": [
         "Apply best practices to assess the risk of suicide.",
@@ -43,12 +43,12 @@
     "principles": {
       "paragraph": "This virtual gaming simulation was designed to employ the following essential principles:",
       "bullet_list": [
-        "Therapeutic relationship and build rapport",
-        "Identification of risk factors",
-        "Identification of protective factors",
-        "Conduct suicide inquiry",
-        "Determine risk level",
-        "Intervention "
+        "Therapeutic relationship and building rapport",
+        "Identifying risk factors",
+        "Identifying protective factors",
+        "Conducting suicide inquiry",
+        "Determining risk level",
+        "Developing an intervention plan"
       ]
     },
     "resources": {

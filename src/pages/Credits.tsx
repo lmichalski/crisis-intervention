@@ -19,9 +19,12 @@ const Credits: React.FC<{}> = () => {
             <div className="credits-content">
               <h3>Funding</h3>
               <p>
-                This project was funded by eCampusOntario, the Government of
-                Ontario and the Virtual Learning Strategy. To learn more about
-                the Virtual Learning Strategy visit{" "}
+                This project is made possible with funding by the Government of
+                Ontario and through eCampusOntario’s support of the Virtual
+                Learning Strategy. To learn more about the Virtual Learning
+                Strategy visit: https://vls.ecampusontario.ca. This project was
+                developed by the staff and students from Seneca College, School
+                of Community Services.{" "}
                 <span>
                   <a
                     href="https://vls.ecampusontario.ca/"

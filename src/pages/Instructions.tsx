@@ -1,3 +1,5 @@
+import { useCallback } from "react";
+import { useHistory } from "react-router-dom";
 import "./Instructions.scss";
 
 interface iProps {
@@ -9,15 +11,26 @@ interface iProps {
 }
 
 const Instructions: React.FC<iProps> = ({ minSteps, strings }) => {
+  const history = useHistory();
+
+  const handleClickResource = useCallback(
+    (evt: React.MouseEvent<HTMLButtonElement>) => {
+      evt.currentTarget.blur();
+
+      history.push(`/resources/`);
+    },
+    [history]
+  );
+
   return (
     <div className="container">
       <div className="panel info">
         <header>
           <h2>Introduction</h2>
           <div>
-            This virtual gaming simulation is focused on using the best
-            practices for working with a suicidal client. The simulation was
-            generously funded by eCampusOntario.
+            This virtual gaming simulation uses best practices for working with
+            a client who is suicidal. The simulation was generously funded by
+            eCampusOntario.
           </div>
         </header>
 
@@ -26,8 +39,8 @@ const Instructions: React.FC<iProps> = ({ minSteps, strings }) => {
           <div className="content cf">
             <ul>
               <li>
-                Watch interactions between Kelly and the mental health
-                counsellor.
+                Watch interactions between the client, Kelly, and the mental
+                health counsellor, Marcus.
               </li>
               <li>
                 Following each interaction, you will be asked to select the most
@@ -54,6 +67,10 @@ const Instructions: React.FC<iProps> = ({ minSteps, strings }) => {
                   height="20"
                 ></img>{" "}
                 Incorrect.
+              </li>
+              <li>
+                The game is best played on a desktop computer, laptop, and/or
+                tablet and may not be fully compatible on a mobile device.
               </li>
               <li>
                 You can repeat this game numerous times for practice and to
@@ -85,6 +102,9 @@ const Instructions: React.FC<iProps> = ({ minSteps, strings }) => {
             obtain support.
           </div>
         </div>
+        <button className="resource-button" onClick={handleClickResource}>
+          Crisis Resources
+        </button>
       </div>
     </div>
   );

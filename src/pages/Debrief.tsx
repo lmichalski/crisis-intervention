@@ -19,10 +19,11 @@ const Credits: React.FC<{}> = () => {
             <div className="debrief-content">
               <h2>Instructions</h2>
               <p>
-                In the crisis intervention virtual gaming simulation, you
-                assumed the role of Marcus, a therapist at a Student Wellness
-                Centre. Kelly, a university student, is brought into the clinic
-                by her friend Talia who she believes is in crisis.
+                In this crisis intervention virtual gaming simulation, you
+                assumed the role of Marcus, a counsellor at the Student Wellness
+                Centre on campus. Kelly, a university student, is brought into
+                the clinic by her friend, **Talia, who she believes is in
+                crisis.
               </p>
               <p>
                 Upon completion of this virtual gaming simulation, we would like
@@ -41,7 +42,7 @@ const Credits: React.FC<{}> = () => {
               <ol>
                 <li className="debrief-item">
                   What are your thoughts and feelings about acting in the role
-                  of the Marcus, the mental health counsellor?
+                  of Marcus, the mental health counsellor?
                 </li>
                 <li className="debrief-item">
                   How did you feel in the role of the mental health counsellor
@@ -86,8 +87,8 @@ const Credits: React.FC<{}> = () => {
                 </li>
                 <li className="debrief-item">
                   Did it come as a surprise at the end of the video when you had
-                  to contact the police? What was your initial reaction to this
-                  correct response?{" "}
+                  to contact 911? What was your initial reaction to this correct
+                  response?{" "}
                 </li>
                 <li className="debrief-item">
                   If a similar situation arose in the future, what would you

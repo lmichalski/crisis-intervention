@@ -299,7 +299,7 @@ const Summary: React.FC<iProps> = ({
         <header>
           <FormattedMessage
             id="Summary.title"
-            defaultMessage="Congratulations!"
+            defaultMessage="Great Work!"
             description="Summary title"
             tagName="h2"
           />

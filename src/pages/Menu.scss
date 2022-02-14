@@ -10,7 +10,7 @@
       line-height: 120%;
       text-decoration: none;
       cursor: pointer;
-      background-color: cornflowerblue;
+      // background-color: cornflowerblue;
 
       a {
         display: block;
@@ -21,7 +21,7 @@
 
       &:hover,
       &:focus-within {
-        background-color: #223c60;
+        background-color: #446fa0;
         transition: all 0.5s ease;
       }
     }
@@ -38,7 +38,7 @@
 
   .controls li {
     line-height: 120%;
-    border-color: #223c60;
+    border-color: #204a85;
     border-style: solid;
     color: black;
 

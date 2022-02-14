@@ -36,6 +36,13 @@ button,
     position: sticky;
     top: 0;
 
+    color: white;
+    background-color: rgb(16, 54, 95);
+    // border-bottom: black 2px solid;
+    // box-shadow: 0px 5px 5px black;
+    z-index: 1000;
+    padding: 0 16px;
+
     @media only screen and (max-width: $max-mobile-width) {
       flex-direction: column;
       h1 {
@@ -88,13 +95,6 @@ button,
       }
     }
 
-    color: white;
-    background-color: #446fa0;
-    // border-bottom: black 2px solid;
-    // box-shadow: 0px 5px 5px black;
-    z-index: 1000;
-    padding: 0 16px;
-
     h1 {
       margin: auto;
     }
@@ -107,7 +107,7 @@ button,
 
       &:hover,
       &:focus-within {
-        background-color: cornflowerblue;
+        background-color: #446fa0;
         transition: all 0.5s ease;
       }
     }
@@ -123,7 +123,7 @@ button,
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      background-color: rgba(209, 218, 217, 255);
+      background-color: #d8e3f7;
 
       // background-image: url(".../images/background.jpg");
 
@@ -165,7 +165,7 @@ button,
         span {
           font-size: 28px;
           font-style: italic;
-          font-weight: 200;
+          font-weight: 500;
         }
       }
 
@@ -185,7 +185,7 @@ button,
       display: flex;
       flex-direction: row;
       flex-grow: 1;
-      background-color: #223c60;
+      background-color: #204a85;
 
       @media only screen and (max-width: $max-mobile-width) {
         flex-direction: column;
