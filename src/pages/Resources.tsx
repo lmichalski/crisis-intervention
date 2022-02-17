@@ -24,7 +24,17 @@ const Resources: React.FC<{}> = () => {
                   Crisis Services Canada <br />
                 </span>
                 <span>
-                  Website: https://www.crisisservicescanada.ca/en/ <br />
+                  Website:
+                  <a
+                    href="https://www.crisisservicescanada.ca/en/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="crisis-links"
+                  >
+                    {" "}
+                    https://www.crisisservicescanada.ca/en/
+                  </a>
+                  <br />
                 </span>
                 <span>Telephone: 1-833-456-4566 </span>
               </li>
@@ -34,7 +44,16 @@ const Resources: React.FC<{}> = () => {
                   Kids Help Phone <br />
                 </span>
                 <span>
-                  Website: https://kidshelpphone.ca/urgent-help
+                  Website:
+                  <a
+                    href="https://kidshelpphone.ca/urgent-help"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="crisis-links"
+                  >
+                    {" "}
+                    https://kidshelpphone.ca/urgent-help
+                  </a>
                   <br />
                 </span>
                 <span>Telephone: 1-800-668-6868 </span>
@@ -48,7 +67,16 @@ const Resources: React.FC<{}> = () => {
                 </span>
                 <span>
                   Website:
-                  https://www.dcogt.com/canada-suicide-prevention-service <br />
+                  <a
+                    href="https://www.dcogt.com/canada-suicide-prevention-service"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="crisis-links"
+                  >
+                    {" "}
+                    https://www.dcogt.com/canada-suicide-prevention-service
+                  </a>
+                  <br />
                 </span>
                 <span>Telephone: 416-408-HELP (4357) </span>
               </li>
@@ -59,8 +87,17 @@ const Resources: React.FC<{}> = () => {
                   Gerstein Centre <br />
                 </span>
                 <span>
-                  {" "}
-                  Website: https://gersteincentre.org/ <br />
+                  Website:
+                  <a
+                    href="https://gersteincentre.org/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="crisis-links"
+                  >
+                    {" "}
+                    https://gersteincentre.org/
+                  </a>
+                  <br />
                 </span>
                 <span> Telephone: 416-929-5200 </span>
               </li>
@@ -73,8 +110,17 @@ const Resources: React.FC<{}> = () => {
                   National Suicide Prevention Lifeline <br />
                 </span>
                 <span>
-                  {" "}
-                  Website: https://suicidepreventionlifeline.org/ <br />
+                  Website:
+                  <a
+                    href="https://suicidepreventionlifeline.org/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="crisis-links"
+                  >
+                    {" "}
+                    https://suicidepreventionlifeline.org/
+                  </a>
+                  <br />
                 </span>
                 <span> Telephone: 1-800-273-8255 </span>
               </li>

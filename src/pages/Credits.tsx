@@ -22,20 +22,16 @@ const Credits: React.FC<{}> = () => {
                 This project is made possible with funding by the Government of
                 Ontario and through eCampusOntario’s support of the Virtual
                 Learning Strategy. To learn more about the Virtual Learning
-                Strategy visit: https://vls.ecampusontario.ca. This project was
-                developed by the staff and students from Seneca College, School
-                of Community Services.{" "}
-                <span>
-                  <a
-                    href="https://vls.ecampusontario.ca/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    vls.ecampusontario.ca
-                  </a>
-                </span>
+                Strategy visit:{" "}
+                <a
+                  href="https://vls.ecampusontario.ca/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  vls.ecampusontario.ca
+                </a>
                 . This project was developed by the staff and students from
-                Seneca College, School of Community Services.
+                Seneca College, School of Community Services. <span></span>
               </p>
 
               <h3>Research Project Manager</h3>
@@ -149,15 +145,6 @@ const Credits: React.FC<{}> = () => {
                 </span>
 
                 <li>
-                  <span className="person">Maris Karklins</span>
-                </li>
-                <span className="title">
-                  Assistive Technologist, Counselling and Accessibility Services{" "}
-                  <br />
-                </span>
-                <span className="organization">Seneca College</span>
-
-                <li>
                   <span className="person">
                     Rebecca Oliveira, RN, BScN, CPMHN
                   </span>
@@ -167,6 +154,25 @@ const Credits: React.FC<{}> = () => {
                 </span>
                 <span className="organization">
                   Center for Addiction and Mental Health
+                </span>
+
+                <li>
+                  <span className="person">Maris Karklins</span>
+                </li>
+                <span className="title">
+                  Assistive Technologist, Counselling and Accessibility Services{" "}
+                  <br />
+                </span>
+                <span className="organization">Seneca College</span>
+
+                <li>
+                  <span className="person">Gina Catenazzo</span>
+                </li>
+                <span className="title">
+                  Instructional Designer <br />
+                </span>
+                <span className="organization">
+                  Seneca College and Accessibility Consultant
                 </span>
               </ul>
             </div>

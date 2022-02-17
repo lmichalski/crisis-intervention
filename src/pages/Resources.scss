@@ -1,6 +1,16 @@
-.main .content .resource-name {
-  font-size: 24px;
-  font-style: italic;
+.main .content {
+  .resource-name {
+    font-size: 24px;
+    font-style: italic;
+  }
+
+  .crisis-links {
+    color: gold;
+
+    &:active {
+      color: cornflowerblue;
+    }
+  }
 }
 
 .resource-item {
