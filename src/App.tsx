@@ -274,7 +274,10 @@ const App: React.FC<iProps> = () => {
               <Route path={`/decision`}>
                 <Decision
                   decisionPoint={currentDecisionPoint}
+                  decisionPoints={gameData.decisionpoints}
                   onOptionChosen={handleOptionChosen}
+                  gameProgress={gameState.progress}
+                  total={gameData.questions.total}
                 />
               </Route>
 

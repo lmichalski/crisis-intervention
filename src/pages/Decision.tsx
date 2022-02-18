@@ -6,10 +6,19 @@ import "./Decision.scss";
 
 interface iProps {
   decisionPoint: DecisionPoint;
+  decisionPoints: DecisionPoint[];
   onOptionChosen: (option: number, label: string) => void;
+  gameProgress: { id: number; label: string; option: number }[];
+  total: number;
 }
 
-const Decision: React.FC<iProps> = ({ decisionPoint, onOptionChosen }) => {
+const Decision: React.FC<iProps> = ({
+  decisionPoint,
+  onOptionChosen,
+  gameProgress,
+  decisionPoints,
+  total,
+}) => {
   const logGameEvent = useLogGameEvent();
 
   const dp = decisionPoint;
@@ -52,8 +61,14 @@ const Decision: React.FC<iProps> = ({ decisionPoint, onOptionChosen }) => {
         </div>
       </div>
       <ul className="option_box cf">{optionBoxes}</ul>
-
-      <ProgressBar decisionPoints={[]} gameProgress={[]} total={0}></ProgressBar>
+      <div className="progress">
+        <ProgressBar
+          decisionPoint={decisionPoint}
+          decisionPoints={decisionPoints}
+          gameProgress={gameProgress}
+          total={total}
+        ></ProgressBar>
+      </div>
     </div>
   );
 };

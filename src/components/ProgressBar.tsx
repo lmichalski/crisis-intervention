@@ -1,15 +1,15 @@
 import React, { useMemo } from "react";
-import { FormattedMessage } from "react-intl";
-import { NavLink } from "react-router-dom";
 import { Correctness, DecisionPoint } from "../hooks/useGameData";
 
 interface iProps {
-    decisionPoints: DecisionPoint[];
-    gameProgress: { id: number; label: string; option: number }[];
-    total: number;
+  decisionPoint: DecisionPoint;
+  decisionPoints: DecisionPoint[];
+  gameProgress: { id: number; label: string; option: number }[];
+  total: number;
 }
 
 const ProgressBar: React.FC<iProps> = ({
+  decisionPoint,
   gameProgress,
   decisionPoints,
   total,
@@ -38,10 +38,8 @@ const ProgressBar: React.FC<iProps> = ({
     }
     return progress;
   }, [decisionPoints, gameProgress]);
-  
-  return (
-    <progress value= {decisionPoints.filter(({ correct }) => correct === "correct").length} max={total}></progress>
-  );
+
+  return <progress value={decisionPoint.id} max={total}></progress>;
 };
 
 export default ProgressBar;
