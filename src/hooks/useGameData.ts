@@ -47,6 +47,11 @@ interface GameDataShape {
     "--primary-text-color": string;
     "--link-color": string;
   };
+
+  questions: {
+    total: number;
+  };
+
   strings: {
     menu: {
       title: string;

@@ -1,4 +1,5 @@
 import { useMemo, useState } from "react";
+import ProgressBar from "../components/ProgressBar";
 import { DecisionPoint } from "../hooks/useGameData";
 import useLogGameEvent from "../hooks/useLogGameEvent";
 import "./Decision.scss";
@@ -51,6 +52,8 @@ const Decision: React.FC<iProps> = ({ decisionPoint, onOptionChosen }) => {
         </div>
       </div>
       <ul className="option_box cf">{optionBoxes}</ul>
+
+      <ProgressBar decisionPoints={[]} gameProgress={[]} total={0}></ProgressBar>
     </div>
   );
 };
