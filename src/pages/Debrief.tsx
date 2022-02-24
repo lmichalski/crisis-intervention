@@ -22,7 +22,7 @@ const Credits: React.FC<{}> = () => {
                 In this crisis intervention virtual gaming simulation, you
                 assumed the role of Marcus, a counsellor at the Student Wellness
                 Centre on campus. Kelly, a university student, is brought into
-                the clinic by her friend, **Talia, who she believes is in
+                the clinic by her friend, Talia, who believes Kelly is in
                 crisis.
               </p>
               <p>
@@ -87,8 +87,8 @@ const Credits: React.FC<{}> = () => {
                 </li>
                 <li className="debrief-item">
                   Did it come as a surprise at the end of the video when you had
-                  to contact 911? What was your initial reaction to this correct
-                  response?{" "}
+                  to contact emergency services? What was your initial reaction to this
+                  correct response?{" "}
                 </li>
                 <li className="debrief-item">
                   If a similar situation arose in the future, what would you
