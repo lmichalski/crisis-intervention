@@ -101,10 +101,10 @@ const Instructions: React.FC<iProps> = ({ minSteps, strings }) => {
             continue to feel triggered, please use the resources provided to
             obtain support.
           </div>
-        </div>
-        <button className="resource-button" onClick={handleClickResource}>
+          <button className="resource-button" onClick={handleClickResource}>
           Crisis Resources
         </button>
+        </div>
       </div>
     </div>
   );
