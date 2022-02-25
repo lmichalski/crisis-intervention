@@ -36,6 +36,8 @@ import DropDown from "./components/DropDown";
 import Research from "./pages/Research";
 import MenuItems from "./components/MenuItems";
 import Debrief from "./pages/Debrief";
+import Guides from "./pages/Guides";
+import Accessibility from "./pages/Accessibility";
 
 interface iProps {}
 
@@ -327,6 +329,14 @@ const App: React.FC<iProps> = () => {
 
               <Route path={`/debrief`}>
                 <Debrief />
+              </Route>
+
+              <Route path={`/user-guides`}>
+                <Guides />
+              </Route>
+
+              <Route path={`/accessibility`}>
+                <Accessibility />
               </Route>
 
               <Route path={`/summary`}>

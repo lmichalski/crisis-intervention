@@ -135,6 +135,36 @@ const MenuItems: React.FC<iProps> = ({
 
       <li>
         <NavLink
+          to={`/user-guides/`}
+          className="Menu__link"
+          activeClassName="Menu__link--active"
+          onClick={onItemClicked}
+        >
+          <FormattedMessage
+            id="Menu.guides"
+            defaultMessage="9. Educator Guides"
+            description="Educator-Guides button"
+          />
+        </NavLink>
+      </li>
+
+      <li>
+        <NavLink
+          to={`/accessibility/`}
+          className="Menu__link"
+          activeClassName="Menu__link--active"
+          onClick={onItemClicked}
+        >
+          <FormattedMessage
+            id="Menu.accessibility"
+            defaultMessage="10. Accessibility Statement"
+            description="Accessibilty Statement button"
+          />
+        </NavLink>
+      </li>
+
+      <li>
+        <NavLink
           to={`/credits/`}
           className="Menu__link"
           activeClassName="Menu__link--active"
@@ -142,7 +172,7 @@ const MenuItems: React.FC<iProps> = ({
         >
           <FormattedMessage
             id="Menu.credits"
-            defaultMessage="9. Credits"
+            defaultMessage="11. Credits"
             description="Credits Button"
           />
         </NavLink>
