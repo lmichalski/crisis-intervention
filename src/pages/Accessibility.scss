@@ -1,0 +1,18 @@
+.main .content {
+  .resource-name {
+    font-size: 24px;
+    font-style: italic;
+  }
+
+  .accessibility-links {
+    color: gold;
+
+    &:active {
+      color: cornflowerblue;
+    }
+
+    &:visited {
+      color: rgb(173, 200, 252);
+    }
+  }
+}

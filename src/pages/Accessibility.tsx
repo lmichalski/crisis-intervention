@@ -20,21 +20,54 @@ const Accessibility: React.FC<{}> = () => {
             <p>
               Seneca is committed to providing an accessible teaching, learning,
               living and working community that is barrier-free and inclusive
-              for all individuals. Seneca’s Accessibility Statement Policy is in
-              place to ensure practices and procedures are consistent with the
-              accessibility standards under the Accessibility for Ontarians with
-              Disabilities Act (AODA) and the Canadian Charter of Rights and
-              Freedoms.
+              for all individuals.{" "}
+              <a
+                href="https://www.senecacollege.ca/about/policies/accessibility-statement-policy.html"
+                className="accessibility-links"
+              >
+                Seneca’s Accessibility Statement Policy
+              </a>{" "}
+              is in place to ensure practices and procedures are consistent with
+              the accessibility standards under the{" "}
+              <a
+                href="https://www.ontario.ca/laws/statute/05a11"
+                className="accessibility-links"
+              >
+                Accessibility for Ontarians with Disabilities Act (AODA)
+              </a>{" "}
+              and the{" "}
+              <a
+                href="https://laws-lois.justice.gc.ca/eng/const/page-12.html"
+                className="accessibility-links"
+              >
+                Canadian Charter of Rights and Freedoms
+              </a>
+              .
             </p>
+
             <h3>Accessibility Standards</h3>
+
             <p>
-              The Web Content Accessibility Guidelines (WCAG) defines
-              requirements for designers and developers to improve accessibility
-              for people with disabilities. It defines three levels of
-              conformance: Level A, Level AA, and Level AAA. This project has
-              been designed to conform with Web Content Accessibility Guidelines
-              (WCAG) 2.0 Level AA, as required by the AODA.
+              The{" "}
+              <a
+                href="https://www.w3.org/WAI/standards-guidelines/wcag/"
+                className="accessibility-links"
+              >
+                Web Content Accessibility Guidelines (WCAG)
+              </a>{" "}
+              defines requirements for designers and developers to improve
+              accessibility for people with disabilities. It defines three
+              levels of conformance: Level A, Level AA, and Level AAA. This
+              project has been designed to conform with{" "}
+              <a
+                href="https://www.w3.org/TR/WCAG20/"
+                className="accessibility-links"
+              >
+                Web Content Accessibility Guidelines (WCAG) 2.0
+              </a>{" "}
+              Level AA, as required by the AODA.
             </p>
+
             <h3>Accessible Features of this Resource</h3>
             <p>The course content has been optimized for accessibility:</p>
             <ul>• All content is navigable by keyboard.</ul>
