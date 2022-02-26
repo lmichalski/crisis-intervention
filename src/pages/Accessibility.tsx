@@ -70,28 +70,30 @@ const Accessibility: React.FC<{}> = () => {
 
             <h3>Accessible Features of this Resource</h3>
             <p>The course content has been optimized for accessibility:</p>
-            <ul>• All content is navigable by keyboard.</ul>
             <ul>
-              • Hyperlinks are visually distinct and are formatted with
+            <li>All content is navigable by keyboard.</li>
+            <li>
+              Hyperlinks are visually distinct and are formatted with
               meaningful text.
-            </ul>
-            <ul>
-              • Proper heading structures were implemented to optimize screen
+            </li>
+            <li>
+              Proper heading structures were implemented to optimize screen
               reader navigation.
-            </ul>
-            <ul>
-              • All images have alternative text, and when appropriate, a long
+            </li>
+            <li>
+              All images have alternative text, and when appropriate, a long
               description.
-            </ul>
-            <ul>
-              • The colour contrast of text complies with accessibility
+            </li>
+            <li>
+              The colour contrast of text complies with accessibility
               guidelines.
-            </ul>
-            <ul>• Colour is not used alone to convey information.</ul>
-            <ul>• All videos have closed captioning.</ul>
-            <ul>
-              • Video transcripts have been created for videos created in-house
+            </li>
+            <li>Colour is not used alone to convey information.</li>
+            <li>All videos have closed captioning.</li>
+            <li>
+              Video transcripts have been created for videos created in-house
               and for some externally sourced videos.
+            </li>
             </ul>
             <h3>Known Accessibility Issues and Feedback</h3>
             <p>
@@ -104,15 +106,19 @@ const Accessibility: React.FC<{}> = () => {
             <p>
               If you find any issues, please provide the following information:
             </p>
-            <ul>• The page title and a link to the page with the issue</ul>
-            <ul>• A detailed description of the issue</ul>
-
             <ul>
-              • The operating system, browser, and assistive technology (if
+            <li>The page title and a link to the page with the issue</li>
+            <li>A detailed description of the issue</li>
+
+            <li>
+              The operating system, browser, and assistive technology (if
               applicable) used. For Example:
-              <ul> • Windows 10</ul>
-              <ul>• Google Chrome (Version 98.0.4758.102)</ul>
-              <ul>• Jaws screen reader </ul>
+              <ul>
+              <li>Windows 10</li>
+              <li>Google Chrome (Version 98.0.4758.102)</li>
+              <li>Jaws screen reader </li>
+              </ul>
+            </li>
             </ul>
 
             <p>
@@ -120,8 +126,10 @@ const Accessibility: React.FC<{}> = () => {
               below.
             </p>
             <ul>
-              • Currently, there are no known accessibility issues in this
+            <li>
+              Currently, there are no known accessibility issues in this
               resource.
+              </li>
             </ul>
             <p>This statement was last updated on 23 February 2022.</p>
 
