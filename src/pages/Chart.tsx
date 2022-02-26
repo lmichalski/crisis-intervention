@@ -69,10 +69,9 @@ const Chart: React.FC<iProps> = ({ image }) => {
             </div>
           </div>
           <button className="next-button" onClick={handleClickNext}>
-          Next
-        </button>
+            Next
+          </button>
         </div>
-
       </div>
     </>
   );

@@ -654,7 +654,7 @@
       "type": "video",
       "data": "SG4_DP9_1",
       "video": {
-        "vimeo_url": "https://player.vimeo.com/video/652290742"
+        "vimeo_url": "https://player.vimeo.com/video/682310747"
       },
       "correct": "correct",
       "feedback": "Your response displayed active listening and empathy. Your response also inquired about self-harm and suicidality to further access risk.",
@@ -1015,7 +1015,7 @@
       "type": "video",
       "data": "SG4_DP14_1",
       "video": {
-        "vimeo_url": "https://player.vimeo.com/video/652291474"
+        "vimeo_url": "https://player.vimeo.com/video/682310716"
       },
       "correct": "correct",
       "feedback": "Your response informed the client that her safety is the main priority. Your response also made it clear that the hospital is the next step to ensure her safety. ",
@@ -1030,7 +1030,7 @@
           "next": 40
         },
         {
-          "label": "Call 911",
+          "label": "Contact Emergency Services",
           "next": 42
         }
       ],
@@ -1053,7 +1053,7 @@
           "next": 41
         },
         {
-          "label": "Call 911",
+          "label": "Contact Emergency Services",
           "next": 42
         }
       ],
@@ -1076,7 +1076,7 @@
           "next": 40
         },
         {
-          "label": "Call 911",
+          "label": "Contact Emergency Services",
           "next": 42
         }
       ],

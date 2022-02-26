@@ -102,8 +102,8 @@ const Instructions: React.FC<iProps> = ({ minSteps, strings }) => {
             obtain support.
           </div>
           <button className="resource-button" onClick={handleClickResource}>
-          Crisis Resources
-        </button>
+            Crisis Resources
+          </button>
         </div>
       </div>
     </div>
